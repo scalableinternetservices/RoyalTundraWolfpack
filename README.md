@@ -2,9 +2,13 @@
 
 # Commands
 ```
+docker-compose build
 docker-compose up
 
-docker-compose run web bin/bash
+In 2nd  terminal: 
+  docker-compose run web rake db:create
+  docker-compose run web /bin/bash
+  rails db:create
 ```
 
 This README would normally document whatever steps are necessary to get the
