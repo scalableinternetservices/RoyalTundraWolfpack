@@ -11,6 +11,8 @@ In 2nd  terminal:
   rails db:migrate
 ```
 
+pw wolf
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
