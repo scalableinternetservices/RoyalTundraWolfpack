@@ -1,5 +1,22 @@
 # README
 
+# Commands
+```
+docker-compose build
+docker-compose up
+
+In 2nd  terminal: 
+  docker-compose run web rake db:create
+  docker-compose run web /bin/bash
+  rails db:migrate
+```
+
+pw wolf
+pw wolfgang
+
+chmod 700 RoyalTundraWolfpack.pem
+ssh -i RoyalTundraWolfpack.pem RoyalTundraWolfpack@ec2.cs291.com
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
