@@ -1,17 +1,15 @@
 # README
 
-# Commands
+# Setup Commands
 ```
 docker-compose build
 docker-compose up
 
 In 2nd  terminal: 
   docker-compose run web rake db:create
-  docker-compose run web /bin/bash
-  rails db:migrate
+  docker-compose run web rails db:migrate
 ```
 
-pw wolf
 pw wolfgang
 
 chmod 700 RoyalTundraWolfpack.pem
