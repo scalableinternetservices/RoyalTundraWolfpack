@@ -1,31 +1,28 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Posts</h1>
+<h1 class="ui header">Posts</h1>
+<form action=<%= new_post_path %>>
+  <button class="ui button" type="submit"> Create New Post </button>
+</form>
+<%= link_to 'New Post', new_post_path %>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Author</th>
-      <th>Upvotes</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @posts.each do |post| %>
-      <tr>
-        <td><%= post.title %></td>
-        <td><%= post.author %></td>
-        <td><%= post.upvotes %></td>
-        <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<div class="ui ">
+  <% @posts.reverse_each do |post| %>
+    <div class="ui raised very padded text container segment"> 
+      <h2 class="ui header"> <%= post.title %></h2>
+      <div class="ui">By <%= post.author %></div>
+      <div class="ui">Upvotes: <%= post.upvotes %></div>
+      <div class="ui grid right aligned">
+        <div class="right floated right aligned six wide column">
+          <div class="ui">
+            <%= link_to 'Show', post %>
+            <%= link_to 'Edit', edit_post_path(post) %>
+            <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
 
 <br>
 
-<%= link_to 'New Post', new_post_path %>
