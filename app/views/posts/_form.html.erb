@@ -11,22 +11,31 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
-  </div>
+  <form class="ui form">
+    <div class="ui field">
+      <%= form.label :title %>
+      <%= form.text_field :title %>
+    </div>
 
-  <div class="field">
-    <%= form.label :author %>
-    <%= form.text_field :author %>
-  </div>
+    <div class="ui field">
+      <%= form.label :author %>
+      <%= form.text_field :author %>
+    </div>
 
   <div class="field">
     <%= form.label :upvotes %>
     <%= form.number_field :upvotes, :value => 0%>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="field">
+    <%= form.label :content %>
+    <%= form.text_field :content %>
   </div>
+
+  <div class="actions">
+    <button class="ui button" type="submit">
+      submit
+    </button>
+  </div>
+  </form>
 <% end %>
