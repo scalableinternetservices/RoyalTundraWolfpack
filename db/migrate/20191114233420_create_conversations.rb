@@ -6,7 +6,5 @@ class CreateConversations < ActiveRecord::Migration[5.2]
 
       t.timestamps
     end
-    add_foreign_key :conversations, :users, column: :user_one_id
-    add_foreign_key :conversations, :users, column: :user_two_id
   end
 end
