@@ -42,6 +42,7 @@ ActiveRecord::Schema.define(version: 2019_11_14_234830) do
     t.integer "upvotes"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "content"
   end
 
   create_table "users", force: :cascade do |t|
