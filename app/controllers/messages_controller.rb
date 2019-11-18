@@ -1,10 +1,29 @@
 class MessagesController < ApplicationController
-  before_action :set_message, only: [:show, :edit, :update, :destroy]
+  # before_action :set_message, only: [:show, :edit, :update, :destroy]
+  before_action do
+    @conversation = Conversation.find(params[:conversation_id])
+    @recipient = User.find(params[:recipient_id])
+  end
 
   # GET /messages
   # GET /messages.json
   def index
-    @messages = Message.all
+    # @messages = Message.all
+    @messages = @conversation.messages
+    # if @messages.length > 10
+    #  @over_ten = true
+    #  @messages = @messages[-10..-1]
+    # end
+    if params[:m]
+     # @over_ten = false
+     @messages = @conversation.messages
+    end
+    # if @messages.last
+    #   if @messages.last.user_id != current_user.id
+    #     @messages.last.read = true;
+    #   end
+    # end
+    @message = @conversation.messages.new
   end
 
   # GET /messages/1
@@ -14,7 +33,12 @@ class MessagesController < ApplicationController
 
   # GET /messages/new
   def new
-    @message = Message.new
+    # @message = Message.new
+    # @message = @conversation.messages.new]
+    # if @message.save
+    #   redirect_to conversation_messages_path(@conversation)
+    # end
+    @message = @conversation.messages.new
   end
 
   # GET /messages/1/edit
@@ -24,16 +48,21 @@ class MessagesController < ApplicationController
   # POST /messages
   # POST /messages.json
   def create
-    @message = Message.new(message_params)
+    # @message = Message.new(message_params)
 
-    respond_to do |format|
-      if @message.save
-        format.html { redirect_to @message, notice: 'Message was successfully created.' }
-        format.json { render :show, status: :created, location: @message }
-      else
-        format.html { render :new }
-        format.json { render json: @message.errors, status: :unprocessable_entity }
-      end
+    # respond_to do |format|
+    #   if @message.save
+    #     format.html { redirect_to @message, notice: 'Message was successfully created.' }
+    #     format.json { render :show, status: :created, location: @message }
+    #   else
+    #     format.html { render :new }
+    #     format.json { render json: @message.errors, status: :unprocessable_entity }
+    #   end
+    # end
+    @message = @conversation.messages.new(message_params)
+    @message.recipient_id = @recipient.id
+    if @message.save
+      redirect_to conversation_messages_path(@conversation)
     end
   end
 
@@ -69,6 +98,7 @@ class MessagesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def message_params
-      params.require(:message).permit(:sender_id, :recipient_id, :conversation_id, :message)
+      # params.require(:message).permit(:sender_id, :recipient_id, :conversation_id, :message)
+      prarms.require(:message).permit(:message, :sender_id, :recipient_id)
     end
 end

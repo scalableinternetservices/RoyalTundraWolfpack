@@ -1,9 +1,13 @@
 class ConversationsController < ApplicationController
-  before_action :set_conversation, only: [:show, :edit, :update, :destroy]
+  before_action :autheticate_user
+  # before_action :autheticate_user, :set_conversation, only: [:show, :edit, :update, :destroy]
+
+  # MIGHT HAVE TO ADD AUTHENTICATE USER HELPER HERE???
 
   # GET /conversations
   # GET /conversations.json
   def index
+    @users = User.all
     @conversations = Conversation.all
   end
 
@@ -26,15 +30,25 @@ class ConversationsController < ApplicationController
   def create
     @conversation = Conversation.new(conversation_params)
 
-    respond_to do |format|
-      if @conversation.save
-        format.html { redirect_to @conversation, notice: 'Conversation was successfully created.' }
-        format.json { render :show, status: :created, location: @conversation }
-      else
-        format.html { render :new }
-        format.json { render json: @conversation.errors, status: :unprocessable_entity }
-      end
+    if Conversation.between(params[:user_one_id],params[:user_two_id])
+      .present?
+        @conversation = Conversation.between(params[:user_one_id],
+        params[:user_two_id]).first
+    else
+      @conversation = Conversation.create!(conversation_params)
     end
+    
+    redirect_to conversation_messages_path(@conversation)
+
+    # respond_to do |format|
+    #   if @conversation.save
+    #     format.html { redirect_to @conversation, notice: 'Conversation was successfully created.' }
+    #     format.json { render :show, status: :created, location: @conversation }
+    #   else
+    #     format.html { render :new }
+    #     format.json { render json: @conversation.errors, status: :unprocessable_entity }
+    #   end
+    # end
   end
 
   # PATCH/PUT /conversations/1
