@@ -30,32 +30,11 @@
 <%= link_to 'New Conversation', new_conversation_path %>
 <% end %>
 
-<div class=”ui segment”>
-  <h3>Mailbox</h3>
-  <div class=”ui list”>
-    <div class=”item”>
-      <% @conversations.each do |conversation| %>
-        <% if conversation.user_one_id == current_user.id || conversation.user_two_id == current_user.id %>
-          <% if conversation.user_one_id == current_user.id %>
-            <% recipient = User.find(conversation.user_one_id) %>
-          <% else %>
-            <% recipient = User.find(conversation.user_two_id) %>
-          <% end %>
-          <%= link_to recipient.username,   conversation_messages_path(conversation)%>
-        <% end %>
-      <% end %>
-    </div>
+<h1>All Conversations</h1>
+<% @conversations.each do |conversation| %>
+  <div>
+    <%= link_to conversation.subject, conversation_path(conversation) %>
   </div>
-</div>
-<div class=”ui segment”>
-  <h3>All Users</h3>
-    <div class=”ui list”>
-    <% @users.each do |user| %>
-      <% if user.id != current_user.id %>
-        <div class=”item”>
-          <%= user.username %> <%= link_to 'Message me!', conversations_path(user_one_id: current_user.id, user_two_id: user.id), method: 'post'%>
-        </div>
-       <% end %>
-    <% end %>
-  </div>
-</div>
+<% end %>
+
+<%= link_to "New Conversation", new_conversation_path %>
