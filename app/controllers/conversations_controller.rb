@@ -12,8 +12,10 @@ class ConversationsController < ApplicationController
   end
 
   def create
+    # TODO: if user sending to person that already has conversation, use that conversation instead of starting new one
     recipient = User.find(params[:user_id])
     receipt = current_user.send_message(recipient, params[:body], params[:subject])
     redirect_to conversations_path(receipt.conversation)
   end
+
 end
