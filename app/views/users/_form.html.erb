@@ -11,6 +11,8 @@
     </div>
   <% end %>
 
+  <form class="ui form">
+
   <div class="field">
     <%= form.label :username %>
     <%= form.text_field :username %>
@@ -21,7 +23,21 @@
     <%= form.text_field :password %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="field">
+    <%= form.label :age %>
+    <%= form.number_field :age, :value => 1%>
   </div>
+
+  <div class="field">
+    <%= form.label :gender %>
+    <%= form.select :gender, ['Female','Male','Other']%>
+  </div>
+
+  <div class="actions">
+    <button class="ui button" type="submit">
+      submit
+    </button>
+  </div>
+  </form>
+
 <% end %>
