@@ -1,3 +1,4 @@
+<% if false %>
 <p id="notice"><%= notice %></p>
 
 <h1>Messages</h1>
@@ -31,3 +32,33 @@
 <br>
 
 <%= link_to 'New Message', new_message_path %>
+<% end %>
+
+<div class=”ui segment”>
+  <% @messages.each do |message| %>
+    <% if message.body %>
+      <% user = User.find(message.user_id) %>
+      <div class=”item”>
+        <div class=”content”>
+          <div class=”header”><strong><%= user.username %></strong>     <%= message.created_at %></div>
+          <div class=”list”>
+            <div class=”item”>
+              <i class=”right triangle icon”></i>
+              <%= message.message %>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+</div>
+<%= form_for [@conversation, @message], html: {class: "ui reply form"} do |f| %>
+
+  <div class=”field”>
+    <%= f.text_area :message, class: "form-control" %>
+  </div>
+  <%= f.text_field :sender_id, value: current_user.id, type: "hidden" %>
+  <div>
+    <%= f.submit "Add Reply", class: "ui blue labeled submit icon button" %>
+  </div>
+<% end %>

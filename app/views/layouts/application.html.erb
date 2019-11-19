@@ -10,18 +10,30 @@
   </head>
 
   <body>
-    <div class="ui inverted segment">
-      <div class="ui inverted secondary pointing menu">
-        <a class="item">
-          Home
-        </a>
-        <a class="item">
-          Messages
-        </a>
-        <a class="item">
-          Friends
-        </a>
-      </div>
+    <div class="ui menu">
+      <% if not user_signed_in? %>
+        <div class="item">
+          <%= link_to new_user_registration_path do %>
+            <div class="ui primary button">Sign up</div>
+          <% end %>
+        </div>
+        <div class="item">
+          <%= link_to new_user_session_path do %>
+            <div class="ui button">Login</div>
+          <% end %>
+        </div>
+      <% else %>
+        <div class="item">
+          <%= link_to users_path(current_user.id) do %>
+            <div class="ui primary button">Profile</div>
+          <% end %>
+        </div>
+        <div class="item">
+          <%= link_to destroy_user_session_path do %>
+            <div class="ui primary button">Logout</div>
+          <% end %>
+        </div>
+      <% end %>
     </div>
     <%= yield %>
   </body>
