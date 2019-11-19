@@ -32,6 +32,7 @@ gem 'less-rails-semantic_ui'
 gem 'autoprefixer-rails', '8.6.5'
 gem 'therubyracer'
 
+gem 'will_paginate', '~> 3.1.0'
 # Use Mailboxer for in-app messaging
 gem 'mailboxer'
 # Use Devise for auth

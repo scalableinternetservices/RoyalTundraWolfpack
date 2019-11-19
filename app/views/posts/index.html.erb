@@ -1,14 +1,21 @@
 <p id="notice"><%= notice %></p>
 
-<h1 class="ui header">Posts</h1>
-<form action=<%= new_post_path %>>
-  <button class="ui button" type="submit"> Create New Post </button>
-</form>
-<%= link_to 'New Post', new_post_path %>
+<div class="ui grid right aligned">
+  <div class="left floated six wide column">
+    <div class="centered">
+      <h1 class="ui header">Posts</h1>
+    </div>
+  </div>
+  <div class="right floated right aligned three wide column">
+    <form action=<%= new_post_path %>>
+      <button class="ui button" type="submit"> Create New Post </button>
+    </form>
+  </div>
+</div>
 
 
 <div class="ui ">
-  <% @posts.reverse_each do |post| %>
+  <% @posts.each do |post| %>
     <div class="ui raised very padded text container segment"> 
       <h2 class="ui header"> <%= post.title %></h2>
       <div class="ui">By <%= post.author %></div>
@@ -26,5 +33,8 @@
     </div>
   <% end %>
 
+  <div class="apple_pagination">
+    <%= will_paginate @posts %>
+  </div>
 <br>
 
