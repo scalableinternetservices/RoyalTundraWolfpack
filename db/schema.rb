@@ -78,18 +78,6 @@ ActiveRecord::Schema.define(version: 2019_11_18_222623) do
     t.index ["receiver_id", "receiver_type"], name: "index_mailboxer_receipts_on_receiver_id_and_receiver_type"
   end
 
-  create_table "messages", force: :cascade do |t|
-    t.bigint "sender_id"
-    t.bigint "recipient_id"
-    t.bigint "conversation_id"
-    t.string "message_body"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["conversation_id"], name: "index_messages_on_conversation_id"
-    t.index ["recipient_id"], name: "index_messages_on_recipient_id"
-    t.index ["sender_id"], name: "index_messages_on_sender_id"
-  end
-
   create_table "posts", force: :cascade do |t|
     t.string "title"
     t.string "author"
@@ -104,6 +92,8 @@ ActiveRecord::Schema.define(version: 2019_11_18_222623) do
     t.string "password"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "age"
+    t.string "gender"
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
@@ -114,12 +104,7 @@ ActiveRecord::Schema.define(version: 2019_11_18_222623) do
     t.index ["username"], name: "index_users_on_username", unique: true
   end
 
-  add_foreign_key "conversations", "users", column: "user_one_id"
-  add_foreign_key "conversations", "users", column: "user_two_id"
   add_foreign_key "mailboxer_conversation_opt_outs", "mailboxer_conversations", column: "conversation_id", name: "mb_opt_outs_on_conversations_id"
   add_foreign_key "mailboxer_notifications", "mailboxer_conversations", column: "conversation_id", name: "notifications_on_conversation_id"
   add_foreign_key "mailboxer_receipts", "mailboxer_notifications", column: "notification_id", name: "receipts_on_notification_id"
-  add_foreign_key "messages", "conversations"
-  add_foreign_key "messages", "users", column: "recipient_id"
-  add_foreign_key "messages", "users", column: "sender_id"
 end

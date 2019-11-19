@@ -13,6 +13,7 @@ class User < ApplicationRecord
 		nil
 	end
 
+
 	has_many :conversations
 	has_many :messages
 
