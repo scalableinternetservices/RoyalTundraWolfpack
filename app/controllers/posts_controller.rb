@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  protect_from_forgery with: :exception
+  prepend_before_action :authenticate_user!, except: [:index]
   before_action :set_post, only: [:show, :edit, :update, :destroy]
 
   # GET /posts

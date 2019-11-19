@@ -32,6 +32,11 @@ gem 'less-rails-semantic_ui'
 gem 'autoprefixer-rails', '8.6.5'
 gem 'therubyracer'
 
+# Use Mailboxer for in-app messaging
+gem 'mailboxer'
+# Use Devise for auth
+gem 'devise'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 

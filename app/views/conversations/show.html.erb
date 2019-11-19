@@ -1,14 +1,16 @@
-<p id="notice"><%= notice %></p>
+<h1> <%=@conversation.subject %> </h1>
 
-<p>
-  <strong>User one:</strong>
-  <%= @conversation.user_one %>
-</p>
+<% @conversation.receipts_for(current_user).each do |r| %>
+	<div>
+		<p><%= r.message.sender.name %> sent:</p>
+		<p><%= r.message.body %></p>
+	</div>
+<% end %>
 
-<p>
-  <strong>User two:</strong>
-  <%= @conversation.user_two %>
-</p>
+<%= form_tag conversation_messages_path(@conversation), method: :post do %>
+	<div>
+		<%= text_area_tag :body %>
+	</div>
 
-<%= link_to 'Edit', edit_conversation_path(@conversation) %> |
-<%= link_to 'Back', conversations_path %>
+	<%= submit_tag %>
+<% end %>
