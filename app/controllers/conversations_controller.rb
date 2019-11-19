@@ -7,6 +7,7 @@ class ConversationsController < ApplicationController
 
   def show
     @conversation = current_user.mailbox.conversations.find(params[:id])
+    @recipient = (@conversation.recipients - [current_user])[0].email
   end
 
   def new
