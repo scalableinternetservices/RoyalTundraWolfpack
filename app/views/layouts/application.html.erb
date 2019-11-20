@@ -11,6 +11,11 @@
 
   <body>
     <div class="ui menu">
+      <div class="item">
+        <%= link_to root_path do%>
+          Boe's Books
+        <% end%>
+      </div>
       <% if not user_signed_in? %>
         <div class="item">
           <%= link_to new_user_registration_path do %>
@@ -25,7 +30,7 @@
       <% else %>
         <div class="item">
           <%= link_to users_path(current_user.id) do %>
-            <div class="ui primary button">Profile</div>
+            <div class="ui primary button"><%= current_user.username %>'s Profile</div>
           <% end %>
         </div>
         <div class="item">

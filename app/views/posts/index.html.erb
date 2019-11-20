@@ -21,15 +21,17 @@
       <div class="ui">By <%= post.author %></div>
       <div class="ui">Upvotes: <%= post.upvotes %></div>
       <div class="ui"><%= post.content %></div>
-      <div class="ui grid right aligned">
-        <div class="right floated right aligned six wide column">
-          <div class="ui">
-            <%= link_to 'Show', post %>
-            <%= link_to 'Edit', edit_post_path(post) %>
-            <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+      <% if user_signed_in? and current_user.email === post.author %>
+        <div class="ui grid right aligned">
+          <div class="right floated right aligned six wide column">
+            <div class="ui">
+              <%= link_to 'Show', post %>
+              <%= link_to 'Edit', edit_post_path(post) %>
+              <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+            </div>
           </div>
         </div>
-      </div>
+      <%end%>
     </div>
   <% end %>
 
