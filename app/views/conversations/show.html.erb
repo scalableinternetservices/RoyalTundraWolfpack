@@ -1,16 +1,23 @@
-<h1> <%=@recipient %> </h1>
+<h1> Conversation with <%=@recipient %> </h1>
 
-<% @conversation.receipts_for(current_user).each do |r| %>
-	<div>
-		<p><%= r.message.sender.email %> sent:</p>
-		<p><%= r.message.body %></p>
-	</div>
-<% end %>
+<div class="ui comments">
+	<% @conversation.receipts_for(current_user).each do |r| %>
+		<div class="comment">
+			<div class="content">
+				<p class="author"><%= r.message.sender.username %> sent:</p>
+				<p class="text"><%= r.message.body %></p>
+			</div>
+		</div>
+	<% end %>
+</div>
 
 <%= form_tag conversation_messages_path(@conversation), method: :post do %>
 	<div>
-		<%= text_area_tag :body %>
+		<div class="ui reply form">
+			<%= text_field_tag :body %>
+		</div>
 	</div>
 
-	<%= submit_tag %>
+	
+	<%= submit_tag "Reply", class: "ui button" %>
 <% end %>

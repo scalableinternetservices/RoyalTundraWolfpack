@@ -1,23 +1,23 @@
 <h1>All Conversations</h1>
 
 <div class="ui middle aligned selection celled list">
-<%= link_to new_conversation_path do %>
-  <div class="item">
+<div class="item">
+  <%= link_to new_conversation_path do %>
     <div class="content">
       <div class="header">New Conversation</div>
     </div>
-  </div>
-<% end %>
+  <% end %>
+</div>
   <% @conversations.each do |conversation| %>
     <% recipient = conversation.recipients - [current_user] %>
-    <%= link_to conversation_path(conversation) do %>
-      <div class="item">
+    <div class="item">
+      <%= link_to conversation_path(conversation) do %>
         <!-- <img class="ui avatar image" src="https://www.abc.net.au/news/image/8314104-1x1-940x940.jpg"> -->
         <div class="content">
-          <div class="header"><%= recipient[0].email %></div>
+          <div class="header"><%= recipient[0].username %></div>
         </div>
-      </div>
-    <% end %>
+      <% end %>
+    </div>
 <% end %>
   
 </div>
