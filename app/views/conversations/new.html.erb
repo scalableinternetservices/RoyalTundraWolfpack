@@ -5,9 +5,11 @@
 		<%= select_tag :user_id, options_from_collection_for_select(@recipients, :id, :username)%>
 	</div>
 
-	<div>
-		<%= text_field_tag :subject, nil, placeholder: "Subject" %>
-	</div>
+	<% if false %>
+		<div>
+			<%= text_field_tag :subject, nil, placeholder: "Subject" %>
+		</div>
+	<% end %>
 
 	<div>
 		<%= text_area_tag :body, nil, placeholder: "Add Message Here..." %>

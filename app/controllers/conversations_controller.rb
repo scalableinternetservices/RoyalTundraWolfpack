@@ -11,16 +11,16 @@ class ConversationsController < ApplicationController
   end
 
   def new
-    # @recipients = []
-    # User.all.each do |u| 
-    #   if u != current_user
-    #     ongoing_conversation = Mailboxer::Conversation.between(u, current_user).find{|c| c.participants.count == 2 }
-    #     if not ongoing_conversation.present?
-    #       @recipients.append(u)
-    #     end
-    #   end
-    # end
-    @recipients = User.all - [current_user]
+    @recipients = []
+    User.all.each do |u| 
+      if u != current_user
+        ongoing_conversation = Mailboxer::Conversation.between(u, current_user).find{|c| c.participants.count == 2 }
+        if not ongoing_conversation.present?
+          @recipients.append(u)
+        end
+      end
+    end
+    # @recipients = User.all - [current_user]
     # Conversation.participant(@a).participant(@b)
     # ADD FILTER FOR NOT ALLOWING NEW CONVOS W PPL WHO ALREADY HAVE CONVO WITH YOU
   end
@@ -33,7 +33,7 @@ class ConversationsController < ApplicationController
       receipt = current_user.reply_to_conversation(ongoing_conversation, params[:body])
       redirect_to conversation_path(receipt.conversation)
     else
-      receipt = current_user.send_message(recipient, params[:body], params[:subject])
+      receipt = current_user.send_message(recipient, params[:body], "default-subject")
       redirect_to conversation_path(receipt.conversation)
     end
   end
