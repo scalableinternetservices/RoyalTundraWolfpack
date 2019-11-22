@@ -12,14 +12,14 @@
   <body>
     <div class="ui menu">
       <div class="item">
-        <%= link_to root_path do%>
-          Boe's Books
-        <% end%>
+        <%= link_to root_path do %>
+          <div class="ui primary button">Home</div>
+        <% end %>
       </div>
       <% if not user_signed_in? %>
         <div class="item">
           <%= link_to new_user_registration_path do %>
-            <div class="ui primary button">Sign up</div>
+            <div class="ui button">Sign up</div>
           <% end %>
         </div>
         <div class="item">
@@ -30,12 +30,17 @@
       <% else %>
         <div class="item">
           <%= link_to users_path(current_user.id) do %>
-            <div class="ui primary button"><%= current_user.username %>'s Profile</div>
+            <div class="ui button">Profile</div>
+          <% end %>
+        </div>
+        <div class="item">
+          <%= link_to conversations_path do %>
+            <div class="ui button">Conversations</div>
           <% end %>
         </div>
         <div class="item">
           <%= link_to destroy_user_session_path do %>
-            <div class="ui primary button">Logout</div>
+            <div class="ui button">Logout</div>
           <% end %>
         </div>
       <% end %>
