@@ -1,0 +1,25 @@
+
+<div class="comment">
+	<div class="content">
+		<p class="author"><%=comment.user.username%></p>
+		<div class="text">
+			<p><%= comment.body %></p>
+		</div>
+	</div>
+
+	<% if user_signed_in? %>
+		<div class="ui form">
+			<%= form_for [comment, Comment.new] do |f| %>
+				<div class="field">
+				    <%= f.text_area :body, placeholder: "Add a Reply", rows: 1%><br/>
+				</div>
+			    <%= f.submit "Reply", class: "ui button"  %>
+			<% end %>
+		</div>
+	<% end %>
+
+	<div class="comments">
+	    <%= render partial: 'comments/comment', collection: comment.comments %>
+	</div>
+
+</div>
