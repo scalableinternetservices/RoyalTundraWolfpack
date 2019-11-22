@@ -34,5 +34,6 @@
 
 <% if current_user != nil && current_user == @user %>
   <%= link_to 'Edit', edit_user_path(@user) %> |
+  <%= link_to 'Delete', @user, method: :delete, data: { confirm: 'Are you sure?' } %> | 
 <% end %>
 <%= link_to 'Back', root_path %>
