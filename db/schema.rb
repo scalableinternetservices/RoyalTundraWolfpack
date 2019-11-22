@@ -10,10 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_22_023034) do
+ActiveRecord::Schema.define(version: 2019_11_22_025139) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "books", force: :cascade do |t|
+    t.string "title"
+    t.string "author"
+    t.integer "upvotes"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["title"], name: "index_books_on_title", unique: true
+  end
 
   create_table "comments", force: :cascade do |t|
     t.text "body"
@@ -125,8 +134,6 @@ ActiveRecord::Schema.define(version: 2019_11_22_023034) do
     t.index ["username"], name: "index_users_on_username", unique: true
   end
 
-  add_foreign_key "conversations", "users", column: "user_one_id"
-  add_foreign_key "conversations", "users", column: "user_two_id"
   add_foreign_key "mailboxer_conversation_opt_outs", "mailboxer_conversations", column: "conversation_id", name: "mb_opt_outs_on_conversations_id"
   add_foreign_key "mailboxer_notifications", "mailboxer_conversations", column: "conversation_id", name: "notifications_on_conversation_id"
   add_foreign_key "mailboxer_receipts", "mailboxer_notifications", column: "notification_id", name: "receipts_on_notification_id"
