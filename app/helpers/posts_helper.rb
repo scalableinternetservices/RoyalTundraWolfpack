@@ -1,6 +1,10 @@
 module PostsHelper
   def getAuthorById(id)
-    auth = User.find(id)
-    return auth ? auth.username :  "[Deleted]"
+    begin 
+      auth = User.find(params[:id])
+    rescue ActiveRecord::RecordNotFound
+      return "[Deleted]"
+    end
+    return auth.username
   end
 end
