@@ -6,7 +6,11 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.order('created_at DESC').page(params[:page]).per_page(3)
+    paginationNumber = 3
+    if user_signed_in?
+      paginationNumber = 5
+    end
+    @posts = Post.order('created_at DESC').page(params[:page]).per_page(paginationNumber)
  end
 
   # GET /posts/1
@@ -21,20 +25,29 @@ class PostsController < ApplicationController
 
   # GET /posts/1/edit
   def edit
+    if current_user.email === @post.author
+      render :edit
+    else
+      head :forbidden
+    end
   end
 
   # POST /posts
   # POST /posts.json
   def create
-    @post = Post.new(post_params)
+    if user_signed_in?
+      @post = Post.new(post_params)
+      @post.author = current_user.email
+      @post.upvotes = 0
 
-    respond_to do |format|
-      if @post.save
-        format.html { redirect_to @post, notice: 'Post was successfully created.' }
-        format.json { render :show, status: :created, location: @post }
-      else
-        format.html { render :new }
-        format.json { render json: @post.errors, status: :unprocessable_entity }
+      respond_to do |format|
+        if @post.save
+          format.html { redirect_to @post, notice: 'Post was successfully created.' }
+          format.json { render :show, status: :created, location: @post }
+        else
+          format.html { render :new }
+          format.json { render json: @post.errors, status: :unprocessable_entity }
+        end
       end
     end
   end
