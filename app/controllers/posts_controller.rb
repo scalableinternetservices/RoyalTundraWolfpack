@@ -25,7 +25,7 @@ class PostsController < ApplicationController
 
   # GET /posts/1/edit
   def edit
-    if current_user.email === @post.author
+    if current_user.id === @post.author.to_i
       render :edit
     else
       head :forbidden
@@ -37,7 +37,7 @@ class PostsController < ApplicationController
   def create
     if user_signed_in?
       @post = Post.new(post_params)
-      @post.author = current_user.email
+      @post.author = current_user.id
       @post.upvotes = 0
 
       respond_to do |format|
