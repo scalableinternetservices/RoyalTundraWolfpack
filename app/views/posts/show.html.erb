@@ -23,15 +23,19 @@
 <%= link_to 'Edit', edit_post_path(@post) %> |
 <%= link_to 'Back', root_path %>
 
-<h3>Comments</h3>
+<h3 class="ui dividing header">Comments</h3>
 
 <% if user_signed_in? %>
-	<%= form_for [@post, Comment.new] do |f| %>
-		<%= f.text_area :body, placeholder: "Add a comment" %><br/>
-		<%= f.submit "Add Comment" %>
-	<% end %>
+	<div class="ui form">
+		<%= form_for [@post, Comment.new] do |f| %>
+			<div class="field">
+				<%= f.text_area :body, placeholder: "Add a comment", rows: 1%><br/>
+			</div>
+			<%= f.submit "Add Comment", class: "ui button" %>
+		<% end %>
+	</div>
 <% end %>
 
-<ul>
+<div class="ui comments">
   <%= render(partial: 'comments/comment', collection: @post.comments) %>
-</ul>
+</div>
