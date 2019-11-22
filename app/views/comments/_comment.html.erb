@@ -1,0 +1,16 @@
+<li>
+	<p><%= comment.user.username %> commented: </p>
+	<%= comment.body %>
+
+	<% if user_signed_in? %>
+		<%= form_for [comment, Comment.new] do |f| %>
+		    <%= f.text_area :body, placeholder: "Add a Reply" %><br/>
+		    <%= f.submit "Reply"  %>
+		<% end %>
+	<% end %>
+
+	<ul>
+	    <%= render partial: 'comments/comment', collection: comment.comments %>
+	</ul>
+
+</li>

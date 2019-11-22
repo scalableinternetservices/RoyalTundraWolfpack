@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :comments
   devise_for :users, path: '', path_names: { sign_up: 'register', sign_in: 'login', sign_out: 'logout'}
 
   devise_scope :user do
@@ -16,7 +17,13 @@ Rails.application.routes.draw do
  # match 'users' => 'users#show', via: :get, as: 'users'
 
   resources :users
-  resources :posts, except: :index
+  resources :posts, except: :index do
+    resources :comments
+  end
+
+  resources :comments do
+    resources :comments
+  end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root "posts#index"
 end
