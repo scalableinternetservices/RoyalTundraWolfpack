@@ -38,6 +38,9 @@ gem 'mailboxer'
 # Use Devise for auth
 gem 'devise'
 
+#friendship between Users
+gem 'has_friendship'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
