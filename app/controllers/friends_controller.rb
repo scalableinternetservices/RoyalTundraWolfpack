@@ -16,23 +16,23 @@ class FriendsController < ApplicationController
     if params[:friendUsername]
       @user = current_user
       friend_username = params[:friends][:friend_username]
-      if friend_username.nil?
-        head 404
-      else
-        friend = User.find_by(username: friend_username)
+      friend = User.find_by(username: friend_username)
+      begin
         @user.friend_request(friend)
+      rescue NoMethodError
+        render :status => 404
+        return
+      end
 
-        respond_to do |format|
-          if @user.save
-            format.html { redirect_to friends_path, notice: 'Friend request was successfully sent.' }
-            format.json { render :show, status: :created, location: friends_path}
-          else
-            format.html { redirect_to friends_path, notice: 'Friend request failed to be sent.'  }
-            format.json { render json: @friend.errors, status: :unprocessable_entity }
-          end
+      respond_to do |format|
+        if @user.save
+          format.html { redirect_to friends_path, notice: 'Friend request was successfully sent.' }
+          format.json { render :show, status: :created, location: friends_path}
+        else
+          format.html { redirect_to friends_path, notice: 'Friend request failed to be sent.'  }
+          format.json { render json: @friend.errors, status: :unprocessable_entity }
         end
       end
-    else
     end
   end
 
