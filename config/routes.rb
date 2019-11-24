@@ -15,7 +15,13 @@ Rails.application.routes.draw do
   match 'users/:id/edit' => 'users#edit', via: :get, as: 'edit_user'
   match 'users/:id' => 'users#update', via: :put 
 
+  match 'friends' => 'friends#create', via: :post, as: 'send_request'
+  match 'friends/accept' => 'friends#accept', via: :post 
+  match 'friends/reject' => 'friends#reject', via: :post 
+  match 'friends/remove' => 'friends#remove', via: :post
+
   resources :users
+  resources :friends, only: [:index]
   resources :posts, except: :index do
     resources :comments
   end

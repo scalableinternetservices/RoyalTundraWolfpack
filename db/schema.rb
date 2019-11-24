@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_22_025139) do
+ActiveRecord::Schema.define(version: 2019_11_23_181943) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -40,6 +40,17 @@ ActiveRecord::Schema.define(version: 2019_11_22_025139) do
     t.datetime "updated_at", null: false
     t.index ["user_one_id"], name: "index_conversations_on_user_one_id"
     t.index ["user_two_id"], name: "index_conversations_on_user_two_id"
+  end
+
+  create_table "friendships", id: :serial, force: :cascade do |t|
+    t.string "friendable_type"
+    t.integer "friendable_id"
+    t.integer "friend_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer "blocker_id"
+    t.integer "status"
+    t.index ["friendable_id", "friend_id"], name: "index_friendships_on_friendable_id_and_friend_id", unique: true
   end
 
   create_table "mailboxer_conversation_opt_outs", id: :serial, force: :cascade do |t|
@@ -96,18 +107,6 @@ ActiveRecord::Schema.define(version: 2019_11_22_025139) do
     t.index ["receiver_id", "receiver_type"], name: "index_mailboxer_receipts_on_receiver_id_and_receiver_type"
   end
 
-  create_table "messages", force: :cascade do |t|
-    t.bigint "sender_id"
-    t.bigint "recipient_id"
-    t.bigint "conversation_id"
-    t.string "message_body"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["conversation_id"], name: "index_messages_on_conversation_id"
-    t.index ["recipient_id"], name: "index_messages_on_recipient_id"
-    t.index ["sender_id"], name: "index_messages_on_sender_id"
-  end
-
   create_table "posts", force: :cascade do |t|
     t.string "title"
     t.string "author"
@@ -122,13 +121,13 @@ ActiveRecord::Schema.define(version: 2019_11_22_025139) do
     t.string "password"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "age"
+    t.string "gender"
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
-    t.integer "age"
-    t.string "gender"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
     t.index ["username"], name: "index_users_on_username", unique: true
@@ -137,7 +136,4 @@ ActiveRecord::Schema.define(version: 2019_11_22_025139) do
   add_foreign_key "mailboxer_conversation_opt_outs", "mailboxer_conversations", column: "conversation_id", name: "mb_opt_outs_on_conversations_id"
   add_foreign_key "mailboxer_notifications", "mailboxer_conversations", column: "conversation_id", name: "notifications_on_conversation_id"
   add_foreign_key "mailboxer_receipts", "mailboxer_notifications", column: "notification_id", name: "receipts_on_notification_id"
-  add_foreign_key "messages", "conversations"
-  add_foreign_key "messages", "users", column: "recipient_id"
-  add_foreign_key "messages", "users", column: "sender_id"
 end
