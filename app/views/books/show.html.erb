@@ -1,42 +1,36 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @book.title %>
-</p>
 
-<p>
-  <strong>Author:</strong>
-  <%= @book.author %>
-</p>
-
-<div class="right floated right aligned three wide column">
-  <form action=<%= new_post_path %>>
-    <button class="ui button" type="submit"> Create New Post </button>
-  </form>
-</div>
-
-<div class="ui">
-  <% @posts.each do |post| %>
-    <div class="ui raised very padded text container segment"> 
-      <h2 class="ui header"> <%= post.title %></h2>
-      <div class="ui">By <%= getAuthorById(post.author) %></div>
-      <div class="ui">Upvotes: <%= post.score %></div>
-      <div class="ui"><%= post.content %></div>
-        <div class="ui grid right aligned">
-          <div class="right floated right aligned six wide column">
-            <div class="ui">
-              <%= link_to 'Show', post %>
-              <% if user_signed_in? and current_user.id.to_s == post.author %>
-                <%= link_to 'Edit', edit_post_path(post) %>
-                <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
-              <%end%>
-            </div>
-          </div>
-        </div>
+<div style="margin: 5rem;">
+  <div class="ui two column centered grid">
+    <div class="four column centered row">
+      <div class="column">
+        <h1><%= @book.title %> Posts</h1>
+        <p>By <%= @book.author %> </p>
+      </div>
+      <div class="middle right aligned column">
+        <form action=<%= new_post_path %>>
+          <button class="ui button" type="submit"> Create New Post </button>
+        </form>
+      </div>
     </div>
-  <%end%>
+    <div class="column">
+      <div class="ui" style="margin-top: 20px;">
+        <% @posts.each do |post| %>
+          <a class="ui card" href=<%=url_for(post)%> style="width: 100%"> 
+            <div class="content"> 
+              <div class="header"> <%= post.title %></div>
+              <div class="meta"> by <%= getAuthorById(post.author) %> </div>
+              <div class="meta">Upvotes: <%= post.score %></div>
+              <div class="description"> <%= post.content%></div>
+            </div>
+          </a>
+        <%end%>
+      </div>
+    </div>
+  </div>
 </div>
+
 
 <%= link_to 'Edit', edit_book_path(@book) %> |
 <%= link_to 'Back', books_path %>
