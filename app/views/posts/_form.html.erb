@@ -22,6 +22,8 @@
     <%= form.text_field :content %>
   </div>
 
+  <%= form.collection_select(:book_id, Book.all, :id, :title) %>
+
   <div class="actions">
     <button class="ui button" type="submit">
       submit
