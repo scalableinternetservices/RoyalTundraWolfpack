@@ -1,19 +1,36 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @book.title %>
-</p>
 
-<p>
-  <strong>Author:</strong>
-  <%= @book.author %>
-</p>
+<div style="margin: 5rem;">
+  <div class="ui two column centered grid">
+    <div class="four column centered row">
+      <div class="column">
+        <h1><%= @book.title %> Posts</h1>
+        <p>By <%= @book.author %> </p>
+      </div>
+      <div class="middle right aligned column">
+        <form action=<%= new_post_path %>>
+          <button class="ui button" type="submit"> Create New Post </button>
+        </form>
+      </div>
+    </div>
+    <div class="column">
+      <div class="ui" style="margin-top: 20px;">
+        <% @posts.each do |post| %>
+          <a class="ui card" href=<%=url_for(post)%> style="width: 100%"> 
+            <div class="content"> 
+              <div class="header"> <%= post.title %></div>
+              <div class="meta"> by <%= getAuthorById(post.author) %> </div>
+              <div class="meta">Upvotes: <%= post.score %></div>
+              <div class="description"> <%= post.content%></div>
+            </div>
+          </a>
+        <%end%>
+      </div>
+    </div>
+  </div>
+</div>
 
-<p>
-  <strong>Upvotes:</strong>
-  <%= @book.upvotes %>
-</p>
 
 <%= link_to 'Edit', edit_book_path(@book) %> |
 <%= link_to 'Back', books_path %>

@@ -1,18 +1,23 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>Book:</strong>
+  <%= Book.find(@post.book_id).title %>
+</p>
+
+<p>
   <strong>Title:</strong>
   <%= @post.title %>
 </p>
 
 <p>
-  <strong>Author Id:</strong>
-  <%= @post.author %>
+  <strong>Author:</strong>
+  <%= getAuthorById(@post.author) %>
 </p>
 
 <p>
   <strong>Upvotes:</strong>
-  <%= @post.upvotes %>
+  <%= @post.score%>
 </p>
 
 <p>
@@ -20,22 +25,30 @@
   <%= @post.content%>
 </p>
 
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', root_path %>
+<% if user_signed_in? and current_user.id.to_s == @post.author %>
+  <%= link_to 'Edit', edit_post_path(@post) %> | 
+  <%= link_to 'Destroy', @post, method: :delete, data: { confirm: 'Are you sure?' } %> |
+  <%= link_to 'Back', root_path %> 
+  <%= form_for [@post, Upvote.new] do |f| %>
+    <%= f.submit 'Upvote', class: 'upvote-submit' %>
+  <% end %>
+<%end%>
 
 <h3 class="ui dividing header">Comments</h3>
 
-<% if user_signed_in? %>
-	<div class="ui form">
-		<%= form_for [@post, Comment.new] do |f| %>
-			<div class="field">
-				<%= f.text_area :body, placeholder: "Add a comment", rows: 1%><br/>
-			</div>
-			<%= f.submit "Add Comment", class: "ui button" %>
-		<% end %>
-	</div>
-<% end %>
 
-<div class="ui comments">
-  <%= render(partial: 'comments/comment', collection: @post.comments) %>
+<div class="ui comments" style="margin: 1rem; width: 100%">
+  <% if user_signed_in? %>
+    <div class="ui form">
+      <%= form_for [@post, Comment.new] do |f| %>
+        <div class="field">
+          <%= f.text_area :body, placeholder: "Add a comment", rows: 1%><br/>
+        </div>
+        <%= f.submit "Add Comment", class: "ui button" %>
+      <% end %>
+    </div>
+  <% end %>
+  <div class="ui card" style="padding: 1rem; width: 100%;">
+    <%= render(partial: 'comments/comment', collection: @post.comments) %>
+  </div>
 </div>
