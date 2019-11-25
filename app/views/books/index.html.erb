@@ -1,22 +1,21 @@
 <p id="notice"><%= notice %></p>
-
-  <div style="margin: 5rem;">
-  <div class="ui two column centered grid">
-    <div class="column">
-      <h1>Book Discussions</h1>
-      <span>
-        <form action=<%= new_book_path%>>
-          <button class="ui button" type="submit"> Submit New Book</button>
-        </form>
-        <%= link_to "All Posts", :controller => :posts , :action => :index %>
-      </span>
-      <% @books.each do |book| %>
-        <a class="ui card" href=<%=url_for(book)%> style="width: 100%">
-          <div class="content">
-            <div class="header"><%= book.title%></div>
-            <div class="meta">by <%= book.author%></div>
-          </div>
-        </a>
-      <% end %>
-    </div>
+<div style="margin: 5rem;">
+<div class="ui two column centered grid">
+  <div class="column">
+    <h1>Book Discussions</h1>
+    <span>
+      <form action=<%= new_book_path%>>
+        <button class="ui button" type="submit"> Submit New Book</button>
+      </form>
+      <%= link_to "All Posts", :controller => :posts , :action => :index %>
+    </span>
+    <% @books.each do |book| %>
+      <a class="ui card" href=<%=url_for(book)%> style="width: 100%">
+        <div class="content">
+          <div class="header"><%= book.title%></div>
+          <div class="meta">by <%= book.author%></div>
+        </div>
+      </a>
+    <% end %>
   </div>
+</div>
