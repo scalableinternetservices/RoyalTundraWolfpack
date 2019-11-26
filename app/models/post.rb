@@ -9,4 +9,12 @@ class Post < ApplicationRecord
 	def score
 		upvotes.count
 	end
+
+	def commentCount
+		total = comments.count
+		comments.each do |comment|
+			total += comment.commentCount
+		end
+		return total
+	end
 end

@@ -14,6 +14,7 @@
         <div class="content">
           <div class="header"><%= book.title%></div>
           <div class="meta">by <%= book.author%></div>
+          <div class="meta"> <%= book.posts.count %> posts</div>
         </div>
       </a>
     <% end %>
