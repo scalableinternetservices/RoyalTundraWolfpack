@@ -18,7 +18,7 @@
   <% @posts.each do |post| %>
     <div class="ui raised very padded text container segment"> 
       <h2 class="ui header"> <%= post.title %></h2>
-      <div class="ui">By <%= getAuthorById(post.author) %></div>
+      <div class="ui">By <a href="users/<%= post.author.id %>"><%= getAuthorById(post.author) %></a></div>
       <div class="ui">Upvotes: <%= post.score %></div>
       <div class="ui"><%= post.content %></div>
         <div class="ui grid right aligned">
