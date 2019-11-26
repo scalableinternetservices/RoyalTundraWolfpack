@@ -51,10 +51,7 @@ ssh -i RoyalTundraWolfpack.pem RoyalTundraWolfpack@ec2.cs291.com
 ```
 ssh -i RoyalTundraWolfpack.pem RoyalTundraWolfpack@ec2.cs291.com
 ```
-	- if get permission issues with .pem file, run
-		```
-		chmod 700 RoyalTundraWolfpack.pem
-		```
+	- if get permission issues with .pem file, run ```chmod 700 RoyalTundraWolfpack.pem```
 3. Clone GitHub repo into EB instance via HTTPS and cd into that directory.
 ```
 git clone https://github.com/scalableinternetservices/RoyalTundraWolfpack.git
@@ -64,7 +61,7 @@ cd PROJECTNAME
 ```
 eb init --keyname $(whoami) \
   --platform "64bit Amazon Linux 2018.03 v2.11.0 running Ruby 2.6 (Puma)" \
-  --region us-west-2 PROJECTNAME
+  --region us-west-2 RoyalTundraWolfPack
 ```
 5. Create deployment (~10 min to deploy).
 ```
