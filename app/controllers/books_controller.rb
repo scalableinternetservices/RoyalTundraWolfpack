@@ -11,7 +11,8 @@ class BooksController < ApplicationController
   # GET /books/1.json
   def show
     @book = Book.find(params[:id])
-    @posts = Post.where(["book_id = ?" , params[:id]]).order('created_at DESC').page(params[:page]).per_page(5)
+    @posts = Post.where(["book_id = ?" , params[:id]])
+    #.order('created_at DESC').page(params[:page]).per_page(5)
   end
 
   # GET /books/new
