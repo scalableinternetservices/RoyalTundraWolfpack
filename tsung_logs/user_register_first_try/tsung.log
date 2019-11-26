@@ -1,0 +1,23 @@
+# stats: dump at 1574756543
+stats: users 1 1
+stats: {freemem,"tsung_controller@ip-172-31-20-100"} 1 733.94140625 0 733.94140625 733.94140625 0 0
+stats: {load,"tsung_controller@ip-172-31-20-100"} 1 0.0 0 0.0 0.0 0 0
+stats: {cpu,"tsung_controller@ip-172-31-20-100"} 1 0.27091256741434355 0 0.27091256741434355 0.27091256741434355 0 0
+stats: session 8 71.83874999999999 4.512507832403179 82.132 68.907 0 0
+stats: users_count 9 9
+stats: finish_users_count 8 8
+stats: error_connect_nxdomain 32 32
+stats: error_abort_max_conn_retries 8 8
+# stats: dump at 1574756549
+stats: users 0 1
+stats: {freemem,"tsung_controller@ip-172-31-20-100"} 1 734.08203125 0.0 734.08203125 733.94140625 733.94140625 1
+stats: {load,"tsung_controller@ip-172-31-20-100"} 1 0.0 0.0 0.0 0.0 0.0 1
+stats: {recvpackets,"tsung_controller@ip-172-31-20-100"} 1 73 0 73 73 0 0
+stats: {sentpackets,"tsung_controller@ip-172-31-20-100"} 1 74 0 74 74 0 0
+stats: {cpu,"tsung_controller@ip-172-31-20-100"} 1 0.10005002501250625 0.0 0.27091256741434355 0.10005002501250625 0.27091256741434355 1
+stats: session 2 68.8945 0.06850000000000023 82.132 68.826 71.83874999999999 8
+stats: users_count 1 10
+stats: finish_users_count 2 10
+stats: error_connect_nxdomain 8 40
+stats: error_abort_max_conn_retries 2 10
+EndMonitor:{1574,756549,770338}
