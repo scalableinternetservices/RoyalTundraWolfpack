@@ -25,10 +25,13 @@
   <%= @post.content%>
 </p>
 
-<% if user_signed_in? and current_user.id.to_s == @post.author %>
-  <%= link_to 'Edit', edit_post_path(@post) %> | 
-  <%= link_to 'Destroy', @post, method: :delete, data: { confirm: 'Are you sure?' } %> |
-  <%= link_to 'Back', root_path %> 
+<% if user_signed_in?%>
+  <%if current_user.id.to_s == @post.author %>
+    <%= link_to 'Edit', edit_post_path(@post) %> | 
+    <%= link_to 'Destroy', @post, method: :delete, data: { confirm: 'Are you sure?' } %> |
+    <%= link_to 'Back', root_path %> 
+  <%end%>
+
   <%= form_for [@post, Upvote.new] do |f| %>
     <%= f.submit 'Upvote', class: 'upvote-submit' %>
   <% end %>
