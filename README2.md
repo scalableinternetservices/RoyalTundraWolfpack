@@ -15,6 +15,13 @@ pw wolfgang
 chmod 700 RoyalTundraWolfpack.pem
 ssh -i RoyalTundraWolfpack.pem RoyalTundraWolfpack@ec2.cs291.com
 
+# Tsung Instance Setup Commands
+```
+./launch_instance.sh
+ssh -i ~/RoyalTundraWolfpack.pem ec2-user@IP_ADDRESS 
+```
+IP_ADDRESS should be given when "./launch_instance.sh" is ran
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 

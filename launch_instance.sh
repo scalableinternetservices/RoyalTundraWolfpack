@@ -13,7 +13,7 @@ tag_specification='[{"ResourceType": "instance", "Tags": [{"Key": "Name", "Value
 instance_id=$(aws ec2 run-instances \
   --image-id ami-f62afe8e \
   --instance-type ${instance_type} \
-  --key-name RoyalTundraWolfpack \
+  --key-name ${username} \
   --security-group-ids sg-0ebf2c62af41a0eb1 \
   --tag-specifications "${tag_specification}" | jq -r .Instances[0].InstanceId)
 
@@ -21,5 +21,5 @@ echo "InstanceId: ${instance_id}"
 
 public_ip=$(aws ec2 describe-instances --instance-ids "${instance_id}" | jq -r .Reservations[0].Instances[0].PublicIpAddress)
 
-echo "ssh command: ssh -i ~/RoyalTundraWolfpack.pem ec2-user@${public_ip}"
+echo "ssh command: ssh -i ~/${username}.pem ec2-user@${public_ip}"
 echo "tsung dashboard: https//${public_ip}:8091"
