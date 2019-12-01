@@ -1,0 +1,75 @@
+<?xml version="1.0"?><tsung loglevel="notice">
+
+  <clients>
+    <client host="localhost" use_controller_vm="true" maxusers="100"/>
+  </clients>
+
+  <servers>
+    <server host="yourname.yxhf954iam.us-west-2.elasticbeanstalk.com" port="80" type="tcp"/>
+  </servers>
+
+
+  <load duration="2" unit="minute">
+    <arrivalphase phase="1" duration="2" unit="minute">
+      <users arrivalrate="1" unit="second" maxnumber="12"/>
+    </arrivalphase>
+  </load>
+
+  <options>
+    <option name="global_ack_timeout" value="2000"/>
+    <option name="file_server" id="user_register_db" value="/home/ec2-user/.tsung/user_register.csv"/>
+  </options>
+
+  <sessions>
+    <session name="Make Post" probability="100" type="ts_http">
+      <setdynvars sourcetype="file" fileid="user_register_db" delimiter="," order="iter">
+	<var name="email"/>
+	<var name="username"/>
+	<var name="password"/>
+	<var name="password_confirmation"/>
+      </setdynvars>
+      <request>
+        <http url="/"/>
+      </request>
+
+      <thinktime random="true" value="2"/>
+
+      <request>
+	<dyn_variable name="authenticity_token"/>
+	<http url="/register"/>
+      </request>
+
+      <setdynvars sourcetype="eval" code="fun({Pid,DynVars})->{ok,Val}=ts_dynvars:lookup(authenticity_token,DynVars),re:replace(Val,&quot;[+]&quot;,&quot;%2B&quot;,[global, {return,list}]) end.">
+	<var name="authenticity_token"/>
+      </setdynvars>
+
+      <setdynvars sourcetype="eval" code="fun({Pid,DynVars})->                       {ok,Val}=ts_dynvars:lookup(email,DynVars),                       http_uri:encode(Val) end.">
+	<var name="encoded_email"/>
+      </setdynvars>
+
+      <setdynvars sourcetype="eval" code="fun({Pid,DynVars})->                       {ok,Val}=ts_dynvars:lookup(username,DynVars),                       http_uri:encode(Val) end.">
+	<var name="encoded_username"/>
+      </setdynvars>
+
+      <setdynvars sourcetype="eval" code="fun({Pid,DynVars})->                       {ok,Val}=ts_dynvars:lookup(password,DynVars),                       http_uri:encode(Val) end.">
+	<var name="encoded_password"/>
+      </setdynvars>
+
+      <setdynvars sourcetype="eval" code="fun({Pid,DynVars})->                       {ok,Val}=ts_dynvars:lookup(password_confirmation,DynVars),                       http_uri:encode(Val) end.">
+	<var name="encoded_password_confirmation"/>
+      </setdynvars>
+
+      <thinktime random="true" value="2"/>
+
+      <request subst="true">
+	<http url="/register" method="POST" contents="authenticity_token=%%_authenticity_token%%&amp;user%5Bemail%5D=%%_encoded_email%%&amp;user%5Busername%5D=%%_encoded_password%%&amp;user%5Bpassword_confirmation%5D=%%_encoded_password_confirmation%%"/>
+      </request>
+
+      <thinktime random="true" value="2"/>
+
+      <request>
+        <http url="/"/>
+      </request>
+    </session>
+  </sessions>
+</tsung>

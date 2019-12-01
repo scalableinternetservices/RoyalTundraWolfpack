@@ -46,6 +46,7 @@ class User < ApplicationRecord
 	has_many :messages
 
 	has_many :comments
+	has_many :upvotes
 
 	validates :username, presence: true
 	validates :username, uniqueness: true, if: -> { self.username.present? }

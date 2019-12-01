@@ -39,7 +39,6 @@ class PostsController < ApplicationController
     if user_signed_in?
       @post = Post.new(post_params)
       @post.author = current_user.id
-      @post.upvotes = 0
 
       respond_to do |format|
         if @post.save
@@ -85,6 +84,6 @@ class PostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit(:title, :author, :upvotes, :content)
+      params.require(:post).permit(:title, :author, :content, :book_id)
     end
 end

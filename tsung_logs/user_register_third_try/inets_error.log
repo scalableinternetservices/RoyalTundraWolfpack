@@ -1,0 +1,8 @@
+[26/Nov/2019:09:54:42 -0000] access to /icons/unknown.gif failed for 169.231.155.107, reason: 
+"httpd_file: Can't access /home/ec2-user/.tsung/log/20191126-0953/icons/unknown.gif: File not found"
+[26/Nov/2019:09:54:42 -0000] access to /icons/blank.gif failed for 169.231.155.107, reason: 
+"httpd_file: Can't access /home/ec2-user/.tsung/log/20191126-0953/icons/blank.gif: File not found"
+[26/Nov/2019:09:54:43 -0000] access to /icons/text.gif failed for 169.231.155.107, reason: 
+"httpd_file: Can't access /home/ec2-user/.tsung/log/20191126-0953/icons/text.gif: File not found"
+[26/Nov/2019:09:54:43 -0000] access to /icons/blank.gif failed for 169.231.155.107, reason: 
+"httpd_file: Can't access /home/ec2-user/.tsung/log/20191126-0953/icons/blank.gif: File not found"

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_23_181943) do
+ActiveRecord::Schema.define(version: 2019_11_24_230646) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -18,7 +18,6 @@ ActiveRecord::Schema.define(version: 2019_11_23_181943) do
   create_table "books", force: :cascade do |t|
     t.string "title"
     t.string "author"
-    t.integer "upvotes"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["title"], name: "index_books_on_title", unique: true
@@ -107,13 +106,35 @@ ActiveRecord::Schema.define(version: 2019_11_23_181943) do
     t.index ["receiver_id", "receiver_type"], name: "index_mailboxer_receipts_on_receiver_id_and_receiver_type"
   end
 
+  create_table "messages", force: :cascade do |t|
+    t.bigint "sender_id"
+    t.bigint "recipient_id"
+    t.bigint "conversation_id"
+    t.string "message_body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["conversation_id"], name: "index_messages_on_conversation_id"
+    t.index ["recipient_id"], name: "index_messages_on_recipient_id"
+    t.index ["sender_id"], name: "index_messages_on_sender_id"
+  end
+
   create_table "posts", force: :cascade do |t|
     t.string "title"
     t.string "author"
-    t.integer "upvotes"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "content"
+    t.bigint "book_id"
+    t.index ["book_id"], name: "index_posts_on_book_id"
+  end
+
+  create_table "upvotes", force: :cascade do |t|
+    t.bigint "post_id"
+    t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["post_id"], name: "index_upvotes_on_post_id"
+    t.index ["user_id"], name: "index_upvotes_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -121,19 +142,27 @@ ActiveRecord::Schema.define(version: 2019_11_23_181943) do
     t.string "password"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "age"
-    t.string "gender"
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
+    t.integer "age"
+    t.string "gender"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
     t.index ["username"], name: "index_users_on_username", unique: true
   end
 
+  add_foreign_key "conversations", "users", column: "user_one_id"
+  add_foreign_key "conversations", "users", column: "user_two_id"
   add_foreign_key "mailboxer_conversation_opt_outs", "mailboxer_conversations", column: "conversation_id", name: "mb_opt_outs_on_conversations_id"
   add_foreign_key "mailboxer_notifications", "mailboxer_conversations", column: "conversation_id", name: "notifications_on_conversation_id"
   add_foreign_key "mailboxer_receipts", "mailboxer_notifications", column: "notification_id", name: "receipts_on_notification_id"
+  add_foreign_key "messages", "conversations"
+  add_foreign_key "messages", "users", column: "recipient_id"
+  add_foreign_key "messages", "users", column: "sender_id"
+  add_foreign_key "posts", "books"
+  add_foreign_key "upvotes", "posts"
+  add_foreign_key "upvotes", "users"
 end
