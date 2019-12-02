@@ -1,0 +1,25 @@
+# stats: dump at 1575272234
+stats: users 0 2
+stats: {cpu,"tsung_controller@ip-172-31-24-44"} 1 5.884257909906409 0 5.884257909906409 5.884257909906409 0 0
+stats: {load,"tsung_controller@ip-172-31-24-44"} 1 0.01953125 0 0.01953125 0.01953125 0 0
+stats: {freemem,"tsung_controller@ip-172-31-24-44"} 1 738.07421875 0 738.07421875 738.07421875 0 0
+stats: session 9 75.93444444444444 10.832043319205097 97.954 68.04 0 0
+stats: users_count 9 9
+stats: finish_users_count 9 9
+stats: tr_Get_Root 7 75.95228571428571 11.501599872741753 96.078 66.112 0 0
+stats: error_connect_nxdomain 30 30
+stats: error_abort_max_conn_retries 7 7
+# stats: dump at 1575272240
+stats: users 0 2
+stats: {recvpackets,"tsung_controller@ip-172-31-24-44"} 1 81 0 81 81 0 0
+stats: {sentpackets,"tsung_controller@ip-172-31-24-44"} 1 81 0 81 81 0 0
+stats: {cpu,"tsung_controller@ip-172-31-24-44"} 1 0.10015022533800699 0.0 5.884257909906409 0.10015022533800699 5.884257909906409 1
+stats: {load,"tsung_controller@ip-172-31-24-44"} 1 0.01953125 0.0 0.01953125 0.01953125 0.01953125 1
+stats: {freemem,"tsung_controller@ip-172-31-24-44"} 1 738.12890625 0.0 738.12890625 738.07421875 738.07421875 1
+stats: session 1 69.229 0.0 97.954 68.04 75.93444444444444 9
+stats: users_count 1 10
+stats: finish_users_count 1 10
+stats: tr_Get_Root 3 67.16033333333333 0.12183686725380531 96.078 66.112 75.95228571428571 7
+stats: error_connect_nxdomain 10 40
+stats: error_abort_max_conn_retries 3 10
+EndMonitor:{1575,272240,201438}
