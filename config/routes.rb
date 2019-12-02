@@ -23,6 +23,9 @@ Rails.application.routes.draw do
   match 'friends/accept' => 'friends#accept', via: :post 
   match 'friends/reject' => 'friends#reject', via: :post 
   match 'friends/remove' => 'friends#remove', via: :post
+  # match 'friends/:id/accept' => 'friends#accept', via: :post 
+  # match 'friends/:id/reject' => 'friends#reject', via: :post 
+  # match 'friends/:id/remove' => 'friends#remove', via: :post
 
   resources :users
   resources :friends, only: [:index]
