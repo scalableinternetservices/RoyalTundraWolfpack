@@ -4,7 +4,7 @@
   </clients>
 
   <servers>
-    <server host="irenepawena.3hfpeaqsam.us-west-2.elasticbeanstalk.com" port="80" type="tcp"/>
+    <server host="irenepawena-0.3hfpeaqsam.us-west-2.elasticbeanstalk.com" port="80" type="tcp"/>
   </servers>
 
 
@@ -62,7 +62,7 @@
                 <http url="/"/>
               </request>
       </transaction>
-
+      
       <thinktime random="true" value="2"/>
 
       <transaction name="Get_Logout">
@@ -83,14 +83,14 @@
       <setdynvars sourcetype="eval" code="fun({Pid,DynVars})->{ok,Val}=ts_dynvars:lookup(authenticity_token,DynVars),re:replace(Val,&quot;[+]&quot;,&quot;%2B&quot;,[global, {return,list}]) end.">
         <var name="authenticity_token"/>
       </setdynvars>
-
+      
       <thinktime random="true" value="2"/>
 
       <transaction name="Post_Login">
         <request subst="true">
           <http url="/login" method="POST" content_type="application/x-www-form-urlencoded" contents="authenticity_token=%%_authenticity_token%%&amp;user%5Bemail%5D=%%_rnd_email%%@gmail.com&amp;user%5Bpassword%5D=123456&amp;commit=Log+in"/>
         </request>
-      </transaction>
+      </transaction> 
     </session>
   </sessions>
 </tsung>

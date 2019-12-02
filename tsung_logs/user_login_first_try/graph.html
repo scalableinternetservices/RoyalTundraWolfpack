@@ -49,14 +49,14 @@
             <li><a href="report.html#network">Network Throughput</a></li>
             <li><a href="report.html#count">Counters</a></li>
             <li><a href="report.html#os_mon">Server monitoring</a></li>
-            <li><a href="report.html#errors">Errors</a></li>
+            <li><a href="report.html#http_status">HTTP status</a></li>
           </ul>
           <ul class="nav nav-sidebar">
             <li><a href="graph.html#response_time">Response times</a></li>
             <li><a href="graph.html#throughput">Throughput graphs</a></li>
             <li><a href="graph.html#users">Simultaneous Users</a></li>
             <li><a href="graph.html#os_mon">Server monitoring</a></li>
-            <li><a href="graph.html#errors">Errors</a></li>
+            <li><a href="graph.html#http_status">HTTP status</a></li>
           </ul>
        </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
@@ -232,18 +232,18 @@ requests (in msec).</dd></dl>
 </table>
 </div>
 
-
-<div id="errors">
-<h3 class="sub-header">Errors (rate)</h3> 
-<div id="errors_rate" style="width:500px; height:300px;"></div> 
+<div id="http_status">
+<h3 class="sub-header">HTTP return code Status (rate)</h3> 
+<div id="http_code_rate" style="width:500px; height:300px;"></div> 
   <script type="text/javascript"> 
   g2 = new Dygraph(
-    document.getElementById("errors_rate"),
-    "csv_data/graphes-Errors-rate.csv",
+    document.getElementById("http_code_rate"),
+    "csv_data/graphes-HTTP_CODE-rate.csv",
 	graphOptions
   );
 </script> 
 </div>
+
 <footer class="bs-docs-footer" role="contentinfo">
   <ul class="bs-docs-footer-links muted">
     <li>Tsung version 1.7.0</li>

@@ -1,3 +1,5 @@
-time,users 
-0,2 
-6,2 
+time,users,connected 
+0,6,6 
+10,8,2 
+20,8,-5 
+30,8,-3 
