@@ -18,10 +18,14 @@ Rails.application.routes.draw do
   match 'users/:id' => 'users#update', via: :put 
   get 'posts' => 'posts#index'
 
-  match 'friends' => 'friends#create', via: :post, as: 'send_request'
+  match 'friends/new' => 'friends#create', via: :get
+  match 'friends/new' => 'friends#create', via: :post, as: 'send_request'
   match 'friends/accept' => 'friends#accept', via: :post 
   match 'friends/reject' => 'friends#reject', via: :post 
   match 'friends/remove' => 'friends#remove', via: :post
+  # match 'friends/:id/accept' => 'friends#accept', via: :post 
+  # match 'friends/:id/reject' => 'friends#reject', via: :post 
+  # match 'friends/:id/remove' => 'friends#remove', via: :post
 
   resources :users
   resources :friends, only: [:index]

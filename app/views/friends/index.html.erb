@@ -1,7 +1,7 @@
 <main class="ui two column doubling stackable grid container">
     <section class="column">
     <div class="ui teal segment">
-    <%= link_to 'Add a friend', @friend, method: :post%>
+    <%= link_to 'Add a friend', controller: "friends", action: 'create', method: :get%>
     <% if @user.friend_requests? %>
         <div class="ui vertical clearing segment">
             <header class="ui basic segment">

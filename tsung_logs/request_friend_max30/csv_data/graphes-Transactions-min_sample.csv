@@ -1,0 +1,5 @@
+time,tr_Post_Register,tr_Get_Root,page,tr_Request_Friend,tr_Post_Login,tr_Get_Friends,tr_Get_New_Friend,tr_Get_Logout,tr_Get_Register,tr_Redirect_Root,tr_Get_Login 
+0,130.095,6.313,5.52,,,,,,5.658,, 
+10,126.681,6.09,4.791,6.741,127.983,11.238,7.345,6.593,5.658,6.201,4.888 
+20,126.681,6.09,4.791,6.288,127.983,9.044,6.202,6.593,5.658,6.201,4.888 
+27,126.681,6.09,4.791,6.288,127.983,9.044,5.851,6.593,5.658,6.201,4.888 
