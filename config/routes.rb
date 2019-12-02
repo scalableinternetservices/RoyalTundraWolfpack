@@ -19,7 +19,7 @@ Rails.application.routes.draw do
   get 'posts' => 'posts#index'
 
   match 'friends/new' => 'friends#create', via: :get
-  match 'friends' => 'friends#create', via: :post, as: 'send_request'
+  match 'friends/new' => 'friends#create', via: :post, as: 'send_request'
   match 'friends/accept' => 'friends#accept', via: :post 
   match 'friends/reject' => 'friends#reject', via: :post 
   match 'friends/remove' => 'friends#remove', via: :post

@@ -6,7 +6,7 @@
   </clients>
 
   <servers>
-    <server host="irenepawena-0.3hfpeaqsam.us-west-2.elasticbeanstalk.com" port="80" type="tcp"/>
+    <server host="irenepawena-1.3hfpeaqsam.us-west-2.elasticbeanstalk.com" port="80" type="tcp"/>
   </servers>
 
 
@@ -98,10 +98,19 @@
 
       <transaction name="Get_Friends">
         <request>
-          <dyn_variable name="authenticity_token"/>
           <http url="/friends"/>
         </request>
       </transaction>
+
+      <thinktime random="true" value="2"/>
+
+      <transaction name="Get_New_Friend">
+        <dyn_variable name="authenticity_token"/>
+            <request>
+                <http url="/friends"/>
+            </request>
+      </transaction>
+      
 
       <setdynvars sourcetype="eval" code="fun({Pid,DynVars})->{ok,Val}=ts_dynvars:lookup(authenticity_token,DynVars),re:replace(Val,&quot;[+]&quot;,&quot;%2B&quot;,[global, {return,list}]) end.">
         <var name="authenticity_token"/>
