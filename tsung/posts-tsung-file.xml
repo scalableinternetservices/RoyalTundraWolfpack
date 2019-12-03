@@ -13,7 +13,7 @@
     <arrivalphase phase="1" duration="15" unit="second">
       <users arrivalrate="2" unit="second"/>
     </arrivalphase>
-  </load>
+</load>
 
   <options>
     <option name="global_ack_timeout" value="2000"/>
@@ -66,18 +66,12 @@
 
       <thinktime random="true" value="2"/>
 
-<!--       <transaction name="Get_Conversations">
-  <request>
-        <http url="/conversations"/>
-  </request>
-      </transaction> -->
-
-      <setdynvars sourcetype="random_number" start="0" end="29">
+<setdynvars sourcetype="random_number" start="1" end="30">
      <var name="random_book_id"/>
-       </setdynvars>
+      </setdynvars>
 
       <transaction name="Get_Book">
-        <request>
+        <request subst="true">
           <http url="/books/%%_random_book_id%%"/>
         </request>
       </transaction>
@@ -98,7 +92,7 @@
       <transaction name="Post_New_Post">
         <request subst="true">
           <dyn_variable name="post_id" re="Location: http://.*/posts/(.*)\r"/>
-          <http url="/posts" method="POST" contents="authenticity_token=%%_authenticity_token%%&amp;post%title%5D=tsung_post_title&amp;post%content%5D=tsung_post_title&amp;post%book_id%5D=%%_random_book_id%%&amp;"/>
+          <http url="/posts" method="POST" contents="authenticity_token=%%_authenticity_token%%&amp;post%5Btitle%5D=tsung_post_title&amp;post%5Bcontent%5D=tsung_post_content&amp;post%5Bbook_id%5D=2&amp;"/>
         </request>
       </transaction>
 
