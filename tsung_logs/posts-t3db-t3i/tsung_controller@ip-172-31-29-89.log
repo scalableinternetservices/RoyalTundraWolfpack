@@ -1,0 +1,139 @@
+
+=INFO REPORT==== 3-Dec-2019::10:04:41 ===
+    ts_config_server:(5:<0.102.0>) Config server started, logdir is "/home/ec2-user/.tsung/log/20191203-1004"
+ 
+=INFO REPORT==== 3-Dec-2019::10:04:41 ===
+              ts_mon:(5:<0.83.0>) starting monitor, global 
+
+=INFO REPORT==== 3-Dec-2019::10:04:41 ===
+           ts_config:(5:<0.102.0>) Reading config file: simple.xml
+
+=INFO REPORT==== 3-Dec-2019::10:04:41 ===
+           ts_config:(5:<0.102.0>) Session name for id 1 is "Make Post"
+
+=INFO REPORT==== 3-Dec-2019::10:04:41 ===
+    ts_config_server:(4:<0.102.0>) SYSINFO:Tsung version: 1.7.0
+
+=INFO REPORT==== 3-Dec-2019::10:04:41 ===
+    ts_config_server:(4:<0.102.0>) SYSINFO:Erlang version: Erlang/OTP 20 [erts-9.1] [source] [64-bit] [smp:2:2] [ds:2:2:10] [async-threads:8] [hipe] [kernel-poll:true]
+
+
+=INFO REPORT==== 3-Dec-2019::10:04:41 ===
+    ts_config_server:(4:<0.102.0>) SYSINFO:System architecture x86_64-unknown-linux-gnu
+
+=INFO REPORT==== 3-Dec-2019::10:04:41 ===
+    ts_config_server:(4:<0.102.0>) SYSINFO:Current path: /usr/local/lib/tsung/tsung-1.7.0/ebin/tsung.beam
+
+=INFO REPORT==== 3-Dec-2019::10:04:41 ===
+              ts_mon:(5:<0.103.0>) Activate clients with text backend
+
+=INFO REPORT==== 3-Dec-2019::10:04:41 ===
+              ts_mon:(5:<0.103.0>) Starting tsung clients on hosts: [localhost]
+
+=INFO REPORT==== 3-Dec-2019::10:04:41 ===
+    ts_config_server:(5:<0.102.0>) Start a launcher on the controller beam localhost
+
+=INFO REPORT==== 3-Dec-2019::10:04:41 ===
+  ts_launcher_static:(5:<0.154.0>) Launch msg receive ("localhost")
+
+=INFO REPORT==== 3-Dec-2019::10:04:41 ===
+         ts_launcher:(5:<0.155.0>) Launch msg receive ("localhost")
+
+=INFO REPORT==== 3-Dec-2019::10:04:41 ===
+    ts_config_server:(5:<0.102.0>) New arrival phase 1 for client "localhost" (last ? true): will start 30 users
+
+=INFO REPORT==== 3-Dec-2019::10:04:41 ===
+         ts_launcher:(5:<0.155.0>) Expected duration of first phase: 15.0 sec (30 users) 
+
+=INFO REPORT==== 3-Dec-2019::10:04:41 ===
+         ts_launcher:(5:<0.155.0>) Activate launcher (30 users) in 2027 msec 
+
+=INFO REPORT==== 3-Dec-2019::10:04:50 ===
+           ts_search:(5:<0.160.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 3-Dec-2019::10:04:50 ===
+           ts_search:(5:<0.161.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 3-Dec-2019::10:04:51 ===
+           ts_search:(5:<0.162.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 3-Dec-2019::10:04:52 ===
+           ts_search:(5:<0.167.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 3-Dec-2019::10:04:53 ===
+           ts_search:(5:<0.166.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 3-Dec-2019::10:04:54 ===
+           ts_search:(5:<0.174.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 3-Dec-2019::10:04:55 ===
+           ts_search:(5:<0.168.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 3-Dec-2019::10:04:55 ===
+           ts_search:(5:<0.170.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 3-Dec-2019::10:04:55 ===
+           ts_search:(5:<0.172.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 3-Dec-2019::10:04:55 ===
+           ts_search:(5:<0.157.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 3-Dec-2019::10:04:57 ===
+           ts_search:(5:<0.165.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 3-Dec-2019::10:04:58 ===
+         ts_launcher:(5:<0.155.0>) Phase duration exceeded, but not all users were launched (3 users, 10.0% of phase)
+
+=INFO REPORT==== 3-Dec-2019::10:04:58 ===
+         ts_launcher:(5:<0.155.0>) This was the last phase, wait for connected users to finish their session
+
+=INFO REPORT==== 3-Dec-2019::10:04:58 ===
+           ts_search:(5:<0.164.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 3-Dec-2019::10:04:58 ===
+           ts_search:(5:<0.171.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 3-Dec-2019::10:04:59 ===
+           ts_search:(5:<0.176.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 3-Dec-2019::10:04:59 ===
+           ts_search:(5:<0.175.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 3-Dec-2019::10:05:00 ===
+           ts_search:(5:<0.182.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 3-Dec-2019::10:05:02 ===
+           ts_search:(5:<0.163.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 3-Dec-2019::10:05:02 ===
+           ts_search:(5:<0.169.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 3-Dec-2019::10:05:02 ===
+           ts_search:(5:<0.180.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 3-Dec-2019::10:05:03 ===
+           ts_search:(5:<0.177.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 3-Dec-2019::10:05:04 ===
+           ts_search:(5:<0.186.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 3-Dec-2019::10:05:05 ===
+           ts_search:(5:<0.184.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 3-Dec-2019::10:05:08 ===
+           ts_search:(5:<0.178.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 3-Dec-2019::10:05:09 ===
+           ts_search:(5:<0.179.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 3-Dec-2019::10:05:09 ===
+           ts_search:(5:<0.181.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 3-Dec-2019::10:05:10 ===
+           ts_search:(5:<0.183.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 3-Dec-2019::10:05:15 ===
+           ts_search:(5:<0.185.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 3-Dec-2019::10:05:28 ===
+     ts_launcher_mgr:(5:<0.149.0>) No more active users 'tsung_controller@ip-172-31-29-89' "9481"
