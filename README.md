@@ -37,7 +37,8 @@ Things you may want to cover:
 	```
 4. Seed DB
 	```
-		TBD
+		docker-compose run web /bin/bash
+		rails db:reset #to seed and reset db
 	```
 
 pw wolfgang
@@ -86,13 +87,36 @@ ssh -i RoyalTundraWolfpack.pem RoyalTundraWolfpack@ec2.cs291.com
 	```
 	eb ssh -i "ssh -i ~/$(whoami).pem"
 	```
+11. Cd into following directory
+	```
+	cd /var/app/current
+	```
+12. Give permissions to following folder
+	```
+	sudo chmod -R 757 /var/app/current/tmp
+	```
+13. Seed database
+	```
+	rails db:seed
+	```
+	- If you need to reset before seeding database:
+		```
+		rails db:reset
+		```
+		- To disable environment check to allow permission to drop production data:
+			```
+			export DISABLE_DATABASE_ENVIRONMENT_CHECK=1
+			```
 11. To cleanup
 	```
 	eb terminate
 	```
 
+# Tsung Test Doc
+- Google Doc: https://docs.google.com/document/d/1Ria1GqA-sbHAJvYKMeelyiTjw506ygr5h6RUkQ490kA/edit
 
 # Tsung Instance Setup Commands
+
 1. Log into ec2 instance and run tsung script. If permission issues, run chmod first.
 	```
 	chmod 700 launch_instance.sh
