@@ -13,14 +13,7 @@
     <arrivalphase phase="1" duration="15" unit="second">
       <users arrivalrate="2" unit="second"/>
     </arrivalphase>
-
-    <arrivalphase phase="2" duration="15" unit="second">
-      <users arrivalrate="4" unit="second"/>
-    </arrivalphase>
-     <arrivalphase phase="3" duration="15" unit="second">
-      <users arrivalrate="8" unit="second"/>
-    </arrivalphase>
-    </load>
+</load>
 
   <options>
     <option name="global_ack_timeout" value="2000"/>
@@ -73,61 +66,42 @@
 
       <thinktime random="true" value="2"/>
 
-      <transaction name="Get_Conversations">
-  <request>
-        <http url="/conversations"/>
-  </request>
+<setdynvars sourcetype="random_number" start="1" end="30">
+     <var name="random_book_id"/>
+      </setdynvars>
+
+      <transaction name="Get_Book">
+        <request subst="true">
+          <http url="/books/%%_random_book_id%%"/>
+        </request>
       </transaction>
 
       <thinktime random="true" value="2"/>
 
       <transaction name="Get_New_Conversation">
-  <request>
-        <dyn_variable name="authenticity_token"/>
-              <http url="/conversations/new"/>
-  </request>
+        <request>
+          <dyn_variable name="authenticity_token"/>
+          <http url="/posts/new"/>
+        </request>
       </transaction>
 
        <setdynvars sourcetype="eval" code="fun({Pid,DynVars})->{ok,Val}=ts_dynvars:lookup(authenticity_token,DynVars),re:replace(Val,&quot;[+]&quot;,&quot;%2B&quot;,[global, {return,list}]) end.">
      <var name="authenticity_token"/>
        </setdynvars>
 
-       <setdynvars sourcetype="random_number" start="1" end="30">
-     <var name="random_user_id"/>
-       </setdynvars>
-
-      <transaction name="Post_New_Conversation">
-  <request subst="true">
-        <dyn_variable name="convo_id" re="Location: http://.*/conversations/(.*)\r"/>
-        <http url="/conversations" method="POST" contents="authenticity_token=%%_authenticity_token%%&amp;user_id=2&amp;body=tsung_message&amp;"/>
-  </request>
+      <transaction name="Post_New_Post">
+        <request subst="true">
+          <dyn_variable name="post_id" re="Location: http://.*/posts/(.*)\r"/>
+          <http url="/posts" method="POST" contents="authenticity_token=%%_authenticity_token%%&amp;post%5Btitle%5D=tsung_post_title&amp;post%5Bcontent%5D=tsung_post_content&amp;post%5Bbook_id%5D=2&amp;"/>
+        </request>
       </transaction>
 
       <thinktime random="true" value="4"/>
 
-      <transaction name="Redirect_To_New_Conversation">
-  <request subst="true">
-        <dyn_variable name="authenticity_token"/>
-              <http url="/conversations/%%_convo_id%%"/>
-  </request>
-      </transaction>
-
-      <setdynvars sourcetype="eval" code="fun({Pid,DynVars})->{ok,Val}=ts_dynvars:lookup(authenticity_token,DynVars),re:replace(Val,&quot;[+]&quot;,&quot;%2B&quot;,[global, {return,list}]) end.">
-  <var name="authenticity_token"/>
-      </setdynvars>
-
-      <thinktime random="true" value="2"/>
-
-      <transaction name="Reply_To_Conversation">
-  <request subst="true">
-        <http url="/conversations/%%_convo_id%%/messages" method="POST" contents="authenticity_token=%%_authenticity_token%%&amp;body=message"/>
-  </request>
-      </transaction>
-
-      <transaction name="Redirect_To_Same_Conversation">
-  <request subst="true">
-        <http url="/conversations/%%_convo_id%%"/>
-  </request>
+      <transaction name="Redirect_To_New_Post">
+      <request subst="true">
+            <http url="/posts/%%_post_id%%"/>
+      </request>
       </transaction>
 
     </session>
