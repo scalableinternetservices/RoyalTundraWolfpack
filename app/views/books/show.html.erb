@@ -22,7 +22,9 @@
               <div class="header"> <%= post.title %></div>
               <div class="meta"> by <%= getAuthorById(post.author) %> </div>
               <div class="meta">Upvotes: <%= post.score %></div>
-              <div class="meta"><%= post.commentCount %> comments</div>
+              <%if false%>
+                <div class="meta"><%= post.commentCount %> comments</div> 
+              <% end %>
               <div class="description"> <%= post.content%></div>
             </div>
           </a>
