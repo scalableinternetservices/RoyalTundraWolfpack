@@ -59,38 +59,32 @@
         </request>
       </transaction>
       <thinktime random="true" value="2"/>
-      <setdynvars end="30" sourcetype="random_number" start="1">
-        <var name="random_book_id"/>
-      </setdynvars>
-      <transaction name="Get_Book">
+      <transaction name="Get_New_Book">
         <request subst="true">
           <!-- <match do="abort" when="nomatch">HTTP/1.1 (2|3)\d\d</match> -->
-          <http url="/books/%%_random_book_id%%"/>
+          <dyn_variable name="authenticity_token"/>
+          <http url="/books/new"/>
         </request>
       </transaction>
       <thinktime random="true" value="2"/>
-      <transaction name="Get_New_Post">
-        <request>
-          <!-- <match do="abort" when="nomatch">HTTP/1.1 (2|3)\d\d</match> -->
-          <dyn_variable name="authenticity_token"/>
-          <http url="/posts/new"/>
-        </request>
-      </transaction>
       <setdynvars code="fun({Pid,DynVars})-&gt;{ok,Val}=ts_dynvars:lookup(authenticity_token,DynVars),re:replace(Val,&quot;[+]&quot;,&quot;%2B&quot;,[global, {return,list}]) end." sourcetype="eval">
         <var name="authenticity_token"/>
       </setdynvars>
-      <transaction name="Post_New_Post">
+      <setdynvars length="30" sourcetype="random_string">
+        <var name="rnd_book_title"/>
+      </setdynvars>
+      <transaction name="Post_New_Book">
         <request subst="true">
           <!-- <match do="abort" when="nomatch">HTTP/1.1 (2|3)\d\d</match> -->
-          <dyn_variable name="post_id" re="Location: http://.*/posts/(.*)\r"/>
-          <http  url="/posts" contents="authenticity_token=%%_authenticity_token%%&amp;post%5Btitle%5D=tsung_post_title&amp;post%5Bcontent%5D=tsung_post_content&amp;post%5Bbook_id%5D=%%_random_book_id%%&amp;" method="POST"/>
+          <dyn_variable name="book_id" re="Location: http://.*/books/(.*)\r"/>
+          <http  url="/books" contents="authenticity_token=%%_authenticity_token%%&amp;book%5Btitle%5D=%%_rnd_book_title%%&amp;book%5Bauthor%5D=tsung_book_author&amp;" method="POST"/>
         </request>
       </transaction>
       <thinktime random="true" value="4"/>
-      <transaction name="Redirect_To_New_Post">
+      <transaction name="Redirect_To_New_Book">
         <request subst="true">
           <!-- <match do="abort" when="nomatch">HTTP/1.1 (2|3)\d\d</match> -->
-          <http url="/posts/%%_post_id%%"/>
+          <http url="/books/%%_book_id%%"/>
         </request>
       </transaction>
     </session>
