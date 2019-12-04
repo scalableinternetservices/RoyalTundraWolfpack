@@ -9,16 +9,14 @@
         <p>By <%= @book.author %> </p>
       </div>
       <div class="middle right aligned column">
-        <form action=<%= new_post_path %>>
-          <button class="ui button" type="submit"> Create New Post </button>
-        </form>
+        <a href="<%= new_post_path(:book => @book.id) %>"><button class="ui button" type="submit"> Create New Post </button></a>
       </div>
     </div>
     <div class="column">
       <div class="ui" style="margin-top: 20px;">
         <% @posts.each do |post| %>
           <% cache(cache_key_for_post(post), expires_in: 5.minutes) do %>
-            <a class="ui card" href=<%=url_for(post)%> style="width: 100%"> 
+            <a class="ui card" href="<%=url_for(post)%>" style="width: 100%"> 
               <div class="content"> 
                 <div class="header"> <%= post.title %></div>
                 <div class="meta"> by <%= getAuthorById(post.author) %> </div>
