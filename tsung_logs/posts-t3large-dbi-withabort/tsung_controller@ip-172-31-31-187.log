@@ -1,0 +1,374 @@
+
+=INFO REPORT==== 4-Dec-2019::10:38:00 ===
+    ts_config_server:(5:<0.102.0>) Config server started, logdir is "/home/ec2-user/.tsung/log/20191204-1038"
+ 
+=INFO REPORT==== 4-Dec-2019::10:38:00 ===
+              ts_mon:(5:<0.83.0>) starting monitor, global 
+
+=INFO REPORT==== 4-Dec-2019::10:38:00 ===
+           ts_config:(5:<0.102.0>) Reading config file: simple.xml
+
+=INFO REPORT==== 4-Dec-2019::10:38:00 ===
+           ts_config:(5:<0.102.0>) Session name for id 1 is "Make Post"
+
+=INFO REPORT==== 4-Dec-2019::10:38:00 ===
+    ts_config_server:(4:<0.102.0>) SYSINFO:Tsung version: 1.7.0
+
+=INFO REPORT==== 4-Dec-2019::10:38:00 ===
+    ts_config_server:(4:<0.102.0>) SYSINFO:Erlang version: Erlang/OTP 20 [erts-9.1] [source] [64-bit] [smp:2:2] [ds:2:2:10] [async-threads:8] [hipe] [kernel-poll:true]
+
+
+=INFO REPORT==== 4-Dec-2019::10:38:00 ===
+    ts_config_server:(4:<0.102.0>) SYSINFO:System architecture x86_64-unknown-linux-gnu
+
+=INFO REPORT==== 4-Dec-2019::10:38:00 ===
+    ts_config_server:(4:<0.102.0>) SYSINFO:Current path: /usr/local/lib/tsung/tsung-1.7.0/ebin/tsung.beam
+
+=INFO REPORT==== 4-Dec-2019::10:38:00 ===
+              ts_mon:(5:<0.103.0>) Activate clients with text backend
+
+=INFO REPORT==== 4-Dec-2019::10:38:00 ===
+              ts_mon:(5:<0.103.0>) Starting tsung clients on hosts: [localhost]
+
+=INFO REPORT==== 4-Dec-2019::10:38:00 ===
+    ts_config_server:(5:<0.102.0>) Start a launcher on the controller beam localhost
+
+=INFO REPORT==== 4-Dec-2019::10:38:00 ===
+  ts_launcher_static:(5:<0.154.0>) Launch msg receive ("localhost")
+
+=INFO REPORT==== 4-Dec-2019::10:38:00 ===
+         ts_launcher:(5:<0.155.0>) Launch msg receive ("localhost")
+
+=INFO REPORT==== 4-Dec-2019::10:38:00 ===
+    ts_config_server:(5:<0.102.0>) New arrival phase 1 for client "localhost" (last ? true): will start 30 users
+
+=INFO REPORT==== 4-Dec-2019::10:38:00 ===
+    ts_config_server:(5:<0.102.0>) New arrival phase 2 for client "localhost" (last ? true): will start 60 users
+
+=INFO REPORT==== 4-Dec-2019::10:38:00 ===
+         ts_launcher:(5:<0.155.0>) Expected duration of first phase: 15.0 sec (30 users) 
+
+=INFO REPORT==== 4-Dec-2019::10:38:00 ===
+         ts_launcher:(5:<0.155.0>) Activate launcher (30 users) in 2024 msec 
+
+=INFO REPORT==== 4-Dec-2019::10:38:14 ===
+         ts_launcher:(4:<0.155.0>) Need to wait 2.885 sec before changing phase, going to sleep
+
+=INFO REPORT==== 4-Dec-2019::10:38:17 ===
+         ts_launcher:(5:<0.155.0>) Waking up
+
+=INFO REPORT==== 4-Dec-2019::10:38:17 ===
+         ts_launcher:(5:<0.155.0>) Start a new arrival phase (60 users, 0.004); expected duration=15.0 sec
+
+=INFO REPORT==== 4-Dec-2019::10:38:32 ===
+         ts_launcher:(5:<0.155.0>) Phase duration exceeded, but not all users were launched (11 users, 18.3% of phase)
+
+=INFO REPORT==== 4-Dec-2019::10:38:32 ===
+         ts_launcher:(5:<0.155.0>) This was the last phase, wait for connected users to finish their session
+
+=INFO REPORT==== 4-Dec-2019::10:39:07 ===
+           ts_client:(5:<0.157.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460744115796127}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:09 ===
+           ts_client:(5:<0.160.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460742712846240}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:09 ===
+           ts_client:(5:<0.163.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460742420857374}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:09 ===
+           ts_client:(5:<0.166.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460742415867573}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:10 ===
+           ts_client:(5:<0.161.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460741649752631}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:11 ===
+           ts_client:(5:<0.170.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460740566818737}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:11 ===
+           ts_client:(5:<0.168.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460740246836260}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:14 ===
+           ts_client:(5:<0.164.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460737158882136}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:14 ===
+           ts_client:(5:<0.182.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460737146820001}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:14 ===
+           ts_client:(5:<0.173.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460737083810978}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:15 ===
+           ts_client:(5:<0.162.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460736867847752}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:15 ===
+           ts_client:(5:<0.174.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460736705769737}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:15 ===
+           ts_client:(5:<0.169.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460736110823345}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:15 ===
+           ts_client:(5:<0.165.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460736077826471}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:16 ===
+           ts_client:(5:<0.186.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460735073888221}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:18 ===
+           ts_client:(5:<0.181.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460733959806632}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:18 ===
+           ts_client:(5:<0.172.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460733801819772}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:18 ===
+           ts_client:(5:<0.179.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460733655819484}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:18 ===
+           ts_client:(5:<0.185.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460733352837247}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:19 ===
+           ts_client:(5:<0.176.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460732695827927}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:19 ===
+           ts_client:(5:<0.171.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460732459762959}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:21 ===
+           ts_client:(5:<0.177.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460730254868290}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:22 ===
+           ts_client:(5:<0.184.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460729792761231}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:22 ===
+           ts_client:(5:<0.175.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460729579907382}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:23 ===
+           ts_client:(5:<0.183.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460728830805596}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:23 ===
+           ts_client:(5:<0.167.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460728326853576}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:23 ===
+           ts_client:(5:<0.192.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460728125816132}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:24 ===
+           ts_client:(5:<0.190.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460727854818349}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:24 ===
+           ts_client:(5:<0.188.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460727588941520}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:25 ===
+           ts_client:(5:<0.189.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460726488827000}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:26 ===
+           ts_client:(5:<0.195.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460725660964032}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:26 ===
+           ts_client:(5:<0.180.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460725522912662}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:26 ===
+           ts_client:(5:<0.206.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460725413914278}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:28 ===
+           ts_client:(5:<0.187.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460723509807909}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:28 ===
+           ts_client:(5:<0.202.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460723281777936}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:29 ===
+           ts_client:(5:<0.191.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460722759897253}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:29 ===
+           ts_client:(5:<0.200.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460722537817418}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:29 ===
+           ts_client:(5:<0.209.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460722207789274}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:30 ===
+           ts_client:(5:<0.216.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460721875846304}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:30 ===
+           ts_client:(5:<0.207.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460721535856952}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:30 ===
+           ts_client:(5:<0.201.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460721347812956}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:31 ===
+           ts_client:(5:<0.214.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460720536825634}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:31 ===
+           ts_client:(5:<0.203.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460720535907417}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:32 ===
+           ts_client:(5:<0.226.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460719697900307}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:32 ===
+           ts_client:(5:<0.197.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460719168738182}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:32 ===
+           ts_client:(5:<0.220.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460719067965034}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:33 ===
+           ts_client:(5:<0.208.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460718411873488}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:34 ===
+           ts_client:(5:<0.224.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460717943793994}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:34 ===
+           ts_client:(5:<0.230.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460717149935218}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:34 ===
+           ts_client:(5:<0.193.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460717121815090}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:35 ===
+           ts_client:(5:<0.227.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460717052749840}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:35 ===
+           ts_client:(5:<0.223.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460716883842656}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:35 ===
+           ts_client:(5:<0.210.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460716456833309}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:35 ===
+           ts_client:(5:<0.234.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460716183820782}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:35 ===
+           ts_client:(5:<0.225.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460716147834352}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:35 ===
+           ts_client:(5:<0.232.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460716076854007}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:36 ===
+           ts_client:(5:<0.211.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460715986744378}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:36 ===
+           ts_client:(5:<0.213.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460715696925506}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:36 ===
+           ts_client:(5:<0.199.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460715634799273}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:36 ===
+           ts_client:(5:<0.222.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460715592783136}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:36 ===
+           ts_client:(5:<0.219.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460715402806624}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:37 ===
+           ts_client:(5:<0.196.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460714989787932}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:37 ===
+           ts_client:(5:<0.194.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460714747746350}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:37 ===
+           ts_client:(5:<0.228.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460714409797810}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:38 ===
+           ts_client:(5:<0.212.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460713849740581}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:39 ===
+           ts_client:(5:<0.215.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460712554894352}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:40 ===
+           ts_client:(5:<0.236.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460711440836917}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:40 ===
+           ts_client:(5:<0.238.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460711184884925}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:41 ===
+           ts_client:(5:<0.231.0>) Pending transactions: [{tr_Redirect_Root,
+                                                           -576460710946796740}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:41 ===
+           ts_client:(5:<0.233.0>) Pending transactions: [{tr_Post_Register,
+                                                           -576460710703936418}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:41 ===
+           ts_client:(5:<0.204.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460710193743806}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:42 ===
+           ts_client:(5:<0.205.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460709755776880}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:42 ===
+           ts_client:(5:<0.229.0>) Pending transactions: [{tr_Redirect_Root,
+                                                           -576460709390666122}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:44 ===
+           ts_client:(5:<0.217.0>) Pending transactions: [{tr_Redirect_Root,
+                                                           -576460707425772092}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:39:48 ===
+           ts_client:(5:<0.240.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460703586694729}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:40:41 ===
+           ts_client:(5:<0.218.0>) Pending transactions: [{tr_Get_Book,
+                                                           -576460650795846749}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::10:41:47 ===
+     ts_launcher_mgr:(5:<0.149.0>) No more active users 'tsung_controller@ip-172-31-31-187' "10402"

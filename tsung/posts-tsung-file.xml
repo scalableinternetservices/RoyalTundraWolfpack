@@ -23,14 +23,14 @@
     <session name="Make Post" probability="100" type="ts_http">
       <transaction name="Get_Root">
         <request>
-          <match do="abort" when="nomatch">HTTP/1.1 (2|3)\d\d</match>
+          <!-- <match do="abort" when="nomatch">HTTP/1.1 (2|3)\d\d</match> -->
           <http url="/"/>
         </request>
       </transaction>
       <thinktime random="true" value="2"/>
       <transaction name="Get_Register">
         <request>
-          <match do="abort" when="nomatch">HTTP/1.1 (2|3)\d\d</match>
+          <!-- <match do="abort" when="nomatch">HTTP/1.1 (2|3)\d\d</match> -->
           <dyn_variable name="authenticity_token"/>
           <http url="/register"/>
         </request>
@@ -47,14 +47,14 @@
       <thinktime random="true" value="2"/>
       <transaction name="Post_Register">
         <request subst="true">
-          <match do="abort" when="nomatch">HTTP/1.1 (2|3)\d\d</match>
+         <!--  <match do="abort" when="nomatch">HTTP/1.1 (2|3)\d\d</match> -->
           <http content_type="application/x-www-form-urlencoded" contents="authenticity_token=%%_authenticity_token%%&amp;user%5Bemail%5D=%%_rnd_email%%@gmail.com&amp;user%5Busername%5D=%%_rnd_user%%&amp;user%5Bpassword%5D=123456&amp;user%5Bpassword_confirmation%5D=123456&amp;commit=Sign+up" method="POST" url="/"/>
         </request>
       </transaction>
       <thinktime random="true" value="2"/>
       <transaction name="Redirect_Root">
         <request>
-          <match do="abort" when="nomatch">HTTP/1.1 (2|3)\d\d</match>
+          <!-- <match do="abort" when="nomatch">HTTP/1.1 (2|3)\d\d</match> -->
           <http url="/"/>
         </request>
       </transaction>
@@ -64,14 +64,14 @@
       </setdynvars>
       <transaction name="Get_Book">
         <request subst="true">
-          <match do="abort" when="nomatch">HTTP/1.1 (2|3)\d\d</match>
+          <!-- <match do="abort" when="nomatch">HTTP/1.1 (2|3)\d\d</match> -->
           <http url="/books/%%_random_book_id%%"/>
         </request>
       </transaction>
       <thinktime random="true" value="2"/>
       <transaction name="Get_New_Post">
         <request>
-          <match do="abort" when="nomatch">HTTP/1.1 (2|3)\d\d</match>
+          <!-- <match do="abort" when="nomatch">HTTP/1.1 (2|3)\d\d</match> -->
           <dyn_variable name="authenticity_token"/>
           <http url="/posts/new"/>
         </request>
@@ -81,15 +81,15 @@
       </setdynvars>
       <transaction name="Post_New_Post">
         <request subst="true">
-          <match do="abort" when="nomatch">HTTP/1.1 (2|3)\d\d</match>
+          <!-- <match do="abort" when="nomatch">HTTP/1.1 (2|3)\d\d</match> -->
           <dyn_variable name="post_id" re="Location: http://.*/posts/(.*)\r"/>
-          <http contents="authenticity_token=%%_authenticity_token%%&amp;post%5Btitle%5D=tsung_post_title&amp;post%5Bcontent%5D=tsung_post_content&amp;post%5Bbook_id%5D=%%_random_book_id%%&amp;" method="POST" url="/posts"/>
+          <http  url="/posts" contents="authenticity_token=%%_authenticity_token%%&amp;post%5Btitle%5D=tsung_post_title&amp;post%5Bcontent%5D=tsung_post_content&amp;post%5Bbook_id%5D=%%_random_book_id%%&amp;" method="POST"/>
         </request>
       </transaction>
       <thinktime random="true" value="4"/>
       <transaction name="Redirect_To_New_Post">
         <request subst="true">
-          <match do="abort" when="nomatch">HTTP/1.1 (2|3)\d\d</match>
+          <!-- <match do="abort" when="nomatch">HTTP/1.1 (2|3)\d\d</match> -->
           <http url="/posts/%%_post_id%%"/>
         </request>
       </transaction>

@@ -35,7 +35,6 @@
       <thinktime random="true" value="2"/>
       <transaction name="Get_Register">
         <request>
-          <match do="abort" when="nomatch">HTTP/1.1 (2|3)\d\d</match>
           <dyn_variable name="authenticity_token"/>
           <http url="/register"/>
         </request>
@@ -52,28 +51,28 @@
       <thinktime random="true" value="2"/>
       <transaction name="Post_Register">
         <request subst="true">
-          <match do="abort" when="nomatch">HTTP/1.1 (2|3)\d\d</match>
+         <!--  <match do="abort" when="nomatch">HTTP/1.1 (2|3)\d\d</match> -->
           <http content_type="application/x-www-form-urlencoded" contents="authenticity_token=%%_authenticity_token%%&amp;user%5Bemail%5D=%%_rnd_email%%@gmail.com&amp;user%5Busername%5D=%%_rnd_user%%&amp;user%5Bpassword%5D=123456&amp;user%5Bpassword_confirmation%5D=123456&amp;commit=Sign+up" method="POST" url="/"/>
         </request>
       </transaction>
       <thinktime random="true" value="2"/>
       <transaction name="Redirect_Root">
         <request>
-          <match do="abort" when="nomatch">HTTP/1.1 (2|3)\d\d</match>
+          <!-- <match do="abort" when="nomatch">HTTP/1.1 (2|3)\d\d</match> -->
           <http url="/"/>
         </request>
       </transaction>
       <thinktime random="true" value="2"/>
       <transaction name="Get_Conversations">
         <request>
-          <match do="abort" when="nomatch">HTTP/1.1 (2|3)\d\d</match>
+          <!-- <match do="abort" when="nomatch">HTTP/1.1 (2|3)\d\d</match> -->
           <http url="/conversations"/>
         </request>
       </transaction>
       <thinktime random="true" value="2"/>
       <transaction name="Get_New_Conversation">
         <request>
-          <match do="abort" when="nomatch">HTTP/1.1 (2|3)\d\d</match>
+          <!-- <match do="abort" when="nomatch">HTTP/1.1 (2|3)\d\d</match> -->
           <dyn_variable name="authenticity_token"/>
           <http url="/conversations/new"/>
         </request>
@@ -86,7 +85,7 @@
       </setdynvars>
       <transaction name="Post_New_Conversation">
         <request subst="true">
-          <match do="abort" when="nomatch">HTTP/1.1 (2|3)\d\d</match>
+          <!-- <match do="abort" when="nomatch">HTTP/1.1 (2|3)\d\d</match> -->
           <dyn_variable name="convo_id" re="Location: http://.*/conversations/(.*)\r"/>
           <http contents="authenticity_token=%%_authenticity_token%%&amp;user_id=2&amp;body=tsung_message&amp;" method="POST" url="/conversations"/>
         </request>
@@ -94,7 +93,7 @@
       <thinktime random="true" value="4"/>
       <transaction name="Redirect_To_New_Conversation">
         <request subst="true">
-          <match do="abort" when="nomatch">HTTP/1.1 (2|3)\d\d</match>
+          <!-- <match do="abort" when="nomatch">HTTP/1.1 (2|3)\d\d</match> -->
           <dyn_variable name="authenticity_token"/>
           <http url="/conversations/%%_convo_id%%"/>
         </request>
@@ -105,13 +104,13 @@
       <thinktime random="true" value="2"/>
       <transaction name="Reply_To_Conversation">
         <request subst="true">
-          <match do="abort" when="nomatch">HTTP/1.1 (2|3)\d\d</match>
+          <!-- <match do="abort" when="nomatch">HTTP/1.1 (2|3)\d\d</match> -->
           <http contents="authenticity_token=%%_authenticity_token%%&amp;body=message" method="POST" url="/conversations/%%_convo_id%%/messages"/>
         </request>
       </transaction>
       <transaction name="Redirect_To_Same_Conversation">
         <request subst="true">
-          <match do="abort" when="nomatch">HTTP/1.1 (2|3)\d\d</match>
+          <!-- <match do="abort" when="nomatch">HTTP/1.1 (2|3)\d\d</match> -->
           <http url="/conversations/%%_convo_id%%"/>
         </request>
       </transaction>

@@ -38,7 +38,13 @@ Things you may want to cover:
 4. Seed DB
 	```
 		docker-compose run web /bin/bash
-		rails db:reset #to seed and reset db
+		rails db:reset 	#to seed and reset db
+	```
+5. To check database
+	```
+		docker-compose run web /bin/bash
+		rails c 		#brings up rails console
+		> # Enter queries here #
 	```
 
 pw wolfgang
