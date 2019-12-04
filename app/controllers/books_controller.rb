@@ -17,7 +17,11 @@ class BooksController < ApplicationController
 
   # GET /books/new
   def new
-    @book = Book.new
+    if user_signed_in?
+      @book = Book.new
+    else
+      redirect_to 
+    end
   end
 
   # GET /books/1/edit
