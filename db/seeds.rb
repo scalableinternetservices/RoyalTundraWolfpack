@@ -58,7 +58,6 @@ users.each do |user|
       parentcomments << parent_comment
       parent_count += 1
     end
-    break #TODO: REMOVE
   end
 end
 Comment.import parentcomments, validate: false
@@ -71,7 +70,6 @@ users.each do |user|
       childcomments << child_comment
       k += 1
     end
-    break #TODO: REMOVE
   end
 end
 
