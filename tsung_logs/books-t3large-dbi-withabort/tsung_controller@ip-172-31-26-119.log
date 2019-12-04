@@ -1,0 +1,2809 @@
+
+=INFO REPORT==== 4-Dec-2019::12:12:14 ===
+    ts_config_server:(5:<0.102.0>) Config server started, logdir is "/home/ec2-user/.tsung/log/20191204-1212"
+ 
+=INFO REPORT==== 4-Dec-2019::12:12:14 ===
+              ts_mon:(5:<0.83.0>) starting monitor, global 
+
+=INFO REPORT==== 4-Dec-2019::12:12:14 ===
+           ts_config:(5:<0.102.0>) Reading config file: simple.xml
+
+=INFO REPORT==== 4-Dec-2019::12:12:14 ===
+           ts_config:(5:<0.102.0>) Session name for id 1 is "Make Post"
+
+=INFO REPORT==== 4-Dec-2019::12:12:14 ===
+    ts_config_server:(4:<0.102.0>) SYSINFO:Tsung version: 1.7.0
+
+=INFO REPORT==== 4-Dec-2019::12:12:14 ===
+    ts_config_server:(4:<0.102.0>) SYSINFO:Erlang version: Erlang/OTP 20 [erts-9.1] [source] [64-bit] [smp:2:2] [ds:2:2:10] [async-threads:8] [hipe] [kernel-poll:true]
+
+
+=INFO REPORT==== 4-Dec-2019::12:12:14 ===
+    ts_config_server:(4:<0.102.0>) SYSINFO:System architecture x86_64-unknown-linux-gnu
+
+=INFO REPORT==== 4-Dec-2019::12:12:14 ===
+    ts_config_server:(4:<0.102.0>) SYSINFO:Current path: /usr/local/lib/tsung/tsung-1.7.0/ebin/tsung.beam
+
+=INFO REPORT==== 4-Dec-2019::12:12:14 ===
+              ts_mon:(5:<0.103.0>) Activate clients with text backend
+
+=INFO REPORT==== 4-Dec-2019::12:12:14 ===
+              ts_mon:(5:<0.103.0>) Starting tsung clients on hosts: [localhost]
+
+=INFO REPORT==== 4-Dec-2019::12:12:14 ===
+    ts_config_server:(5:<0.102.0>) Start a launcher on the controller beam localhost
+
+=INFO REPORT==== 4-Dec-2019::12:12:14 ===
+  ts_launcher_static:(5:<0.154.0>) Launch msg receive ("localhost")
+
+=INFO REPORT==== 4-Dec-2019::12:12:14 ===
+         ts_launcher:(5:<0.155.0>) Launch msg receive ("localhost")
+
+=INFO REPORT==== 4-Dec-2019::12:12:14 ===
+    ts_config_server:(5:<0.102.0>) New arrival phase 1 for client "localhost" (last ? true): will start 30 users
+
+=INFO REPORT==== 4-Dec-2019::12:12:14 ===
+    ts_config_server:(5:<0.102.0>) New arrival phase 2 for client "localhost" (last ? true): will start 60 users
+
+=INFO REPORT==== 4-Dec-2019::12:12:14 ===
+    ts_config_server:(5:<0.102.0>) New arrival phase 3 for client "localhost" (last ? true): will start 120 users
+
+=INFO REPORT==== 4-Dec-2019::12:12:14 ===
+    ts_config_server:(5:<0.102.0>) New arrival phase 4 for client "localhost" (last ? true): will start 240 users
+
+=INFO REPORT==== 4-Dec-2019::12:12:14 ===
+         ts_launcher:(5:<0.155.0>) Expected duration of first phase: 15.0 sec (30 users) 
+
+=INFO REPORT==== 4-Dec-2019::12:12:14 ===
+         ts_launcher:(5:<0.155.0>) Activate launcher (30 users) in 1802 msec 
+
+=INFO REPORT==== 4-Dec-2019::12:12:26 ===
+           ts_search:(5:<0.163.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:12:26 ===
+           ts_client:(5:<0.163.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460739770806989}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:12:26 ===
+           ts_search:(5:<0.160.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:12:26 ===
+           ts_client:(5:<0.160.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460739609759450}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:12:26 ===
+           ts_search:(5:<0.168.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:12:26 ===
+           ts_client:(5:<0.168.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460739408842261}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:12:27 ===
+         ts_launcher:(4:<0.155.0>) Need to wait 3.436 sec before changing phase, going to sleep
+
+=INFO REPORT==== 4-Dec-2019::12:12:28 ===
+           ts_search:(5:<0.165.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:12:28 ===
+           ts_client:(5:<0.165.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460737568794643}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:12:28 ===
+           ts_search:(5:<0.175.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:12:28 ===
+           ts_client:(5:<0.175.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460737301773881}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:12:28 ===
+           ts_search:(5:<0.166.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:12:28 ===
+           ts_client:(5:<0.166.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460737196817212}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:12:29 ===
+           ts_search:(5:<0.167.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:12:29 ===
+           ts_client:(5:<0.167.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460737098787043}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:12:30 ===
+           ts_search:(5:<0.169.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:12:30 ===
+           ts_client:(5:<0.169.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460735762781818}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:12:30 ===
+         ts_launcher:(5:<0.155.0>) Waking up
+
+=INFO REPORT==== 4-Dec-2019::12:12:30 ===
+         ts_launcher:(5:<0.155.0>) Start a new arrival phase (60 users, 0.004); expected duration=15.0 sec
+
+=INFO REPORT==== 4-Dec-2019::12:12:31 ===
+           ts_search:(5:<0.180.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:12:31 ===
+           ts_client:(5:<0.180.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460734687712061}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:12:31 ===
+           ts_search:(5:<0.178.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:12:31 ===
+           ts_client:(5:<0.178.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460734132871830}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:12:32 ===
+           ts_search:(5:<0.170.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:12:32 ===
+           ts_client:(5:<0.170.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460733408825355}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:12:32 ===
+           ts_search:(5:<0.161.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:12:32 ===
+           ts_client:(5:<0.161.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460733125798326}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:12:33 ===
+           ts_search:(5:<0.185.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:12:33 ===
+           ts_client:(5:<0.185.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460732358786689}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:12:33 ===
+           ts_search:(5:<0.171.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:12:33 ===
+           ts_client:(5:<0.171.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460732246798063}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:12:33 ===
+           ts_search:(5:<0.177.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:12:33 ===
+           ts_client:(5:<0.177.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460732123810655}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:12:34 ===
+           ts_search:(5:<0.164.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:12:34 ===
+           ts_client:(5:<0.164.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460731766784843}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:12:34 ===
+           ts_search:(5:<0.157.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:12:34 ===
+           ts_client:(5:<0.157.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460731756803753}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:12:35 ===
+           ts_search:(5:<0.179.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:12:35 ===
+           ts_client:(5:<0.179.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460731004654900}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:12:35 ===
+           ts_search:(5:<0.174.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:12:35 ===
+           ts_client:(5:<0.174.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460730625428897}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:12:36 ===
+           ts_search:(5:<0.187.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:12:36 ===
+           ts_client:(5:<0.187.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460729858818203}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:12:36 ===
+           ts_search:(5:<0.176.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:12:36 ===
+           ts_client:(5:<0.176.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460729174779136}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:12:37 ===
+           ts_search:(5:<0.188.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:12:37 ===
+           ts_client:(5:<0.188.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460728685782561}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:12:37 ===
+           ts_search:(5:<0.173.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:12:37 ===
+           ts_client:(5:<0.173.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460728417855773}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:12:37 ===
+           ts_search:(5:<0.182.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:12:37 ===
+           ts_client:(5:<0.182.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460728392828687}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:12:40 ===
+           ts_search:(5:<0.181.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:12:40 ===
+           ts_client:(5:<0.181.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460726232737354}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:12:42 ===
+           ts_search:(5:<0.162.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:12:42 ===
+           ts_client:(5:<0.162.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460724164854117}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:12:42 ===
+           ts_search:(5:<0.200.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:12:42 ===
+           ts_client:(5:<0.200.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460723885224660}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:12:42 ===
+         ts_launcher:(4:<0.155.0>) Need to wait 2.539 sec before changing phase, going to sleep
+
+=INFO REPORT==== 4-Dec-2019::12:12:43 ===
+           ts_search:(5:<0.186.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:12:43 ===
+           ts_client:(5:<0.186.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460723189807734}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:12:45 ===
+         ts_launcher:(5:<0.155.0>) Waking up
+
+=INFO REPORT==== 4-Dec-2019::12:12:45 ===
+         ts_launcher:(5:<0.155.0>) Start a new arrival phase (120 users, 0.008); expected duration=15.0 sec
+
+=INFO REPORT==== 4-Dec-2019::12:12:46 ===
+           ts_search:(5:<0.191.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:12:46 ===
+           ts_client:(5:<0.191.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460719572803572}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:12:47 ===
+           ts_search:(5:<0.193.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:12:47 ===
+           ts_client:(5:<0.193.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460718733821101}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:12:48 ===
+           ts_search:(5:<0.194.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:12:48 ===
+           ts_client:(5:<0.194.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460718090745140}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:12:48 ===
+           ts_search:(5:<0.206.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:12:48 ===
+           ts_client:(5:<0.206.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460718191794038}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:12:48 ===
+           ts_search:(5:<0.203.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:12:48 ===
+           ts_client:(5:<0.203.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460717609720805}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:12:49 ===
+           ts_search:(5:<0.197.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:12:49 ===
+           ts_client:(5:<0.197.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460717204712168}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:12:52 ===
+           ts_search:(5:<0.205.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:12:52 ===
+           ts_client:(5:<0.205.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460715258797629}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:12:53 ===
+           ts_search:(5:<0.213.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:12:53 ===
+           ts_client:(5:<0.213.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460714557809800}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:12:58 ===
+           ts_search:(5:<0.201.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:12:58 ===
+           ts_client:(5:<0.201.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460711692736964}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:12:59 ===
+         ts_launcher:(4:<0.155.0>) Need to wait 1.084 sec before changing phase, going to sleep
+
+=INFO REPORT==== 4-Dec-2019::12:13:00 ===
+         ts_launcher:(5:<0.155.0>) Waking up
+
+=INFO REPORT==== 4-Dec-2019::12:13:00 ===
+         ts_launcher:(5:<0.155.0>) Start a new arrival phase (240 users, 0.016); expected duration=15.0 sec
+
+=INFO REPORT==== 4-Dec-2019::12:13:03 ===
+           ts_search:(5:<0.210.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:03 ===
+           ts_client:(5:<0.210.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460708601773236}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:03 ===
+           ts_search:(5:<0.285.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:03 ===
+           ts_client:(5:<0.285.0>) Pending transactions: [{tr_Get_Register,
+                                                           -576460702490958859}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:03 ===
+           ts_search:(5:<0.300.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:03 ===
+           ts_client:(5:<0.300.0>) Pending transactions: [{tr_Get_Register,
+                                                           -576460702488896816}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:03 ===
+           ts_client:(5:<0.419.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460702477976305}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:03 ===
+           ts_client:(5:<0.240.0>) Pending transactions: [{tr_Redirect_Root,
+                                                           -576460702291893898}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:03 ===
+           ts_search:(5:<0.290.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:03 ===
+           ts_client:(5:<0.290.0>) Pending transactions: [{tr_Get_Register,
+                                                           -576460702107970886}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:04 ===
+           ts_search:(5:<0.297.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:04 ===
+           ts_client:(5:<0.297.0>) Pending transactions: [{tr_Get_Register,
+                                                           -576460702082833543}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:04 ===
+           ts_search:(5:<0.298.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:04 ===
+           ts_client:(5:<0.298.0>) Pending transactions: [{tr_Get_Register,
+                                                           -576460702075903908}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:04 ===
+           ts_client:(5:<0.425.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460702103957513}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:04 ===
+           ts_client:(5:<0.423.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460702118956002}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:04 ===
+           ts_client:(5:<0.424.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460702106969901}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:04 ===
+           ts_client:(5:<0.428.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460701835961585}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:04 ===
+           ts_search:(5:<0.214.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:04 ===
+           ts_client:(5:<0.214.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460707890843681}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:04 ===
+           ts_client:(5:<0.431.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460701775784948}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:04 ===
+           ts_client:(5:<0.432.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460701759970975}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:04 ===
+           ts_search:(5:<0.295.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:04 ===
+           ts_client:(5:<0.295.0>) Pending transactions: [{tr_Get_Register,
+                                                           -576460701757965886}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:04 ===
+           ts_search:(5:<0.302.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:04 ===
+           ts_client:(5:<0.302.0>) Pending transactions: [{tr_Get_Register,
+                                                           -576460701738933693}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:04 ===
+           ts_search:(5:<0.286.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:04 ===
+           ts_client:(5:<0.286.0>) Pending transactions: [{tr_Get_Register,
+                                                           -576460701735959207}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:04 ===
+           ts_client:(5:<0.433.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460701694946049}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:04 ===
+           ts_client:(5:<0.247.0>) Pending transactions: [{tr_Redirect_Root,
+                                                           -576460701668924898}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:04 ===
+           ts_client:(5:<0.253.0>) Pending transactions: [{tr_Post_Register,
+                                                           -576460701649924603}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:04 ===
+           ts_client:(5:<0.435.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460701628908520}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:04 ===
+           ts_search:(5:<0.266.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:04 ===
+           ts_client:(5:<0.266.0>) Pending transactions: [{tr_Get_Register,
+                                                           -576460701592838987}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:04 ===
+           ts_client:(5:<0.436.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460701577902562}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:04 ===
+           ts_search:(5:<0.296.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:04 ===
+           ts_client:(5:<0.296.0>) Pending transactions: [{tr_Get_Register,
+                                                           -576460701407938129}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:04 ===
+           ts_client:(5:<0.441.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460701327956855}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:04 ===
+           ts_client:(5:<0.439.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460701361963330}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:04 ===
+           ts_client:(5:<0.440.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460701353970736}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:04 ===
+           ts_client:(5:<0.438.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460701363880045}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:04 ===
+           ts_client:(5:<0.437.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460701419949984}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:04 ===
+           ts_search:(5:<0.230.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:04 ===
+           ts_client:(5:<0.230.0>) Pending transactions: [{tr_Get_New_Book,
+                                                           -576460701241918933}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:04 ===
+           ts_client:(5:<0.443.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460701225966331}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:05 ===
+           ts_client:(5:<0.445.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460701113968954}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:05 ===
+           ts_search:(5:<0.172.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:05 ===
+           ts_client:(5:<0.172.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460707607396773}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:05 ===
+           ts_search:(5:<0.209.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:05 ===
+           ts_client:(5:<0.209.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460707509803329}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:05 ===
+           ts_client:(5:<0.450.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460700817956368}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:05 ===
+           ts_search:(5:<0.294.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:05 ===
+           ts_client:(5:<0.294.0>) Pending transactions: [{tr_Get_Register,
+                                                           -576460700743900509}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:05 ===
+           ts_search:(5:<0.207.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:05 ===
+           ts_client:(5:<0.207.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460707405849646}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:05 ===
+           ts_search:(5:<0.196.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:05 ===
+           ts_client:(5:<0.196.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460707411829121}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:05 ===
+           ts_search:(5:<0.306.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:05 ===
+           ts_client:(5:<0.306.0>) Pending transactions: [{tr_Get_Register,
+                                                           -576460700573779562}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:05 ===
+           ts_client:(5:<0.273.0>) Pending transactions: [{tr_Post_Register,
+                                                           -576460700555866486}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:05 ===
+           ts_client:(5:<0.453.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460700689971748}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:05 ===
+           ts_client:(5:<0.452.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460700706961273}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:05 ===
+           ts_client:(5:<0.454.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460700478962268}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:05 ===
+           ts_client:(5:<0.276.0>) Pending transactions: [{tr_Post_Register,
+                                                           -576460700438879427}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:05 ===
+           ts_search:(5:<0.284.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:05 ===
+           ts_client:(5:<0.284.0>) Pending transactions: [{tr_Get_Register,
+                                                           -576460700289402096}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:05 ===
+           ts_search:(5:<0.292.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:05 ===
+           ts_client:(5:<0.292.0>) Pending transactions: [{tr_Get_Register,
+                                                           -576460700277942505}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:06 ===
+           ts_client:(5:<0.461.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460699966957218}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:06 ===
+           ts_client:(5:<0.463.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460699911890586}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:06 ===
+           ts_client:(5:<0.464.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460699873923922}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:06 ===
+           ts_client:(5:<0.465.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460699870972351}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:06 ===
+           ts_search:(5:<0.299.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:06 ===
+           ts_client:(5:<0.299.0>) Pending transactions: [{tr_Get_Register,
+                                                           -576460699815892849}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:06 ===
+           ts_client:(5:<0.467.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460699782953856}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:06 ===
+           ts_client:(5:<0.469.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460699708922084}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:06 ===
+           ts_client:(5:<0.470.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460699661909146}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:06 ===
+           ts_client:(5:<0.472.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460699627836934}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:06 ===
+           ts_client:(5:<0.473.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460699625769540}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:06 ===
+           ts_client:(5:<0.474.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460699613975790}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:06 ===
+           ts_search:(5:<0.287.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:06 ===
+           ts_client:(5:<0.287.0>) Pending transactions: [{tr_Get_Register,
+                                                           -576460699554836197}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:06 ===
+           ts_client:(5:<0.475.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460699440966196}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:06 ===
+           ts_search:(5:<0.220.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:06 ===
+           ts_client:(5:<0.220.0>) Pending transactions: [{tr_Get_New_Book,
+                                                           -576460699421913528}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:06 ===
+           ts_client:(5:<0.476.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460699367886596}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:06 ===
+           ts_search:(5:<0.195.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:06 ===
+           ts_client:(5:<0.195.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460699365690252}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:06 ===
+           ts_client:(5:<0.477.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460699277933785}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:06 ===
+           ts_client:(5:<0.479.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460699237919098}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:06 ===
+           ts_client:(5:<0.480.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460699197967133}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:06 ===
+           ts_search:(5:<0.223.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:06 ===
+           ts_client:(5:<0.223.0>) Pending transactions: [{tr_Get_New_Book,
+                                                           -576460699199792784}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:06 ===
+           ts_search:(5:<0.308.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:06 ===
+           ts_client:(5:<0.308.0>) Pending transactions: [{tr_Get_Register,
+                                                           -576460699114813218}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:07 ===
+           ts_search:(5:<0.310.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:07 ===
+           ts_client:(5:<0.310.0>) Pending transactions: [{tr_Get_Register,
+                                                           -576460699040858131}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:07 ===
+           ts_search:(5:<0.198.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:07 ===
+           ts_client:(5:<0.198.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460706650854691}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:07 ===
+           ts_search:(5:<0.202.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:07 ===
+           ts_client:(5:<0.202.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460706313804508}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:07 ===
+           ts_client:(5:<0.492.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460698115915189}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:08 ===
+           ts_search:(5:<0.313.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:08 ===
+           ts_client:(5:<0.313.0>) Pending transactions: [{tr_Get_Register,
+                                                           -576460698100901453}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:08 ===
+           ts_search:(5:<0.189.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:08 ===
+           ts_client:(5:<0.189.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460705368844236}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:08 ===
+           ts_client:(5:<0.239.0>) Pending transactions: [{tr_Redirect_Root,
+                                                           -576460697751924430}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:08 ===
+           ts_search:(5:<0.315.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:08 ===
+           ts_client:(5:<0.315.0>) Pending transactions: [{tr_Get_Register,
+                                                           -576460697667861588}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:08 ===
+           ts_search:(5:<0.330.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:08 ===
+           ts_client:(5:<0.330.0>) Pending transactions: [{tr_Get_Register,
+                                                           -576460697662945581}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:08 ===
+           ts_client:(5:<0.498.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460697674926454}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:08 ===
+           ts_client:(5:<0.500.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460697436910524}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:08 ===
+           ts_client:(5:<0.259.0>) Pending transactions: [{tr_Post_Register,
+                                                           -576460697426226480}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:08 ===
+           ts_search:(5:<0.301.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:08 ===
+           ts_client:(5:<0.301.0>) Pending transactions: [{tr_Get_Register,
+                                                           -576460697413943680}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:08 ===
+           ts_search:(5:<0.331.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:08 ===
+           ts_client:(5:<0.331.0>) Pending transactions: [{tr_Get_Register,
+                                                           -576460697404874392}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:08 ===
+           ts_search:(5:<0.317.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:08 ===
+           ts_client:(5:<0.317.0>) Pending transactions: [{tr_Get_Register,
+                                                           -576460697403794214}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:08 ===
+           ts_client:(5:<0.502.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460697362924011}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:08 ===
+           ts_client:(5:<0.252.0>) Pending transactions: [{tr_Post_Register,
+                                                           -576460697320964888}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:08 ===
+           ts_client:(5:<0.504.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460697323968526}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:08 ===
+           ts_client:(5:<0.505.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460697176890114}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:08 ===
+           ts_client:(5:<0.506.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460697159898693}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:08 ===
+           ts_client:(5:<0.507.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460697144905254}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:09 ===
+           ts_client:(5:<0.508.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460696903914248}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:09 ===
+           ts_search:(5:<0.241.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:09 ===
+           ts_client:(5:<0.241.0>) Pending transactions: [{tr_Get_New_Book,
+                                                           -576460696846941987}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:09 ===
+           ts_search:(5:<0.211.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:09 ===
+           ts_client:(5:<0.211.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460704337796241}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:09 ===
+           ts_client:(5:<0.510.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460696761918600}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:09 ===
+           ts_client:(5:<0.511.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460696750967053}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:09 ===
+           ts_client:(5:<0.513.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460696660941340}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:09 ===
+           ts_client:(5:<0.265.0>) Pending transactions: [{tr_Post_Register,
+                                                           -576460696576272220}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:09 ===
+           ts_client:(5:<0.514.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460696559918873}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:09 ===
+           ts_search:(5:<0.325.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:09 ===
+           ts_client:(5:<0.325.0>) Pending transactions: [{tr_Get_Register,
+                                                           -576460696532883394}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:09 ===
+           ts_search:(5:<0.199.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:09 ===
+           ts_client:(5:<0.199.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460696496139470}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:09 ===
+           ts_client:(5:<0.518.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460696405977845}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:09 ===
+           ts_client:(5:<0.517.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460696408959481}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:09 ===
+           ts_client:(5:<0.519.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460696339883905}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:09 ===
+           ts_client:(5:<0.520.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460696255944271}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:09 ===
+           ts_client:(5:<0.249.0>) Pending transactions: [{tr_Redirect_Root,
+                                                           -576460696250965301}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:09 ===
+           ts_client:(5:<0.278.0>) Pending transactions: [{tr_Post_Register,
+                                                           -576460696243888566}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:09 ===
+           ts_client:(5:<0.521.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460696234970368}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:09 ===
+           ts_client:(5:<0.523.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460696148967938}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:10 ===
+           ts_client:(5:<0.524.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460696080944042}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:10 ===
+           ts_client:(5:<0.526.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460696033969648}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:10 ===
+           ts_search:(5:<0.335.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:10 ===
+           ts_client:(5:<0.335.0>) Pending transactions: [{tr_Get_Register,
+                                                           -576460696019827475}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:10 ===
+           ts_client:(5:<0.289.0>) Pending transactions: [{tr_Post_Register,
+                                                           -576460695926892505}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:10 ===
+           ts_search:(5:<0.333.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:10 ===
+           ts_client:(5:<0.333.0>) Pending transactions: [{tr_Get_Register,
+                                                           -576460695886922753}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:10 ===
+           ts_client:(5:<0.529.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460695784970987}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:10 ===
+           ts_search:(5:<0.339.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:10 ===
+           ts_client:(5:<0.339.0>) Pending transactions: [{tr_Get_Register,
+                                                           -576460695777892478}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:10 ===
+           ts_client:(5:<0.281.0>) Pending transactions: [{tr_Post_Register,
+                                                           -576460695722866364}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:10 ===
+           ts_client:(5:<0.531.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460695517961473}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:10 ===
+           ts_search:(5:<0.235.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:10 ===
+           ts_client:(5:<0.235.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460695416693289}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:10 ===
+           ts_client:(5:<0.532.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460695413963778}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:10 ===
+           ts_client:(5:<0.533.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460695375884542}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:10 ===
+           ts_client:(5:<0.535.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460695271906311}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:10 ===
+           ts_client:(5:<0.534.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460695297904376}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:10 ===
+           ts_client:(5:<0.282.0>) Pending transactions: [{tr_Post_Register,
+                                                           -576460695243904604}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:10 ===
+           ts_client:(5:<0.536.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460695222959528}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:10 ===
+           ts_client:(5:<0.537.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460695209918207}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:11 ===
+           ts_client:(5:<0.291.0>) Pending transactions: [{tr_Post_Register,
+                                                           -576460694988886419}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:11 ===
+           ts_client:(5:<0.540.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460694973969656}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:11 ===
+           ts_search:(5:<0.321.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:11 ===
+           ts_client:(5:<0.321.0>) Pending transactions: [{tr_Get_Register,
+                                                           -576460694906765709}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:11 ===
+           ts_client:(5:<0.256.0>) Pending transactions: [{tr_Redirect_Root,
+                                                           -576460694892834223}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:11 ===
+           ts_client:(5:<0.542.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460694864891205}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:11 ===
+           ts_search:(5:<0.338.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:11 ===
+           ts_client:(5:<0.338.0>) Pending transactions: [{tr_Get_Register,
+                                                           -576460694845885003}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:11 ===
+           ts_client:(5:<0.543.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460694807912118}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:11 ===
+           ts_search:(5:<0.217.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:11 ===
+           ts_client:(5:<0.217.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460694781814967}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:11 ===
+           ts_client:(5:<0.288.0>) Pending transactions: [{tr_Post_Register,
+                                                           -576460694753908597}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:11 ===
+           ts_client:(5:<0.546.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460694690957562}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:11 ===
+           ts_client:(5:<0.263.0>) Pending transactions: [{tr_Post_Register,
+                                                           -576460694669933379}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:11 ===
+           ts_client:(5:<0.547.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460694661966981}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:11 ===
+           ts_client:(5:<0.548.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460694649974175}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:11 ===
+           ts_search:(5:<0.184.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:11 ===
+           ts_client:(5:<0.184.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460703496806765}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:11 ===
+           ts_client:(5:<0.553.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460694303953425}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:11 ===
+           ts_client:(5:<0.554.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460694235829686}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:12 ===
+           ts_client:(5:<0.557.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460694067876780}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:12 ===
+           ts_client:(5:<0.556.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460694067898499}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:12 ===
+           ts_search:(5:<0.347.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:12 ===
+           ts_client:(5:<0.347.0>) Pending transactions: [{tr_Get_Register,
+                                                           -576460694052890615}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:12 ===
+           ts_client:(5:<0.559.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460693910909157}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:12 ===
+           ts_client:(5:<0.262.0>) Pending transactions: [{tr_Post_Register,
+                                                           -576460693881889239}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:12 ===
+           ts_client:(5:<0.560.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460693708912040}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:12 ===
+           ts_client:(5:<0.561.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460693692923107}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:12 ===
+           ts_client:(5:<0.562.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460693615919454}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:12 ===
+           ts_client:(5:<0.563.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460693588957608}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:12 ===
+           ts_client:(5:<0.564.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460693550941663}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:12 ===
+           ts_search:(5:<0.348.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:12 ===
+           ts_client:(5:<0.348.0>) Pending transactions: [{tr_Get_Register,
+                                                           -576460693521859427}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:12 ===
+           ts_client:(5:<0.565.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460693512891121}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:12 ===
+           ts_client:(5:<0.567.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460693308924544}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:12 ===
+           ts_search:(5:<0.316.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:12 ===
+           ts_client:(5:<0.316.0>) Pending transactions: [{tr_Get_Register,
+                                                           -576460693302920861}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:12 ===
+           ts_client:(5:<0.243.0>) Pending transactions: [{tr_Redirect_Root,
+                                                           -576460693259724695}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:12 ===
+           ts_search:(5:<0.349.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:12 ===
+           ts_client:(5:<0.349.0>) Pending transactions: [{tr_Get_Register,
+                                                           -576460693222905344}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:13 ===
+           ts_search:(5:<0.327.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:13 ===
+           ts_client:(5:<0.327.0>) Pending transactions: [{tr_Get_Register,
+                                                           -576460692918828076}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:13 ===
+           ts_client:(5:<0.569.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460692895907984}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:13 ===
+           ts_client:(5:<0.570.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460692868929086}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:13 ===
+           ts_client:(5:<0.572.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460692750956809}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:13 ===
+           ts_client:(5:<0.573.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460692702956475}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:13 ===
+           ts_search:(5:<0.353.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:13 ===
+           ts_client:(5:<0.353.0>) Pending transactions: [{tr_Get_Register,
+                                                           -576460692689697194}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:13 ===
+           ts_client:(5:<0.574.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460692675913966}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:13 ===
+           ts_search:(5:<0.354.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:13 ===
+           ts_client:(5:<0.354.0>) Pending transactions: [{tr_Get_Register,
+                                                           -576460692623764742}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:13 ===
+           ts_search:(5:<0.341.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:13 ===
+           ts_client:(5:<0.341.0>) Pending transactions: [{tr_Get_Register,
+                                                           -576460692614956686}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:13 ===
+           ts_client:(5:<0.575.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460692605920704}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:13 ===
+           ts_client:(5:<0.576.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460692505917454}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:13 ===
+           ts_client:(5:<0.577.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460692477966356}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:13 ===
+           ts_client:(5:<0.578.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460692466959621}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:13 ===
+           ts_client:(5:<0.579.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460692453966253}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:13 ===
+           ts_search:(5:<0.346.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:13 ===
+           ts_client:(5:<0.346.0>) Pending transactions: [{tr_Get_Register,
+                                                           -576460692413842764}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:13 ===
+           ts_client:(5:<0.580.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460692399921448}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:13 ===
+           ts_client:(5:<0.581.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460692387901507}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:13 ===
+           ts_client:(5:<0.257.0>) Pending transactions: [{tr_Redirect_Root,
+                                                           -576460692383923833}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:13 ===
+           ts_client:(5:<0.582.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460692380911550}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:13 ===
+           ts_client:(5:<0.583.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460692373799974}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:13 ===
+           ts_client:(5:<0.586.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460692257972996}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:13 ===
+           ts_client:(5:<0.268.0>) Pending transactions: [{tr_Redirect_Root,
+                                                           -576460692226896178}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:13 ===
+           ts_search:(5:<0.345.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:13 ===
+           ts_client:(5:<0.345.0>) Pending transactions: [{tr_Get_Register,
+                                                           -576460692189939949}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:13 ===
+           ts_client:(5:<0.587.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460692195894853}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:13 ===
+           ts_client:(5:<0.588.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460692184967727}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:13 ===
+           ts_client:(5:<0.589.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460692122963736}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:14 ===
+           ts_search:(5:<0.320.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:14 ===
+           ts_client:(5:<0.320.0>) Pending transactions: [{tr_Get_Register,
+                                                           -576460692091706461}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:14 ===
+           ts_client:(5:<0.590.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460692075845963}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:14 ===
+           ts_client:(5:<0.591.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460692030910633}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:14 ===
+           ts_client:(5:<0.264.0>) Pending transactions: [{tr_Post_Register,
+                                                           -576460692006897637}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:14 ===
+           ts_client:(5:<0.255.0>) Pending transactions: [{tr_Redirect_Root,
+                                                           -576460691943894418}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:14 ===
+           ts_search:(5:<0.351.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:14 ===
+           ts_client:(5:<0.351.0>) Pending transactions: [{tr_Get_Register,
+                                                           -576460691910833951}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:14 ===
+           ts_client:(5:<0.592.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460691892920834}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:14 ===
+           ts_search:(5:<0.236.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:14 ===
+           ts_client:(5:<0.236.0>) Pending transactions: [{tr_Get_New_Book,
+                                                           -576460691884962370}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:14 ===
+           ts_client:(5:<0.593.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460691875975208}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:14 ===
+           ts_client:(5:<0.595.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460691793884656}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:14 ===
+           ts_client:(5:<0.597.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460691763975060}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:14 ===
+           ts_search:(5:<0.218.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:14 ===
+           ts_client:(5:<0.218.0>) Pending transactions: [{tr_Get_New_Book,
+                                                           -576460691761847977}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:14 ===
+           ts_search:(5:<0.208.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:14 ===
+           ts_client:(5:<0.208.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460702616777412}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:14 ===
+           ts_search:(5:<0.360.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:14 ===
+           ts_client:(5:<0.360.0>) Pending transactions: [{tr_Get_Register,
+                                                           -576460691537962808}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:14 ===
+           ts_client:(5:<0.599.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460691543907778}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:14 ===
+           ts_client:(5:<0.600.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460691493952882}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:14 ===
+           ts_client:(5:<0.601.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460691484964628}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:14 ===
+           ts_search:(5:<0.344.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:14 ===
+           ts_client:(5:<0.344.0>) Pending transactions: [{tr_Get_Register,
+                                                           -576460691420963388}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:14 ===
+           ts_client:(5:<0.602.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460691421956559}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:14 ===
+           ts_client:(5:<0.603.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460691401922056}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:14 ===
+           ts_client:(5:<0.604.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460691388923025}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:14 ===
+           ts_client:(5:<0.606.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460691313908263}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:14 ===
+           ts_client:(5:<0.607.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460691221947964}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:14 ===
+           ts_search:(5:<0.231.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:14 ===
+           ts_client:(5:<0.231.0>) Pending transactions: [{tr_Get_New_Book,
+                                                           -576460691201911110}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:14 ===
+           ts_client:(5:<0.269.0>) Pending transactions: [{tr_Redirect_Root,
+                                                           -576460691133942883}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:14 ===
+           ts_client:(5:<0.609.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460691127962132}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:14 ===
+           ts_client:(5:<0.610.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460691119964436}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:14 ===
+           ts_search:(5:<0.358.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:14 ===
+           ts_client:(5:<0.358.0>) Pending transactions: [{tr_Get_Register,
+                                                           -576460691108953922}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:15 ===
+           ts_client:(5:<0.612.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460690946947935}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:15 ===
+         ts_launcher:(5:<0.155.0>) This was the last phase, wait for connected users to finish their session
+
+=INFO REPORT==== 4-Dec-2019::12:13:15 ===
+           ts_client:(5:<0.613.0>) Pending transactions: [{tr_Get_Root,
+                                                           -576460690931891806}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:17 ===
+           ts_search:(5:<0.229.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:17 ===
+           ts_client:(5:<0.229.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460700128782327}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:18 ===
+           ts_search:(5:<0.212.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:18 ===
+           ts_client:(5:<0.212.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460699923724694}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:18 ===
+           ts_search:(5:<0.192.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:18 ===
+           ts_client:(5:<0.192.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460699506761564}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:18 ===
+           ts_search:(5:<0.215.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:18 ===
+           ts_client:(5:<0.215.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460698736753561}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:19 ===
+           ts_search:(5:<0.221.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:19 ===
+           ts_client:(5:<0.221.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460698357851101}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:21 ===
+           ts_search:(5:<0.222.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:21 ===
+           ts_client:(5:<0.222.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460697829734933}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:22 ===
+           ts_search:(5:<0.225.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:22 ===
+           ts_client:(5:<0.225.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460697465824623}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:25 ===
+           ts_search:(5:<0.190.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:25 ===
+           ts_client:(5:<0.190.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460694255840282}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:26 ===
+           ts_search:(5:<0.216.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:26 ===
+           ts_client:(5:<0.216.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460693231781266}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:28 ===
+           ts_search:(5:<0.226.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:28 ===
+           ts_client:(5:<0.226.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460690622784532}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:28 ===
+           ts_search:(5:<0.234.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:28 ===
+           ts_client:(5:<0.234.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460686913787464}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:29 ===
+           ts_search:(5:<0.228.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:29 ===
+           ts_client:(5:<0.228.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460683267792044}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:29 ===
+           ts_search:(5:<0.219.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:29 ===
+           ts_client:(5:<0.219.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460682589806992}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:34 ===
+           ts_search:(5:<0.238.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:34 ===
+           ts_client:(5:<0.238.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460675197856902}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:36 ===
+           ts_search:(5:<0.224.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:36 ===
+           ts_client:(5:<0.224.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460674365723479}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:37 ===
+           ts_search:(5:<0.242.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:37 ===
+           ts_client:(5:<0.242.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460673557802470}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:38 ===
+           ts_search:(5:<0.237.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:38 ===
+           ts_client:(5:<0.237.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460673073788767}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:39 ===
+           ts_search:(5:<0.244.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:39 ===
+           ts_client:(5:<0.244.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460672494348433}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:41 ===
+           ts_search:(5:<0.233.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:41 ===
+           ts_client:(5:<0.233.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460671601785174}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:41 ===
+           ts_search:(5:<0.227.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:41 ===
+           ts_client:(5:<0.227.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460671358780649}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:54 ===
+           ts_search:(5:<0.245.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:54 ===
+           ts_client:(5:<0.245.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460659355768623}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:56 ===
+           ts_search:(5:<0.250.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:56 ===
+           ts_client:(5:<0.250.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460654128716920}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:57 ===
+           ts_search:(5:<0.232.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:57 ===
+           ts_client:(5:<0.232.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460653986685229}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:57 ===
+           ts_search:(5:<0.280.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:57 ===
+           ts_client:(5:<0.280.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460653604849190}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:58 ===
+           ts_search:(5:<0.246.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:58 ===
+           ts_client:(5:<0.246.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460651540639172}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:58 ===
+           ts_search:(5:<0.274.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:58 ===
+           ts_client:(5:<0.274.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460651295714716}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:58 ===
+           ts_search:(5:<0.283.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:58 ===
+           ts_client:(5:<0.283.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460651285782484}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:59 ===
+           ts_search:(5:<0.267.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:59 ===
+           ts_client:(5:<0.267.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460651245770664}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:59 ===
+           ts_search:(5:<0.248.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:59 ===
+           ts_client:(5:<0.248.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460650712685594}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:59 ===
+           ts_search:(5:<0.324.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:59 ===
+           ts_client:(5:<0.324.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460650816817330}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:59 ===
+           ts_search:(5:<0.254.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:59 ===
+           ts_client:(5:<0.254.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460650540774247}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:13:59 ===
+           ts_search:(5:<0.361.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:13:59 ===
+           ts_client:(5:<0.361.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460650326789143}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:00 ===
+           ts_search:(5:<0.314.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:00 ===
+           ts_client:(5:<0.314.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460650220759173}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:00 ===
+           ts_search:(5:<0.271.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:00 ===
+           ts_client:(5:<0.271.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460650066874677}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:00 ===
+           ts_search:(5:<0.260.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:00 ===
+           ts_client:(5:<0.260.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460649933796038}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:00 ===
+           ts_search:(5:<0.373.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:00 ===
+           ts_client:(5:<0.373.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460649524753291}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:01 ===
+           ts_search:(5:<0.340.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:01 ===
+           ts_client:(5:<0.340.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460649424782276}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:01 ===
+           ts_search:(5:<0.366.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:01 ===
+           ts_client:(5:<0.366.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460649458868914}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:01 ===
+           ts_search:(5:<0.332.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:01 ===
+           ts_client:(5:<0.332.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460649361757166}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:01 ===
+           ts_search:(5:<0.293.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:01 ===
+           ts_client:(5:<0.293.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460648880803603}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:01 ===
+           ts_search:(5:<0.312.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:01 ===
+           ts_client:(5:<0.312.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460648343855464}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:01 ===
+           ts_search:(5:<0.309.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:01 ===
+           ts_client:(5:<0.309.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460648342819929}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:01 ===
+           ts_search:(5:<0.367.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:01 ===
+           ts_client:(5:<0.367.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460648270814441}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:01 ===
+           ts_search:(5:<0.385.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:01 ===
+           ts_client:(5:<0.385.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460648164780949}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:02 ===
+           ts_search:(5:<0.277.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:02 ===
+           ts_client:(5:<0.277.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460647935821805}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:02 ===
+           ts_search:(5:<0.356.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:02 ===
+           ts_client:(5:<0.356.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460647847781208}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:02 ===
+           ts_search:(5:<0.307.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:02 ===
+           ts_client:(5:<0.307.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460647841788521}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:02 ===
+           ts_search:(5:<0.342.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:02 ===
+           ts_client:(5:<0.342.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460648048728812}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:02 ===
+           ts_search:(5:<0.372.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:02 ===
+           ts_client:(5:<0.372.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460647653818025}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:02 ===
+           ts_search:(5:<0.303.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:02 ===
+           ts_client:(5:<0.303.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460647392662872}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:02 ===
+           ts_search:(5:<0.343.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:02 ===
+           ts_client:(5:<0.343.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460647647779405}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:02 ===
+           ts_search:(5:<0.355.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:02 ===
+           ts_client:(5:<0.355.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460647335784822}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:02 ===
+           ts_search:(5:<0.392.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:02 ===
+           ts_client:(5:<0.392.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460647152689687}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:02 ===
+           ts_search:(5:<0.318.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:02 ===
+           ts_client:(5:<0.318.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460647260884119}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:02 ===
+           ts_search:(5:<0.272.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:02 ===
+           ts_client:(5:<0.272.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460646956623204}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:02 ===
+           ts_search:(5:<0.261.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:02 ===
+           ts_client:(5:<0.261.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460647029711655}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:02 ===
+           ts_search:(5:<0.395.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:02 ===
+           ts_client:(5:<0.395.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460646911756955}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:02 ===
+           ts_search:(5:<0.391.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:02 ===
+           ts_client:(5:<0.391.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460646593797279}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:02 ===
+           ts_search:(5:<0.404.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:02 ===
+           ts_client:(5:<0.404.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460646858774794}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:02 ===
+           ts_search:(5:<0.411.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:02 ===
+           ts_client:(5:<0.411.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460646815734504}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:02 ===
+           ts_search:(5:<0.399.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:02 ===
+           ts_client:(5:<0.399.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460646437787153}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:02 ===
+           ts_search:(5:<0.270.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:02 ===
+           ts_client:(5:<0.270.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460646804719917}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:03 ===
+           ts_search:(5:<0.322.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:03 ===
+           ts_client:(5:<0.322.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460646075314089}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:03 ===
+           ts_search:(5:<0.363.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:03 ===
+           ts_client:(5:<0.363.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460645900866260}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:03 ===
+           ts_search:(5:<0.304.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:03 ===
+           ts_client:(5:<0.304.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460645841746346}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:03 ===
+           ts_search:(5:<0.352.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:03 ===
+           ts_client:(5:<0.352.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460645779823027}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:03 ===
+           ts_search:(5:<0.336.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:03 ===
+           ts_client:(5:<0.336.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460645495759888}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:03 ===
+           ts_search:(5:<0.334.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:03 ===
+           ts_client:(5:<0.334.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460645219994977}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:03 ===
+           ts_search:(5:<0.396.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:03 ===
+           ts_client:(5:<0.396.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460645315216637}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:03 ===
+           ts_search:(5:<0.409.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:03 ===
+           ts_client:(5:<0.409.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460645182774882}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:03 ===
+           ts_search:(5:<0.275.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:03 ===
+           ts_client:(5:<0.275.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460645061764248}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:03 ===
+           ts_search:(5:<0.389.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:03 ===
+           ts_client:(5:<0.389.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460644974204299}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:03 ===
+           ts_search:(5:<0.258.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:03 ===
+           ts_client:(5:<0.258.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460644933538161}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:03 ===
+           ts_search:(5:<0.328.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:03 ===
+           ts_client:(5:<0.328.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460644738601993}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:03 ===
+           ts_search:(5:<0.279.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:03 ===
+           ts_client:(5:<0.279.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460644674631322}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:04 ===
+           ts_search:(5:<0.305.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:04 ===
+           ts_client:(5:<0.305.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460644368656649}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:04 ===
+           ts_search:(5:<0.426.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:04 ===
+           ts_client:(5:<0.426.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460644552742866}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:04 ===
+           ts_search:(5:<0.403.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:04 ===
+           ts_client:(5:<0.403.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460644345755532}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:04 ===
+           ts_search:(5:<0.458.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:04 ===
+           ts_client:(5:<0.458.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460644157776901}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:04 ===
+           ts_search:(5:<0.401.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:04 ===
+           ts_client:(5:<0.401.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460644099755503}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:04 ===
+           ts_search:(5:<0.408.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:04 ===
+           ts_client:(5:<0.408.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460643796817408}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:04 ===
+           ts_search:(5:<0.388.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:04 ===
+           ts_client:(5:<0.388.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460643858771249}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:04 ===
+           ts_search:(5:<0.386.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:04 ===
+           ts_client:(5:<0.386.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460643558124462}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:04 ===
+           ts_search:(5:<0.368.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:04 ===
+           ts_client:(5:<0.368.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460643427729421}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:04 ===
+           ts_search:(5:<0.412.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:04 ===
+           ts_client:(5:<0.412.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460643673779012}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:04 ===
+           ts_search:(5:<0.429.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:04 ===
+           ts_client:(5:<0.429.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460642785745992}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:04 ===
+           ts_search:(5:<0.413.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:04 ===
+           ts_client:(5:<0.413.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460642302847480}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:04 ===
+           ts_search:(5:<0.484.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:04 ===
+           ts_client:(5:<0.484.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460641994345079}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:05 ===
+           ts_search:(5:<0.397.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:05 ===
+           ts_client:(5:<0.397.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460641872683247}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:05 ===
+           ts_search:(5:<0.456.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:05 ===
+           ts_client:(5:<0.456.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460641818748663}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:05 ===
+           ts_search:(5:<0.486.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:05 ===
+           ts_client:(5:<0.486.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460641600629697}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:05 ===
+           ts_search:(5:<0.370.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:05 ===
+           ts_client:(5:<0.370.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460641069853720}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:05 ===
+           ts_search:(5:<0.405.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:05 ===
+           ts_client:(5:<0.405.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460641334606020}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:05 ===
+           ts_search:(5:<0.427.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:05 ===
+           ts_client:(5:<0.427.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460641058880795}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:05 ===
+           ts_search:(5:<0.448.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:05 ===
+           ts_client:(5:<0.448.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460641061868922}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:05 ===
+           ts_search:(5:<0.369.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:05 ===
+           ts_client:(5:<0.369.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460640980825285}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:05 ===
+           ts_search:(5:<0.418.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:05 ===
+           ts_client:(5:<0.418.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460640633856509}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:05 ===
+           ts_search:(5:<0.379.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:05 ===
+           ts_client:(5:<0.379.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460640593839367}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:06 ===
+           ts_search:(5:<0.460.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:06 ===
+           ts_client:(5:<0.460.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460640551847278}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:06 ===
+           ts_search:(5:<0.459.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:06 ===
+           ts_client:(5:<0.459.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460640460838402}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:06 ===
+           ts_search:(5:<0.381.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:06 ===
+           ts_client:(5:<0.381.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460640434717948}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:06 ===
+           ts_search:(5:<0.394.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:06 ===
+           ts_client:(5:<0.394.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460640366594600}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:06 ===
+           ts_search:(5:<0.371.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:06 ===
+           ts_client:(5:<0.371.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460640333718358}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:06 ===
+           ts_search:(5:<0.430.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:06 ===
+           ts_client:(5:<0.430.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460640150800435}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:06 ===
+           ts_search:(5:<0.390.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:06 ===
+           ts_client:(5:<0.390.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460640199830277}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:06 ===
+           ts_search:(5:<0.359.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:06 ===
+           ts_client:(5:<0.359.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460640270833850}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:06 ===
+           ts_search:(5:<0.374.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:06 ===
+           ts_client:(5:<0.374.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460640091868139}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:06 ===
+           ts_search:(5:<0.415.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:06 ===
+           ts_client:(5:<0.415.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460640006804472}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:06 ===
+           ts_search:(5:<0.323.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:06 ===
+           ts_client:(5:<0.323.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460639880739637}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:06 ===
+           ts_search:(5:<0.398.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:06 ===
+           ts_client:(5:<0.398.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460639631646045}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:06 ===
+           ts_search:(5:<0.471.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:06 ===
+           ts_client:(5:<0.471.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460639777838261}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:07 ===
+           ts_search:(5:<0.406.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:07 ===
+           ts_client:(5:<0.406.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460639060685206}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:07 ===
+           ts_search:(5:<0.376.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:07 ===
+           ts_client:(5:<0.376.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460638824787439}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:07 ===
+           ts_search:(5:<0.311.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:07 ===
+           ts_client:(5:<0.311.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460638784653379}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:07 ===
+           ts_search:(5:<0.483.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:07 ===
+           ts_client:(5:<0.483.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460638712779732}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:07 ===
+           ts_search:(5:<0.384.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:07 ===
+           ts_client:(5:<0.384.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460638456767060}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:07 ===
+           ts_search:(5:<0.375.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:07 ===
+           ts_client:(5:<0.375.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460638147770149}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:08 ===
+           ts_search:(5:<0.417.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:08 ===
+           ts_client:(5:<0.417.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460638128776324}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:08 ===
+           ts_search:(5:<0.487.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:08 ===
+           ts_client:(5:<0.487.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460638086873618}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:08 ===
+           ts_search:(5:<0.387.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:08 ===
+           ts_client:(5:<0.387.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460637937819716}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:08 ===
+           ts_search:(5:<0.319.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:08 ===
+           ts_client:(5:<0.319.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460637835787807}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:08 ===
+           ts_search:(5:<0.326.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:08 ===
+           ts_client:(5:<0.326.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460637782758219}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:08 ===
+           ts_search:(5:<0.449.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:08 ===
+           ts_client:(5:<0.449.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460637648779643}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:08 ===
+           ts_search:(5:<0.364.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:08 ===
+           ts_client:(5:<0.364.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460637564814605}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:08 ===
+           ts_search:(5:<0.466.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:08 ===
+           ts_client:(5:<0.466.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460637519818566}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:08 ===
+           ts_search:(5:<0.378.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:08 ===
+           ts_client:(5:<0.378.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460637401534337}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:09 ===
+           ts_search:(5:<0.462.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:09 ===
+           ts_client:(5:<0.462.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460637075809475}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:09 ===
+           ts_search:(5:<0.493.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:09 ===
+           ts_client:(5:<0.493.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460636966822326}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:09 ===
+           ts_search:(5:<0.416.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:09 ===
+           ts_client:(5:<0.416.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460636939786718}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:09 ===
+           ts_search:(5:<0.400.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:09 ===
+           ts_client:(5:<0.400.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460637073874851}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:09 ===
+           ts_search:(5:<0.421.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:09 ===
+           ts_client:(5:<0.421.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460636955756855}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:09 ===
+           ts_search:(5:<0.380.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:09 ===
+           ts_client:(5:<0.380.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460636883818741}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:09 ===
+           ts_search:(5:<0.422.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:09 ===
+           ts_client:(5:<0.422.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460636585800198}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:09 ===
+           ts_search:(5:<0.377.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:09 ===
+           ts_client:(5:<0.377.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460636536806577}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:09 ===
+           ts_search:(5:<0.457.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:09 ===
+           ts_client:(5:<0.457.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460636399758070}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:09 ===
+           ts_search:(5:<0.362.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:09 ===
+           ts_client:(5:<0.362.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460636245455840}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:10 ===
+           ts_search:(5:<0.357.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:10 ===
+           ts_client:(5:<0.357.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460635961810600}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:10 ===
+           ts_search:(5:<0.350.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:10 ===
+           ts_client:(5:<0.350.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460635817807849}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:10 ===
+           ts_search:(5:<0.444.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:10 ===
+           ts_client:(5:<0.444.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460635804805414}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:10 ===
+           ts_search:(5:<0.365.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:10 ===
+           ts_client:(5:<0.365.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460635812817620}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:10 ===
+           ts_search:(5:<0.447.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:10 ===
+           ts_client:(5:<0.447.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460635558865150}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:10 ===
+           ts_search:(5:<0.478.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:10 ===
+           ts_client:(5:<0.478.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460635451796109}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:10 ===
+           ts_search:(5:<0.393.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:10 ===
+           ts_client:(5:<0.393.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460635322853756}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:10 ===
+           ts_search:(5:<0.420.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:10 ===
+           ts_client:(5:<0.420.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460635299833393}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:10 ===
+           ts_search:(5:<0.490.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:10 ===
+           ts_client:(5:<0.490.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460635254791829}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:10 ===
+           ts_search:(5:<0.491.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:10 ===
+           ts_client:(5:<0.491.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460635122600335}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:11 ===
+           ts_search:(5:<0.494.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:11 ===
+           ts_client:(5:<0.494.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460634813718063}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:11 ===
+           ts_search:(5:<0.516.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:11 ===
+           ts_client:(5:<0.516.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460634740823639}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:11 ===
+           ts_search:(5:<0.455.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:11 ===
+           ts_client:(5:<0.455.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460634660793537}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:11 ===
+           ts_search:(5:<0.558.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:11 ===
+           ts_client:(5:<0.558.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460634606818645}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:11 ===
+           ts_search:(5:<0.446.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:11 ===
+           ts_client:(5:<0.446.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460634540793238}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:11 ===
+           ts_search:(5:<0.501.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:11 ===
+           ts_client:(5:<0.501.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460634408773602}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:11 ===
+           ts_search:(5:<0.550.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:11 ===
+           ts_client:(5:<0.550.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460634335712279}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:11 ===
+           ts_search:(5:<0.451.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:11 ===
+           ts_client:(5:<0.451.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460634285789021}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:12 ===
+           ts_search:(5:<0.495.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:12 ===
+           ts_client:(5:<0.495.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460634020821640}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:12 ===
+           ts_search:(5:<0.541.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:12 ===
+           ts_client:(5:<0.541.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460633989691904}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:12 ===
+           ts_search:(5:<0.482.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:12 ===
+           ts_client:(5:<0.482.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460633825871173}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:12 ===
+           ts_search:(5:<0.410.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:12 ===
+           ts_client:(5:<0.410.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460633797834667}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:12 ===
+           ts_search:(5:<0.525.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:12 ===
+           ts_client:(5:<0.525.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460633765806799}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:12 ===
+           ts_search:(5:<0.497.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:12 ===
+           ts_client:(5:<0.497.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460633633816858}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:12 ===
+           ts_search:(5:<0.512.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:12 ===
+           ts_client:(5:<0.512.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460633507745233}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:12 ===
+           ts_search:(5:<0.407.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:12 ===
+           ts_client:(5:<0.407.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460633439878946}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:12 ===
+           ts_search:(5:<0.605.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:12 ===
+           ts_client:(5:<0.605.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460633425847624}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:12 ===
+           ts_search:(5:<0.522.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:12 ===
+           ts_client:(5:<0.522.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460633419864656}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:12 ===
+           ts_search:(5:<0.414.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:12 ===
+           ts_client:(5:<0.414.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460633208805588}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:13 ===
+           ts_search:(5:<0.337.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:13 ===
+           ts_client:(5:<0.337.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460633098782404}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:13 ===
+           ts_search:(5:<0.551.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:13 ===
+           ts_client:(5:<0.551.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460633048811237}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:13 ===
+           ts_search:(5:<0.383.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:13 ===
+           ts_client:(5:<0.383.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460632910774864}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:13 ===
+           ts_search:(5:<0.539.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:13 ===
+           ts_client:(5:<0.539.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460632785794803}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:13 ===
+           ts_search:(5:<0.584.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:13 ===
+           ts_client:(5:<0.584.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460632775876527}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:13 ===
+           ts_search:(5:<0.594.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:13 ===
+           ts_client:(5:<0.594.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460632758834868}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:13 ===
+           ts_search:(5:<0.499.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:13 ===
+           ts_client:(5:<0.499.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460632644712163}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:13 ===
+           ts_search:(5:<0.538.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:13 ===
+           ts_client:(5:<0.538.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460632621841140}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:13 ===
+           ts_search:(5:<0.481.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:13 ===
+           ts_client:(5:<0.481.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460632498773413}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:13 ===
+           ts_search:(5:<0.530.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:13 ===
+           ts_client:(5:<0.530.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460632311701809}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:13 ===
+           ts_search:(5:<0.555.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:13 ===
+           ts_client:(5:<0.555.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460632181785066}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:13 ===
+           ts_search:(5:<0.552.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:13 ===
+           ts_client:(5:<0.552.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460632130790423}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:13 ===
+           ts_search:(5:<0.496.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:13 ===
+           ts_client:(5:<0.496.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460632120803511}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:14 ===
+           ts_search:(5:<0.509.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:14 ===
+           ts_client:(5:<0.509.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460632021819223}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:14 ===
+           ts_search:(5:<0.468.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:14 ===
+           ts_client:(5:<0.468.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460631964782702}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:14 ===
+           ts_search:(5:<0.382.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:14 ===
+           ts_client:(5:<0.382.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460631758777833}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:14 ===
+           ts_search:(5:<0.489.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:14 ===
+           ts_client:(5:<0.489.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460631500705348}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:14 ===
+           ts_search:(5:<0.442.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:14 ===
+           ts_client:(5:<0.442.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460631279705453}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:15 ===
+           ts_search:(5:<0.596.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:15 ===
+           ts_client:(5:<0.596.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460630885822545}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:15 ===
+           ts_search:(5:<0.571.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:15 ===
+           ts_client:(5:<0.571.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460630846789390}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:15 ===
+           ts_search:(5:<0.527.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:15 ===
+           ts_client:(5:<0.527.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460630691786657}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:15 ===
+           ts_search:(5:<0.585.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:15 ===
+           ts_client:(5:<0.585.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460630490746283}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:15 ===
+           ts_search:(5:<0.515.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:15 ===
+           ts_client:(5:<0.515.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460630348784073}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:15 ===
+           ts_search:(5:<0.544.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:15 ===
+           ts_client:(5:<0.544.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460630347904219}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:17 ===
+           ts_search:(5:<0.549.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:17 ===
+           ts_client:(5:<0.549.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460629052756756}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:17 ===
+           ts_search:(5:<0.614.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:17 ===
+           ts_client:(5:<0.614.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460628913780259}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:18 ===
+           ts_search:(5:<0.485.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:18 ===
+           ts_client:(5:<0.485.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460627281783342}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:19 ===
+           ts_search:(5:<0.488.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:19 ===
+           ts_client:(5:<0.488.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460626855853646}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:19 ===
+           ts_search:(5:<0.545.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:19 ===
+           ts_client:(5:<0.545.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460626811709369}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:19 ===
+           ts_search:(5:<0.568.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:19 ===
+           ts_client:(5:<0.568.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460626449791883}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:20 ===
+           ts_search:(5:<0.402.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:20 ===
+           ts_client:(5:<0.402.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460625998767470}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:20 ===
+           ts_search:(5:<0.566.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:20 ===
+           ts_client:(5:<0.566.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460625294768061}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:21 ===
+           ts_search:(5:<0.503.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:21 ===
+           ts_client:(5:<0.503.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460624778734015}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:22 ===
+           ts_search:(5:<0.528.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:22 ===
+           ts_client:(5:<0.528.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460623571798940}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:22 ===
+           ts_search:(5:<0.608.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:22 ===
+           ts_client:(5:<0.608.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460623425791502}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:24 ===
+           ts_search:(5:<0.611.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 4-Dec-2019::12:14:24 ===
+           ts_client:(5:<0.611.0>) Pending transactions: [{tr_Post_New_Book,
+                                                           -576460621158791217}], compute transaction time
+
+=INFO REPORT==== 4-Dec-2019::12:14:25 ===
+     ts_launcher_mgr:(5:<0.149.0>) No more active users 'tsung_controller@ip-172-31-26-119' "3593"
