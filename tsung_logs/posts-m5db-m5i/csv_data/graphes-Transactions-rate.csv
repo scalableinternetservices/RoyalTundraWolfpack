@@ -1,7 +1,0 @@
-time,tr_Post_Register,tr_Get_Root,page,tr_Get_New_Conversation,tr_Post_New_Post,tr_Redirect_To_New_Post,tr_Get_Register,tr_Get_Book,tr_Redirect_Root 
-0,0.4,0.8,2.3,,,,0.8,0.1,0.2 
-10,0.8,1.1,4.2,0.1,0.1,0.1,1,0,1 
-20,0.8,0.1,2.2,0.1,0.1,0,0.2,0.3,0.6 
-30,0,0,2.6,0.6,0.6,0.5,0,0.7,0.2 
-40,0,0,3.3,0.8,0.8,0.8,0,0.9,0 
-47,0,0,1.4,0.4,0.4,0.6,0,0,0 

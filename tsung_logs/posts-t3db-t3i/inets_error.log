@@ -1,6 +1,0 @@
-[03/Dec/2019:11:58:54 -0000] access to /favicon.ico failed for 169.231.145.249, reason: 
-"httpd_file: Can't access /home/ec2-user/.tsung/log/20191203-1157/favicon.ico: File not found"
-[03/Dec/2019:11:58:55 -0000] access to /favicon.ico failed for 169.231.145.249, reason: 
-"httpd_file: Can't access /home/ec2-user/.tsung/log/20191203-1157/favicon.ico: File not found"
-[03/Dec/2019:11:59:08 -0000] access to /assets/ico/favicon.ico failed for 169.231.145.249, reason: 
-"httpd_file: Can't access /home/ec2-user/.tsung/log/20191203-1157/assets/ico/favicon.ico: File not found"
