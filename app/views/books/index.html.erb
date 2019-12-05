@@ -4,10 +4,8 @@
   <div class="column">
     <h1>Book Discussions</h1>
     <span>
-      <form action=<%= new_book_path%>>
-        <button class="ui button" type="submit"> Submit New Book</button>
-      </form>
-      <%= link_to "All Posts", :controller => :posts , :action => :index %>
+      <a href="<%= new_book_path %>"><button class="ui button"> Create New Book </button></a>
+      <%= link_to '<button class="ui button">View All Posts</button>'.html_safe, :controller => :posts , :action => :index %>
     </span>
     <% @books.each do |book| %>
       <% cache("book/" + book.id.to_s, expires_in: 5.minutes) do %>
