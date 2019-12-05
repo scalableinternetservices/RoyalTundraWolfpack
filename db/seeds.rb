@@ -1,127 +1,103 @@
-# posts = []
-# childcomments = []
-# parentcomments= []
+posts = []
+childcomments = []
+parentcomments= []
 users = []
-# books = []
+books = []
 
-USER_COUNT = 100
-BOOK_COUNT = 50
-POST_COUNT = USER_COUNT*BOOK_COUNT
+USERS = 100
+BOOKS = 50
 
-USER_PARENT_COMMENT_CAP = 10
-PARENT_COMMENT_COUNT = USER_PARENT_COMMENT_CAP*POST_COUNT
-
-USER_CHILD_COMMENT_CAP = 2
-CHILD_COMMENT_COUNT = USER_CHILD_COMMENT_CAP*PARENT_COMMENT_COUNT
-
-
-
-uc = 0
 i = 0
-while i < USER_COUNT
-  user = User.create(email: i.to_s + "@seed.com", username: "seed" + i.to_s, password: "asdasd", password_confirmation: "asdasd")
-  users << user
+columns = [ :email, :username, :password]
+while i < USERS
+  # u = [i.to_s + "@seed.com", "seed" + i.to_s, "asdasd"]
+  # puts u
+  users << [i.to_s + "@seed.com", "seed" + i.to_s, "asdasd"]
   i += 1
-  uc += 1
 end
 
-bc = 0
+User.import columns, users, validate: false
+
 i = 0
-while i < BOOK_COUNT
-  Book.create(title: "seedbook" + i.to_s, author: "author" + i.to_s)
+columns = [ :title, :author ]
+while i < BOOKS
+  books << ["seedbook" + i.to_s, "author" + i.to_s] 
   i += 1
-  bc += 1
 end
 
+Book.import columns, books, validate: false
 
-pc = 0
-i = 0
-while i < USER_COUNT
-  j = 0
-  while j < BOOK_COUNT
+
+columns = [:title, :author, :content, :book_id]
+(1..USERS).each do |user_id|
+  (1..BOOKS).each do |book_id|
     k = 0
     while k < 1
-      Post.create(title: "seed_title" + i.to_s, author: i+1, content: "content", book_id: j+1)
-      k+=1
-      pc += 1
-    end
-    j+=1
-  end
-  i+=1
-end 
-
-pcc = 0 
-i = 0
-while i < USER_PARENT_COMMENT_CAP
-  j = 0
-  while j < POST_COUNT
-    k = 0
-    while k < 1
-      Comment.create(body: "parent_comment_body", commentable_id: j+1, commentable_type: "Post", user_id: i+1)
+      posts << ["post_title" + j.to_s, user_id, "content", book_id]
       k += 1
-      pcc += 1
     end
-    j += 1
   end
-  i += 1
 end
 
-ccc = 0
-i = 0
+Post.import columns, posts, validate: false
 
-while i < PARENT_COMMENT_COUNT
-  j = 0
-  while j < USER_CHILD_COMMENT_CAP
+MAX_USER_POST = 10
+MAX_POSTS = USERS*BOOKS;
+columns = [:body, :commentable_id, :commentable_type, :user_id]
+(1..MAX_USER_POST).each do |user_id|
+  (1..MAX_POSTS).each do |post_id|
+    k = 0
+    while k < 1
+      parentcomments << ["comment_body", post_id, "Post", user_id]
+      k += 1
+    end
+  end
+end
+Comment.import columns, parentcomments, validate: false
+
+
+MAX_USERS_P_COMMENT = 2 
+MAX_P_COMMENTS = MAX_USER_POST*MAX_POSTS
+columns = [:body, :commentable_id, :commentable_type, :user_id]
+(1..MAX_USERS_P_COMMENT).each do |user_id|
+  (1..MAX_P_COMMENTS).each do |parent_comment_id|
     k = 0
     while k < 2
-      Comment.create(body: "child_comment_body", commentable_id: i+1, commentable_type: "Comment", user_id: j+1)
+      childcomments << ["comment_body", parent_comment_id, "Comment", user_id]
       k += 1
     end
-    j += 1
   end
-  i += 1
 end
 
+Comment.import columns, childcomments, validate: false
 
-# while i < USER_CHILD_COMMENT_CAP
-#   j = 0
-#   while j < PARENT_
-#     k = 0
-#     while k < 2
-#       Comment.create(body: "child_comment_body", commentable_id: j+1, commentable_type: "Comment", user_id: i+1)
-#       k += 1
-#       ccc += 1
-#     end
-#     j += 1
-#   end
-#   i += 1
-# end
-
-# Comment.import childcomments, validate: false
-
-users.each do |sender|
-  users.each do |receiver|
-    if sender != receiver
+(1..USERS).each do |sender_id|
+  (1..USERS).each do |receiver_id|
+    if sender_id != receiver_id
+      sender = User.find(sender_id)
+      receiver = User.find(receiver_id)
       ongoing_conversation = Mailboxer::Conversation.between(receiver, sender).find{|c| c.participants.count == 2 }
       if !ongoing_conversation.present?
-        receipt = sender.send_message(receiver, "seed message", "default-subject")
+        receipt = sender.send_message(receiver, "seed-message", "default-subject")
       end
     end
   end
 end
 
-users.each do |sender|
+(1..USERS).each do |sender_id|
   count = 10
-  users.reverse_each do |receiver|
+  (1..USERS).reverse_each do |receiver_id|
     if count < 0
       break
     end
-    if sender != receiver
+    if sender_id != receiver_id
+      sender = User.find(sender_id)
+      receiver = User.find(receiver_id)
       ongoing_conversation = Mailboxer::Conversation.between(receiver, sender).find{|c| c.participants.count == 2 }
       if ongoing_conversation.present?
         i = 0
         while i < 10
-          receipt = sender.reply_to_conversation(ongoing_conversation, "seed reply")
+          receipt = sender.reply_to_conversation(ongoing_conversation, "seed-reply")
           i += 1
         end
       end
