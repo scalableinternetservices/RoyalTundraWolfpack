@@ -8,15 +8,18 @@ USERS = 100
 BOOKS = 50
 
 i = 0
-columns = [ :email, :username, :password]
+
 while i < USERS
   # u = [i.to_s + "@seed.com", "seed" + i.to_s, "asdasd"]
   # puts u
-  users << [i.to_s + "@seed.com", "seed" + i.to_s, "asdasd"]
+  # users << [i.to_s + "@seed.com", "seed" + i.to_s, "asdasd"]
+  user = User.new(email: i.to_s + "@seed.com", username: "seed" + i.to_s, password: "asdasd", password_confirmation: "asdasd") 
+  users << user
   i += 1
 end
 
-User.import columns, users, validate: false
+User.import users, validate: false
+puts "Seeded Users"
 
 i = 0
 columns = [ :title, :author ]
@@ -26,6 +29,7 @@ while i < BOOKS
 end
 
 Book.import columns, books, validate: false
+puts "Seeded Books"
 
 
 columns = [:title, :author, :content, :book_id]
@@ -40,6 +44,7 @@ columns = [:title, :author, :content, :book_id]
 end
 
 Post.import columns, posts, validate: false
+puts "Seeded Posts"
 
 MAX_USER_POST = 10
 MAX_POSTS = USERS*BOOKS;
@@ -54,6 +59,7 @@ columns = [:body, :commentable_id, :commentable_type, :user_id]
   end
 end
 Comment.import columns, parentcomments, validate: false
+puts "Seeded Parent Comments"
 
 
 MAX_USERS_P_COMMENT = 2 
@@ -70,12 +76,11 @@ columns = [:body, :commentable_id, :commentable_type, :user_id]
 end
 
 Comment.import columns, childcomments, validate: false
+puts "Seeded Child Comments"
 
-(1..USERS).each do |sender_id|
-  (1..USERS).each do |receiver_id|
-    if sender_id != receiver_id
-      sender = User.find(sender_id)
-      receiver = User.find(receiver_id)
+users.each do |sender|
+  users.each do |receiver|
+    if sender != receiver
       ongoing_conversation = Mailboxer::Conversation.between(receiver, sender).find{|c| c.participants.count == 2 }
       if !ongoing_conversation.present?
         receipt = sender.send_message(receiver, "seed-message", "default-subject")
@@ -84,15 +89,15 @@ Comment.import columns, childcomments, validate: false
   end
 end
 
-(1..USERS).each do |sender_id|
+puts "Seeded Start Msgs"
+
+users.each do |sender|
   count = 10
-  (1..USERS).reverse_each do |receiver_id|
+  users.reverse_each do |receiver|
     if count < 0
       break
     end
-    if sender_id != receiver_id
-      sender = User.find(sender_id)
-      receiver = User.find(receiver_id)
+    if sender != receiver
       ongoing_conversation = Mailboxer::Conversation.between(receiver, sender).find{|c| c.participants.count == 2 }
       if ongoing_conversation.present?
         i = 0
@@ -105,3 +110,5 @@ end
     end
   end
 end
+
+puts "Seeded Reply Msgs"
