@@ -10,7 +10,7 @@
       <%= link_to "All Posts", :controller => :posts , :action => :index %>
     </span>
     <% @books.each do |book| %>
-      <% cache("book/" + book.id.to_s, expires_in: 5.minutes) do %>
+      <%-# cache("book/" + book.id.to_s, expires_in: 5.minutes) do -%>
         <a class="ui card" href=<%=url_for(book)%> style="width: 100%">
           <div class="content">
             <div class="header"><%= book.title%></div>

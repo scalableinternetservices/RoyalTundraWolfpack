@@ -6,11 +6,12 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    paginationNumber = 3
-    if user_signed_in?
-      paginationNumber = 5
-    end
-    @posts = Post.order('created_at DESC').page(params[:page]).per_page(paginationNumber)
+    @posts = Post.all 
+    # paginationNumber = 3
+    # if user_signed_in?
+    #   paginationNumber = 5
+    # end
+    # @posts = Post.order('created_at DESC').page(params[:page]).per_page(paginationNumber)
  end
 
   # GET /posts/1
