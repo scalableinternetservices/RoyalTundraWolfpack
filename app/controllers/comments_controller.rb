@@ -1,7 +1,7 @@
 class CommentsController < ApplicationController
   # before_action :set_comment, only: [:show, :edit, :update, :destroy]
   prepend_before_action :authenticate_user!, except: [:index]
-  before_action :find_commentable
+  before_action :find_commentable, :set_post
 
   # GET /comments
   # GET /comments.json
@@ -39,6 +39,7 @@ class CommentsController < ApplicationController
     # end
     @comment = @commentable.comments.new comment_params
     @comment.user_id = current_user.id
+    @comment.posts_id = params[:post_id]
     if @comment.save
       redirect_back(fallback_location: root_path, notice: 'Comment was successfully created.' )
     else
@@ -75,6 +76,9 @@ class CommentsController < ApplicationController
     # def set_comment
     #   @comment = Comment.find(params[:id])
     # end
+    def set_post
+      @post = Post.find(params[:post_id])
+    end
 
     # # Never trust parameters from the scary internet, only allow the white list through.
     def comment_params
