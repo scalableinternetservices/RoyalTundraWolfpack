@@ -17,7 +17,7 @@
     <div class="column">
       <div class="ui" style="margin-top: 20px;">
         <% @posts.each do |post| %>
-          <% cache(cache_key_for_post(post), expires_in: 5.minutes) do %>
+          <%-# cache(cache_key_for_post(post), expires_in: 5.minutes) do -%>
             <a class="ui card" href=<%=url_for(post)%> style="width: 100%"> 
               <div class="content"> 
                 <div class="header"> <%= post.title %></div>
