@@ -28,7 +28,7 @@ users.each do |user|
     j = 0
     while j < 1
       post = Post.new(title: user.username + "_" + j.to_s, author: user.id, content: "content", book_id: book.id)
-      puts "post:" + post.title
+      # puts "post:" + post.title
       posts << post
 
       j += 1
