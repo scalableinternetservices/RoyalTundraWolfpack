@@ -30,6 +30,10 @@
   </div>
 </div>
 
-
 <%= link_to 'Edit', edit_book_path(@book) %> |
 <%= link_to 'Back', books_path %>
+
+<div class="apple_pagination">
+  <%= will_paginate @posts %>
+</div>
+<br>
