@@ -21,8 +21,12 @@
     <%= form.label :content %>
     <%= form.text_field :content %>
   </div>
-
-  <%= form.collection_select(:book_id, Book.all, :id, :title) %>
+  
+  <% if @book %>
+    <%= form.collection_select(:book_id, Book.all, :id, :title, {:selected => @book.id}) %>
+  <% else %>
+    <%= form.collection_select(:book_id, Book.all, :id, :title) %>
+  <% end %>
 
   <div class="actions">
     <button class="ui button" type="submit">
