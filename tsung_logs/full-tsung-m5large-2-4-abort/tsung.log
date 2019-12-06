@@ -1,0 +1,1181 @@
+# stats: dump at 1575622612
+stats: users 21 21
+stats: {load,"tsung_controller@ip-172-31-26-68"} 1 0.0 0 0.0 0.0 0 0
+stats: {freemem,"tsung_controller@ip-172-31-26-68"} 1 725.08984375 0 725.08984375 725.08984375 0 0
+stats: {cpu,"tsung_controller@ip-172-31-26-68"} 1 0.3528812125023925 0 0.3528812125023925 0.3528812125023925 0 0
+stats: users_count 21 21
+stats: finish_users_count 0 0
+stats: request 69 113.86210144927539 259.64314326036066 1653.937 4.107 0 0
+stats: connect 21 1.4368571428571428 2.6974831353144952 13.285 0.53 0 0
+stats: page 69 113.86210144927539 259.64314326036066 1653.937 4.107 0 0
+stats: tr_Initial_Get_Root 13 78.31046153846154 50.96417599967103 176.895 40.247 0 0
+stats: 302 25 25
+stats: tr_Get_Root 2 116.43699999999998 32.36999999999999 148.807 84.067 0 0
+stats: match 61 61
+stats: tr_Redirect_Root 6 163.19366666666664 70.88197791791336 272.366 43.214 0 0
+stats: 200 44 44
+stats: tr_Post_New_Comment_On_Post 1 8.959 0 8.959 8.959 0 0
+stats: size_rcv 452716 452716
+stats: tr_Get_Post 1 1467.775 0 1467.775 1467.775 0 0
+stats: size_sent 33138 33138
+stats: tr_Redirect_To_Post 1 1660.153 0 1660.153 1660.153 0 0
+stats: connected 21 21
+stats: tr_Get_Conversations 2 39.051 2.8459999999999983 41.897 36.205 0 0
+stats: tr_Authenticate_User 10 2873.2287000000006 1486.117950245407 5293.972 975.602 0 0
+stats: tr_Get_New_Book 1 8.525 0 8.525 8.525 0 0
+# stats: dump at 1575622622
+stats: users 27 28
+stats: {load,"tsung_controller@ip-172-31-26-68"} 1 0.0 0.0 0.0 0.0 0.0 1
+stats: {freemem,"tsung_controller@ip-172-31-26-68"} 1 725.44140625 0.0 725.44140625 725.08984375 725.08984375 1
+stats: {recvpackets,"tsung_controller@ip-172-31-26-68"} 1 603 0 603 603 0 0
+stats: {sentpackets,"tsung_controller@ip-172-31-26-68"} 1 334 0 334 334 0 0
+stats: {cpu,"tsung_controller@ip-172-31-26-68"} 1 0.5 0.0 0.5 0.3528812125023925 0.3528812125023925 1
+stats: session 2 14061.23 3737.717 17798.947 10323.513 0 0
+stats: users_count 8 29
+stats: finish_users_count 2 2
+stats: request 77 170.8117662337662 359.0908421760413 3062.471 4.107 113.86210144927539 69
+stats: connect 8 1.2404999999999997 1.3649744503103343 13.285 0.53 1.4368571428571428 21
+stats: page 77 170.8117662337662 359.0908421760413 3062.471 4.107 113.86210144927539 69
+stats: 302 35 60
+stats: tr_Initial_Get_Root 6 257.9941666666667 96.3456180657544 436.123 40.247 78.31046153846154 13
+stats: match 77 138
+stats: tr_Get_Root 0 0 0 148.807 84.067 116.43699999999998 2
+stats: 200 42 86
+stats: tr_Redirect_Root 15 292.9758 67.82361766838059 399.607 43.214 163.19366666666664 6
+stats: size_rcv 429764 882480
+stats: tr_Post_New_Comment_On_Post 1 24.45 0.0 24.45 8.959 8.959 1
+stats: size_sent 48138 81276
+stats: tr_Get_Post 1 3068.003 0.0 3068.003 1467.775 1467.775 1
+stats: connected 7 28
+stats: tr_Redirect_To_Post 0 0 0 1660.153 1660.153 1660.153 1
+stats: tr_Post_New_Comment_On_Comment 1 31.975 0 31.975 31.975 0 0
+stats: tr_Get_Logout 1 22.973 0 22.973 22.973 0 0
+stats: tr_Get_Conversations 0 0 0 41.897 36.205 39.051 2
+stats: tr_Authenticate_User 14 3515.8997142857147 1975.738074365029 8340.385 906.852 2873.2287000000006 10
+stats: tr_Get_New_Conversation 2 456.211 13.62299999999999 469.834 442.588 0 0
+stats: tr_Post_New_Conversation 2 167.738 72.78299999999999 240.521 94.955 0 0
+stats: tr_Get_Login 1 8.463 0 8.463 8.463 0 0
+stats: tr_Get_New_Book 5 13.8066 3.5352214414375798 19.663 8.525 8.525 1
+stats: tr_Post_New_Book 3 19.108333333333334 2.3212818776606077 21.009 15.84 0 0
+stats: tr_Redirect_To_New_Book 1 28.649 0 28.649 28.649 0 0
+# stats: dump at 1575622632
+stats: users 17 28
+stats: {load,"tsung_controller@ip-172-31-26-68"} 1 0.0 0.0 0.0 0.0 0.0 2
+stats: {freemem,"tsung_controller@ip-172-31-26-68"} 1 720.171875 0.0 725.44140625 720.171875 725.265625 2
+stats: {recvpackets,"tsung_controller@ip-172-31-26-68"} 1 1627.0 0.0 1627 603 603.0 1
+stats: {sentpackets,"tsung_controller@ip-172-31-26-68"} 1 1857.0 0.0 1857 334 334.0 1
+stats: {cpu,"tsung_controller@ip-172-31-26-68"} 1 1.5484515484515484 0.0 1.5484515484515484 0.3528812125023925 0.4264406062511963 2
+stats: session 10 18899.510299999998 5202.882623527656 25525.653 6189.852 14061.23 2
+stats: users_count 0 29
+stats: finish_users_count 10 12
+stats: page 41 1126.587243902439 3036.999283198264 12068.939 4.107 143.89719863013698 146
+stats: request 43 1074.179604651163 2974.822950939927 12068.939 4.107 143.89719863013698 146
+stats: connect 0 0 0 13.285 0.53 1.3826896551724137 29
+stats: tr_Initial_Get_Root 0 0 0 436.123 40.247 135.05268421052634 19
+stats: 302 19 79
+stats: tr_Get_Root 0 0 0 148.807 84.067 116.43699999999998 2
+stats: match 43 181
+stats: tr_Redirect_Root 7 315.20171428571433 76.22523235538645 444.933 43.214 255.89519047619044 21
+stats: 200 24 110
+stats: tr_Post_New_Comment_On_Post 2 302.8755 103.7845 406.66 8.959 16.7045 2
+stats: size_rcv 323998 1206478
+stats: tr_Get_Post 2 11715.9265 358.83849999999984 12074.765 1467.775 2267.889 2
+stats: size_sent 25490 106766
+stats: tr_Redirect_To_Post 2 8765.195 580.4860000000006 9345.681 1660.153 1660.153 1
+stats: connected -11 17
+stats: tr_Post_New_Comment_On_Comment 1 429.24 0.0 429.24 31.975 31.975 1
+stats: tr_Get_Logout 1 21.4 0.0 22.973 21.4 22.973 1
+stats: tr_Get_Conversations 0 0 0 41.897 36.205 39.051 2
+stats: tr_Authenticate_User 4 4952.50925 2304.6711180758934 8340.385 906.852 3248.120125 24
+stats: tr_Get_New_Conversation 0 0 0 469.834 442.588 456.211 2
+stats: tr_Post_New_Conversation 0 0 0 240.521 94.955 167.738 2
+stats: tr_Get_Login 1 7.558 0.0 8.463 7.558 8.463 1
+stats: tr_Redirect_To_New_Conversation 2 168.535 89.907 258.442 78.628 0 0
+stats: tr_Redirect_To_Same_Conversation 2 69.992 16.092000000000002 86.084 53.9 0 0
+stats: tr_Reply_To_Conversation 2 162.388 31.209000000000003 193.597 131.179 0 0
+stats: tr_Post_Login 2 135.10750000000002 1.207499999999989 136.315 133.9 0 0
+stats: tr_Get_New_Book 2 12.2775 2.0335 19.663 8.525 12.926333333333334 6
+stats: tr_Post_New_Book 5 71.03099999999999 86.72809494506379 243.781 15.84 19.108333333333334 3
+stats: tr_Redirect_To_New_Book 6 29.138499999999997 9.767985492584094 48.994 20.173 28.649 1
+# stats: dump at 1575622642
+stats: users 16 28
+stats: {load,"tsung_controller@ip-172-31-26-68"} 1 0.0 0.0 0.0 0.0 0.0 3
+stats: {freemem,"tsung_controller@ip-172-31-26-68"} 1 720.546875 0.0 725.44140625 720.171875 723.5677083333334 3
+stats: {recvpackets,"tsung_controller@ip-172-31-26-68"} 1 272.0 0.0 1627 272 1115.0 2
+stats: {sentpackets,"tsung_controller@ip-172-31-26-68"} 1 116.0 0.0 1857 116 1095.5 2
+stats: {cpu,"tsung_controller@ip-172-31-26-68"} 1 0.3003003003003003 0.0 1.5484515484515484 0.3003003003003003 0.8004442536513136 3
+stats: session 1 29809.256 0.0 29809.256 6189.852 18093.13025 12
+stats: users_count 0 29
+stats: finish_users_count 1 13
+stats: request 9 4744.397777777779 6658.406520126799 16048.941 4.107 355.54875132275134 189
+stats: page 9 4744.397777777779 6658.406520126799 16048.941 4.107 359.3533048128342 187
+stats: connect 0 0 0 13.285 0.53 1.3826896551724137 29
+stats: tr_Initial_Get_Root 0 0 0 436.123 40.247 135.05268421052634 19
+stats: 302 4 83
+stats: tr_Get_Root 0 0 0 148.807 84.067 116.43699999999998 2
+stats: match 9 190
+stats: tr_Redirect_Root 1 289.603 0.0 444.933 43.214 270.7218214285714 28
+stats: 200 5 115
+stats: tr_Post_New_Comment_On_Post 3 48.512 11.158680059337962 406.66 8.959 159.79 4
+stats: size_rcv 150821 1357299
+stats: tr_Get_Post 3 14083.195 1532.2136494903925 16055.732 1467.775 6991.90775 4
+stats: size_sent 7307 114073
+stats: tr_Redirect_To_Post 0 0 0 9345.681 1660.153 6396.847666666666 3
+stats: connected -1 16
+stats: tr_Post_New_Comment_On_Comment 0 0 0 429.24 31.975 230.60750000000002 2
+stats: tr_Get_Logout 0 0 0 22.973 21.4 22.1865 2
+stats: tr_Get_Conversations 0 0 0 41.897 36.205 39.051 2
+stats: tr_Authenticate_User 1 12221.298 0.0 12221.298 906.852 3491.6042857142857 28
+stats: tr_Get_New_Conversation 0 0 0 469.834 442.588 456.211 2
+stats: tr_Post_New_Conversation 0 0 0 240.521 94.955 167.738 2
+stats: tr_Get_Login 0 0 0 8.463 7.558 8.0105 2
+stats: tr_Redirect_To_New_Conversation 0 0 0 258.442 78.628 168.535 2
+stats: tr_Redirect_To_Same_Conversation 0 0 0 86.084 53.9 69.992 2
+stats: tr_Reply_To_Conversation 0 0 0 193.597 131.179 162.388 2
+stats: tr_Post_Login 0 0 0 136.315 133.9 135.10750000000002 2
+stats: tr_Get_New_Book 0 0 0 19.663 8.525 12.764125 8
+stats: tr_Post_New_Book 0 0 0 243.781 15.84 51.559999999999995 8
+stats: tr_Redirect_To_New_Book 1 27.261 0.0 48.994 20.173 29.068571428571428 7
+# stats: dump at 1575622652
+stats: users 15 28
+stats: {load,"tsung_controller@ip-172-31-26-68"} 1 0.0 0.0 0.0 0.0 0.0 4
+stats: {freemem,"tsung_controller@ip-172-31-26-68"} 1 719.71875 0.0 725.44140625 719.71875 722.8125 4
+stats: {recvpackets,"tsung_controller@ip-172-31-26-68"} 1 123.0 0.0 1627 123 834.0 3
+stats: {sentpackets,"tsung_controller@ip-172-31-26-68"} 1 34.0 0.0 1857 34 769.0 3
+stats: {cpu,"tsung_controller@ip-172-31-26-68"} 1 0.19990004997501248 0.0 1.5484515484515484 0.19990004997501248 0.6754082653135602 4
+stats: session 1 39279.196 0.0 39279.196 6189.852 18994.37069230769 13
+stats: users_count 0 29
+stats: finish_users_count 1 14
+stats: request 10 8918.0454 7242.615165652075 16224.772 4.107 555.041888888889 198
+stats: connect 0 0 0 13.285 0.53 1.3826896551724137 29
+stats: page 10 8918.0454 7242.615165652075 16224.772 4.107 560.7073877551021 196
+stats: tr_Initial_Get_Root 0 0 0 436.123 40.247 135.05268421052634 19
+stats: 302 4 87
+stats: tr_Get_Root 0 0 0 148.807 84.067 116.43699999999998 2
+stats: match 10 200
+stats: tr_Redirect_Root 0 0 0 444.933 43.214 271.3728965517241 29
+stats: 200 6 121
+stats: tr_Post_New_Comment_On_Post 1 236.691 0.0 406.66 8.959 112.09942857142856 7
+stats: size_rcv 266885 1624184
+stats: tr_Get_Post 1 15282.566 0.0 16055.732 1467.775 10031.030857142858 7
+stats: size_sent 4379 118452
+stats: tr_Redirect_To_Post 5 14718.349400000001 899.3959085607631 16231.49 1660.153 6396.847666666666 3
+stats: connected -1 15
+stats: tr_Post_New_Comment_On_Comment 3 33.940333333333335 4.255993603796361 429.24 30.055 230.60750000000002 2
+stats: tr_Get_Logout 0 0 0 22.973 21.4 22.1865 2
+stats: tr_Get_Conversations 0 0 0 41.897 36.205 39.051 2
+stats: tr_Authenticate_User 0 0 0 12221.298 906.852 3792.6282068965515 29
+stats: tr_Get_New_Conversation 0 0 0 469.834 442.588 456.211 2
+stats: tr_Post_New_Conversation 0 0 0 240.521 94.955 167.738 2
+stats: tr_Get_Login 0 0 0 8.463 7.558 8.0105 2
+stats: tr_Redirect_To_New_Conversation 0 0 0 258.442 78.628 168.535 2
+stats: tr_Redirect_To_Same_Conversation 0 0 0 86.084 53.9 69.992 2
+stats: tr_Reply_To_Conversation 0 0 0 193.597 131.179 162.388 2
+stats: tr_Post_Login 0 0 0 136.315 133.9 135.10750000000002 2
+stats: tr_Get_New_Book 0 0 0 19.663 8.525 12.764125 8
+stats: tr_Post_New_Book 0 0 0 243.781 15.84 51.559999999999995 8
+stats: tr_Redirect_To_New_Book 0 0 0 48.994 20.173 28.842624999999998 8
+# stats: dump at 1575622662
+stats: users 15 28
+stats: {load,"tsung_controller@ip-172-31-26-68"} 1 0.0 0.0 0.0 0.0 0.0 5
+stats: {freemem,"tsung_controller@ip-172-31-26-68"} 1 717.2734375 0.0 725.44140625 717.2734375 722.19375 5
+stats: {recvpackets,"tsung_controller@ip-172-31-26-68"} 1 173.0 0.0 1627 123 656.25 4
+stats: {sentpackets,"tsung_controller@ip-172-31-26-68"} 1 38.0 0.0 1857 34 585.25 4
+stats: {cpu,"tsung_controller@ip-172-31-26-68"} 1 0.39980009995002497 0.0 1.5484515484515484 0.19990004997501248 0.5803066222458507 5
+stats: session 0 0 0 39279.196 6189.852 20443.28678571428 14
+stats: users_count 0 29
+stats: finish_users_count 0 14
+stats: request 4 8531.84125 8481.528857411422 17230.941 4.107 957.1093653846157 208
+stats: connect 0 0 0 13.285 0.53 1.3826896551724137 29
+stats: page 4 8531.84125 8481.528857411422 17230.941 4.107 966.4034077669903 206
+stats: tr_Initial_Get_Root 0 0 0 436.123 40.247 135.05268421052634 19
+stats: 302 2 89
+stats: tr_Get_Root 0 0 0 148.807 84.067 116.43699999999998 2
+stats: match 4 204
+stats: tr_Redirect_Root 0 0 0 444.933 43.214 271.3728965517241 29
+stats: 200 2 123
+stats: tr_Post_New_Comment_On_Post 0 0 0 406.66 8.959 127.673375 8
+stats: size_rcv 89069 1713253
+stats: tr_Get_Post 0 0 0 16055.732 1467.775 10687.47275 8
+stats: size_sent 3035 121487
+stats: tr_Redirect_To_Post 2 17018.872499999998 218.46449999999913 17237.337 1660.153 11597.786250000001 8
+stats: connected 0 15
+stats: tr_Post_New_Comment_On_Comment 2 51.923500000000004 0.021499999999997854 429.24 30.055 112.6072 5
+stats: tr_Get_Logout 0 0 0 22.973 21.4 22.1865 2
+stats: tr_Get_Conversations 0 0 0 41.897 36.205 39.051 2
+stats: tr_Authenticate_User 0 0 0 12221.298 906.852 3792.6282068965515 29
+stats: tr_Get_New_Conversation 0 0 0 469.834 442.588 456.211 2
+stats: tr_Post_New_Conversation 0 0 0 240.521 94.955 167.738 2
+stats: tr_Get_Login 0 0 0 8.463 7.558 8.0105 2
+stats: tr_Redirect_To_New_Conversation 0 0 0 258.442 78.628 168.535 2
+stats: tr_Redirect_To_Same_Conversation 0 0 0 86.084 53.9 69.992 2
+stats: tr_Reply_To_Conversation 0 0 0 193.597 131.179 162.388 2
+stats: tr_Post_Login 0 0 0 136.315 133.9 135.10750000000002 2
+stats: tr_Get_New_Book 0 0 0 19.663 8.525 12.764125 8
+stats: tr_Post_New_Book 0 0 0 243.781 15.84 51.559999999999995 8
+stats: tr_Redirect_To_New_Book 0 0 0 48.994 20.173 28.842624999999998 8
+# stats: dump at 1575622672
+stats: users 11 28
+stats: {load,"tsung_controller@ip-172-31-26-68"} 1 0.0 0.0 0.0 0.0 0.0 6
+stats: {freemem,"tsung_controller@ip-172-31-26-68"} 1 716.1171875 0.0 725.44140625 716.1171875 721.3736979166666 6
+stats: {recvpackets,"tsung_controller@ip-172-31-26-68"} 1 69.0 0.0 1627 69 559.6 5
+stats: {sentpackets,"tsung_controller@ip-172-31-26-68"} 1 16.0 0.0 1857 16 475.8 5
+stats: {cpu,"tsung_controller@ip-172-31-26-68"} 1 0.1998001998001998 0.0 1.5484515484515484 0.1998001998001998 0.5502222018632131 6
+stats: session 4 60586.908500000005 2534.0472302207068 64495.678 6189.852 20443.28678571428 14
+stats: users_count 0 29
+stats: finish_users_count 4 18
+stats: request 5 21176.7658 20289.551808454966 60000.641 4.107 1100.0288349056605 212
+stats: connect 0 0 0 13.285 0.53 1.3826896551724137 29
+stats: page 5 21176.7658 20289.551808454966 60000.641 4.107 1110.5069857142857 210
+stats: tr_Initial_Get_Root 0 0 0 436.123 40.247 135.05268421052634 19
+stats: 302 1 90
+stats: tr_Get_Root 0 0 0 148.807 84.067 116.43699999999998 2
+stats: match_stop 1 1
+stats: tr_Redirect_Root 0 0 0 444.933 43.214 271.3728965517241 29
+stats: 504 1 1
+stats: tr_Post_New_Comment_On_Post 0 0 0 406.66 8.959 127.673375 8
+stats: match 4 208
+stats: tr_Get_Post 0 0 0 16055.732 1467.775 10687.47275 8
+stats: 200 3 126
+stats: tr_Redirect_To_Post 3 15279.032666666666 257.79053214103 17237.337 1660.153 12682.0035 10
+stats: size_rcv 136138 1849391
+stats: tr_Post_New_Comment_On_Comment 1 46.948 0.0 429.24 30.055 95.269 7
+stats: nomatch 1 1
+stats: tr_Get_Logout 0 0 0 22.973 21.4 22.1865 2
+stats: size_sent 1266 122753
+stats: tr_Get_Conversations 0 0 0 41.897 36.205 39.051 2
+stats: connected -4 11
+stats: tr_Authenticate_User 0 0 0 12221.298 906.852 3792.6282068965515 29
+stats: tr_Get_New_Conversation 0 0 0 469.834 442.588 456.211 2
+stats: tr_Post_New_Conversation 0 0 0 240.521 94.955 167.738 2
+stats: tr_Get_Login 0 0 0 8.463 7.558 8.0105 2
+stats: tr_Redirect_To_New_Conversation 0 0 0 258.442 78.628 168.535 2
+stats: tr_Redirect_To_Same_Conversation 0 0 0 86.084 53.9 69.992 2
+stats: tr_Reply_To_Conversation 0 0 0 193.597 131.179 162.388 2
+stats: tr_Post_Login 0 0 0 136.315 133.9 135.10750000000002 2
+stats: tr_Get_New_Book 0 0 0 19.663 8.525 12.764125 8
+stats: tr_Post_New_Book 0 0 0 243.781 15.84 51.559999999999995 8
+stats: tr_Redirect_To_New_Book 0 0 0 48.994 20.173 28.842624999999998 8
+stats: tr_Get_Book 1 60000.804 0 60000.804 60000.804 0 0
+# stats: dump at 1575622682
+stats: users 4 28
+stats: {load,"tsung_controller@ip-172-31-26-68"} 1 0.0 0.0 0.0 0.0 0.0 7
+stats: {freemem,"tsung_controller@ip-172-31-26-68"} 1 717.88671875 0.0 725.44140625 716.1171875 720.6227678571429 7
+stats: {recvpackets,"tsung_controller@ip-172-31-26-68"} 1 147.0 0.0 1627 69 477.8333333333333 6
+stats: {sentpackets,"tsung_controller@ip-172-31-26-68"} 1 40.0 0.0 1857 16 399.1666666666667 6
+stats: {cpu,"tsung_controller@ip-172-31-26-68"} 1 0.0 0.0 1.5484515484515484 0.0 0.5001619158542112 7
+stats: session 7 63506.44714285714 5562.49794496608 70504.418 6189.852 29364.09161111111 18
+stats: users_count 0 29
+stats: finish_users_count 7 25
+stats: request 7 40071.21742857143 23035.687708591027 60004.745 4.107 1562.6264608294932 217
+stats: connect 0 0 0 13.285 0.53 1.3826896551724137 29
+stats: page 7 40071.21742857143 23035.687708591027 60004.745 4.107 1577.1641674418604 215
+stats: tr_Initial_Get_Root 0 0 0 436.123 40.247 135.05268421052634 19
+stats: 302 0 90
+stats: tr_Get_Root 0 0 0 148.807 84.067 116.43699999999998 2
+stats: match_stop 4 5
+stats: tr_Redirect_Root 0 0 0 444.933 43.214 271.3728965517241 29
+stats: 504 4 5
+stats: tr_Post_New_Comment_On_Post 0 0 0 406.66 8.959 127.673375 8
+stats: match 3 211
+stats: tr_Get_Post 0 0 0 16055.732 1467.775 10687.47275 8
+stats: 200 3 129
+stats: tr_Redirect_To_Post 3 13497.100333333334 1526.0944007335268 17237.337 1660.153 13281.317923076924 13
+stats: size_rcv 136974 1986365
+stats: tr_Post_New_Comment_On_Comment 0 0 0 429.24 30.055 89.228875 8
+stats: nomatch 4 5
+stats: tr_Get_Logout 0 0 0 22.973 21.4 22.1865 2
+stats: size_sent 0 122753
+stats: tr_Get_Conversations 0 0 0 41.897 36.205 39.051 2
+stats: connected -7 4
+stats: tr_Authenticate_User 0 0 0 12221.298 906.852 3792.6282068965515 29
+stats: tr_Get_New_Conversation 0 0 0 469.834 442.588 456.211 2
+stats: tr_Post_New_Conversation 0 0 0 240.521 94.955 167.738 2
+stats: tr_Get_Login 0 0 0 8.463 7.558 8.0105 2
+stats: tr_Redirect_To_New_Conversation 0 0 0 258.442 78.628 168.535 2
+stats: tr_Redirect_To_Same_Conversation 0 0 0 86.084 53.9 69.992 2
+stats: tr_Reply_To_Conversation 0 0 0 193.597 131.179 162.388 2
+stats: tr_Post_Login 0 0 0 136.315 133.9 135.10750000000002 2
+stats: tr_Get_New_Book 0 0 0 19.663 8.525 12.764125 8
+stats: tr_Post_New_Book 0 0 0 243.781 15.84 51.559999999999995 8
+stats: tr_Redirect_To_New_Book 0 0 0 48.994 20.173 28.842624999999998 8
+stats: tr_Get_Book 4 60002.111000000004 2.079833526992446 60004.923 59999.76 60000.804 1
+# stats: dump at 1575622692
+stats: users 1 28
+stats: {load,"tsung_controller@ip-172-31-26-68"} 1 0.0 0.0 0.0 0.0 0.0 8
+stats: {freemem,"tsung_controller@ip-172-31-26-68"} 1 720.6875 0.0 725.44140625 716.1171875 720.28076171875 8
+stats: {recvpackets,"tsung_controller@ip-172-31-26-68"} 1 77.0 0.0 1627 69 430.57142857142856 7
+stats: {sentpackets,"tsung_controller@ip-172-31-26-68"} 1 26.0 0.0 1857 16 347.85714285714283 7
+stats: {cpu,"tsung_controller@ip-172-31-26-68"} 1 0.199501246882793 0.0 1.5484515484515484 0.0 0.4376416763724348 8
+stats: session 3 73966.51766666667 3465.3416670854067 78655.581 6189.852 38923.95116 25
+stats: users_count 0 29
+stats: finish_users_count 3 28
+stats: request 3 60004.47866666666 2.4164169526174377 60006.853 4.107 2766.019928571429 224
+stats: connect 0 0 0 13.285 0.53 1.3826896551724137 29
+stats: page 3 60004.47866666666 2.4164169526174377 60006.853 4.107 2790.9406216216216 222
+stats: tr_Initial_Get_Root 0 0 0 436.123 40.247 135.05268421052634 19
+stats: 302 0 90
+stats: tr_Get_Root 0 0 0 148.807 84.067 116.43699999999998 2
+stats: match_stop 3 8
+stats: tr_Redirect_Root 0 0 0 444.933 43.214 271.3728965517241 29
+stats: 504 3 8
+stats: tr_Post_New_Comment_On_Post 0 0 0 406.66 8.959 127.673375 8
+stats: match 0 211
+stats: tr_Get_Post 0 0 0 16055.732 1467.775 10687.47275 8
+stats: 200 0 129
+stats: tr_Redirect_To_Post 0 0 0 17237.337 1660.153 13321.777125 16
+stats: size_rcv 987 1987352
+stats: tr_Post_New_Comment_On_Comment 0 0 0 429.24 30.055 89.228875 8
+stats: nomatch 3 8
+stats: tr_Get_Logout 0 0 0 22.973 21.4 22.1865 2
+stats: size_sent 0 122753
+stats: tr_Get_Conversations 0 0 0 41.897 36.205 39.051 2
+stats: connected -3 1
+stats: tr_Authenticate_User 0 0 0 12221.298 906.852 3792.6282068965515 29
+stats: tr_Get_New_Conversation 0 0 0 469.834 442.588 456.211 2
+stats: tr_Post_New_Conversation 0 0 0 240.521 94.955 167.738 2
+stats: tr_Get_Login 0 0 0 8.463 7.558 8.0105 2
+stats: tr_Redirect_To_New_Conversation 0 0 0 258.442 78.628 168.535 2
+stats: tr_Redirect_To_Same_Conversation 0 0 0 86.084 53.9 69.992 2
+stats: tr_Reply_To_Conversation 0 0 0 193.597 131.179 162.388 2
+stats: tr_Post_Login 0 0 0 136.315 133.9 135.10750000000002 2
+stats: tr_Get_New_Book 0 0 0 19.663 8.525 12.764125 8
+stats: tr_Post_New_Book 0 0 0 243.781 15.84 51.559999999999995 8
+stats: tr_Redirect_To_New_Book 0 0 0 48.994 20.173 28.842624999999998 8
+stats: tr_Get_Book 3 60004.655333333336 2.4279094345167858 60007.053 59999.76 60001.8496 5
+# stats: dump at 1575622702
+stats: users 0 28
+stats: {load,"tsung_controller@ip-172-31-26-68"} 1 0.0 0.0 0.0 0.0 0.0 9
+stats: {freemem,"tsung_controller@ip-172-31-26-68"} 1 722.9375 0.0 725.44140625 716.1171875 720.3259548611111 9
+stats: {recvpackets,"tsung_controller@ip-172-31-26-68"} 1 6.0 0.0 1627 6 386.375 8
+stats: {sentpackets,"tsung_controller@ip-172-31-26-68"} 1 9.0 0.0 1857 9 307.625 8
+stats: {cpu,"tsung_controller@ip-172-31-26-68"} 1 0.1 0.0 1.5484515484515484 0.0 0.4111816286513635 9
+stats: session 1 82394.682 0.0 82394.682 6189.852 42678.511857142854 28
+stats: users_count 0 29
+stats: finish_users_count 1 29
+stats: request 1 60002.644 0.0 60006.853 4.107 3522.475330396476 227
+stats: connect 0 0 0 13.285 0.53 1.3826896551724137 29
+stats: page 1 60002.644 0.0 60006.853 4.107 3553.7877955555555 225
+stats: tr_Initial_Get_Root 0 0 0 436.123 40.247 135.05268421052634 19
+stats: 302 0 90
+stats: tr_Get_Root 0 0 0 148.807 84.067 116.43699999999998 2
+stats: match_stop 1 9
+stats: tr_Redirect_Root 0 0 0 444.933 43.214 271.3728965517241 29
+stats: 504 1 9
+stats: tr_Post_New_Comment_On_Post 0 0 0 406.66 8.959 127.673375 8
+stats: match 0 211
+stats: tr_Get_Post 0 0 0 16055.732 1467.775 10687.47275 8
+stats: 200 0 129
+stats: tr_Redirect_To_Post 0 0 0 17237.337 1660.153 13321.777125 16
+stats: size_rcv 329 1987681
+stats: tr_Post_New_Comment_On_Comment 0 0 0 429.24 30.055 89.228875 8
+stats: nomatch 1 9
+stats: tr_Get_Logout 0 0 0 22.973 21.4 22.1865 2
+stats: size_sent 0 122753
+stats: tr_Get_Conversations 0 0 0 41.897 36.205 39.051 2
+stats: connected -1 0
+stats: tr_Authenticate_User 0 0 0 12221.298 906.852 3792.6282068965515 29
+stats: tr_Get_New_Conversation 0 0 0 469.834 442.588 456.211 2
+stats: tr_Post_New_Conversation 0 0 0 240.521 94.955 167.738 2
+stats: tr_Get_Login 0 0 0 8.463 7.558 8.0105 2
+stats: tr_Redirect_To_New_Conversation 0 0 0 258.442 78.628 168.535 2
+stats: tr_Redirect_To_Same_Conversation 0 0 0 86.084 53.9 69.992 2
+stats: tr_Reply_To_Conversation 0 0 0 193.597 131.179 162.388 2
+stats: tr_Post_Login 0 0 0 136.315 133.9 135.10750000000002 2
+stats: tr_Get_New_Book 0 0 0 19.663 8.525 12.764125 8
+stats: tr_Post_New_Book 0 0 0 243.781 15.84 51.559999999999995 8
+stats: tr_Redirect_To_New_Book 0 0 0 48.994 20.173 28.842624999999998 8
+stats: tr_Get_Book 1 60002.823 0.0 60007.053 59999.76 60002.901750000005 8
+# stats: dump at 1575622712
+stats: users 35 35
+stats: {load,"tsung_controller@ip-172-31-26-68"} 1 0.0 0.0 0.0 0.0 0.0 10
+stats: {freemem,"tsung_controller@ip-172-31-26-68"} 1 723.07421875 0.0 725.44140625 716.1171875 720.587109375 10
+stats: {recvpackets,"tsung_controller@ip-172-31-26-68"} 1 2.0 0.0 1627 2 344.1111111111111 9
+stats: {sentpackets,"tsung_controller@ip-172-31-26-68"} 1 3.0 0.0 1857 3 274.44444444444446 9
+stats: {cpu,"tsung_controller@ip-172-31-26-68"} 1 0.05 0.0 1.5484515484515484 0.0 0.38006346578622713 10
+stats: session 0 0 0 82394.682 6189.852 44048.03496551724 29
+stats: users_count 35 64
+stats: finish_users_count 0 29
+stats: request 97 144.46359793814432 163.49580725067446 60006.853 4.107 3770.1953684210525 228
+stats: connect 34 2.1076470588235288 4.444263744240851 23.18 0.53 1.3826896551724137 29
+stats: page 97 144.46359793814432 163.49580725067446 60006.853 4.107 3803.5614955752208 226
+stats: tr_Initial_Get_Root 14 340.7987857142857 84.87792708622234 550.007 40.247 135.05268421052634 19
+stats: 302 41 131
+stats: tr_Get_Root 3 511.80300000000005 210.85254059334133 791.381 84.067 116.43699999999998 2
+stats: match_stop 0 9
+stats: tr_Redirect_Root 8 365.0125 111.32914712239558 531.091 43.214 271.3728965517241 29
+stats: 504 0 9
+stats: tr_Post_New_Comment_On_Post 0 0 0 406.66 8.959 127.673375 8
+stats: match 91 302
+stats: tr_Get_Post 0 0 0 16055.732 1467.775 10687.47275 8
+stats: 200 56 185
+stats: tr_Redirect_To_Post 0 0 0 17237.337 1660.153 13321.777125 16
+stats: size_rcv 511178 2498859
+stats: tr_Post_New_Comment_On_Comment 0 0 0 429.24 30.055 89.228875 8
+stats: nomatch 0 9
+stats: tr_Get_Logout 0 0 0 22.973 21.4 22.1865 2
+stats: newphase 1 1
+stats: tr_Get_Conversations 0 0 0 41.897 36.205 39.051 2
+stats: size_sent 48092 170845
+stats: tr_Authenticate_User 16 2996.1008125 1450.1474592275188 12221.298 906.852 3792.6282068965515 29
+stats: connected 34 34
+stats: tr_Get_New_Conversation 0 0 0 469.834 442.588 456.211 2
+stats: tr_Post_New_Conversation 0 0 0 240.521 94.955 167.738 2
+stats: tr_Get_Login 0 0 0 8.463 7.558 8.0105 2
+stats: tr_Redirect_To_New_Conversation 0 0 0 258.442 78.628 168.535 2
+stats: tr_Redirect_To_Same_Conversation 0 0 0 86.084 53.9 69.992 2
+stats: tr_Reply_To_Conversation 0 0 0 193.597 131.179 162.388 2
+stats: tr_Post_Login 0 0 0 136.315 133.9 135.10750000000002 2
+stats: tr_Get_New_Book 1 7.001 0.0 19.663 7.001 12.764125 8
+stats: tr_Post_New_Book 0 0 0 243.781 15.84 51.559999999999995 8
+stats: tr_Redirect_To_New_Book 0 0 0 48.994 20.173 28.842624999999998 8
+stats: tr_Get_Book 0 0 0 60007.053 59999.76 60002.893000000004 9
+# stats: dump at 1575622722
+stats: users 57 59
+stats: {load,"tsung_controller@ip-172-31-26-68"} 1 0.0 0.0 0.0 0.0 0.0 11
+stats: {freemem,"tsung_controller@ip-172-31-26-68"} 1 715.22265625 0.0 725.44140625 715.22265625 720.8132102272727 11
+stats: {recvpackets,"tsung_controller@ip-172-31-26-68"} 1 875.0 0.0 1627 2 309.9 10
+stats: {sentpackets,"tsung_controller@ip-172-31-26-68"} 1 501.0 0.0 1857 3 247.3 10
+stats: {cpu,"tsung_controller@ip-172-31-26-68"} 1 0.15037593984962408 0.0 1.5484515484515484 0.0 0.3500576961692974 11
+stats: session 3 9664.249666666668 3656.113081171071 82394.682 5277.359 44048.03496551724 29
+stats: users_count 25 89
+stats: finish_users_count 3 32
+stats: request 183 221.28403825136613 316.01451535001627 60006.853 3.982 2688.053886153846 325
+stats: connect 26 0.7319615384615383 0.1420147556713822 23.18 0.53 1.7739365079365077 63
+stats: page 183 221.28403825136613 316.01451535001627 60006.853 3.982 2704.699278637771 323
+stats: tr_Initial_Get_Root 18 450.2884999999999 194.92937274939413 868.853 40.247 222.33890909090908 33
+stats: 302 76 207
+stats: tr_Get_Root 3 608.0100000000001 116.37347775445511 791.381 84.067 353.6566 5
+stats: match_stop 0 9
+stats: tr_Redirect_Root 39 458.67264102564104 167.02831097528275 1032.287 43.214 291.6192972972973 37
+stats: 504 0 9
+stats: tr_Post_New_Comment_On_Post 0 0 0 406.66 8.959 127.673375 8
+stats: match 167 469
+stats: tr_Get_Post 0 0 0 16055.732 1467.775 10687.47275 8
+stats: 200 107 292
+stats: tr_Redirect_To_Post 0 0 0 17237.337 1660.153 13321.777125 16
+stats: size_rcv 1205225 3704084
+stats: tr_Post_New_Comment_On_Comment 0 0 0 429.24 30.055 89.228875 8
+stats: nomatch 0 9
+stats: tr_Get_Logout 1 16.475 0.0 22.973 16.475 22.1865 2
+stats: newphase 0 1
+stats: tr_Get_Conversations 3 72.155 78.35051323805523 182.953 15.728 39.051 2
+stats: size_sent 111950 282795
+stats: tr_Authenticate_User 37 3797.5561621621623 2557.5177949889226 12221.298 832.679 3509.418466666667 45
+stats: connected 23 57
+stats: tr_Get_New_Conversation 1 3239.86 0.0 3239.86 442.588 456.211 2
+stats: tr_Post_New_Conversation 1 129.243 0.0 240.521 94.955 167.738 2
+stats: tr_Get_Login 0 0 0 8.463 7.558 8.0105 2
+stats: tr_Redirect_To_New_Conversation 1 115.053 0.0 258.442 78.628 168.535 2
+stats: tr_Redirect_To_Same_Conversation 0 0 0 86.084 53.9 69.992 2
+stats: tr_Reply_To_Conversation 0 0 0 193.597 131.179 162.388 2
+stats: tr_Post_Login 0 0 0 136.315 133.9 135.10750000000002 2
+stats: tr_Get_New_Book 9 36.85611111111111 70.58832658047716 236.199 5.536 12.123777777777779 9
+stats: tr_Post_New_Book 6 65.97433333333333 74.6357599359866 243.781 15.84 51.559999999999995 8
+stats: tr_Redirect_To_New_Book 3 108.96033333333332 117.28494921723284 274.667 19.813 28.842624999999998 8
+stats: tr_Get_Book 0 0 0 60007.053 59999.76 60002.893000000004 9
+# stats: dump at 1575622732
+stats: users 46 59
+stats: {load,"tsung_controller@ip-172-31-26-68"} 1 0.0 0.0 0.0 0.0 0.0 12
+stats: {freemem,"tsung_controller@ip-172-31-26-68"} 1 712.9375 0.0 725.44140625 712.9375 720.3473307291666 12
+stats: {recvpackets,"tsung_controller@ip-172-31-26-68"} 1 1265.0 0.0 1627 2 361.27272727272725 11
+stats: {sentpackets,"tsung_controller@ip-172-31-26-68"} 1 650.0 0.0 1857 3 270.3636363636364 11
+stats: {cpu,"tsung_controller@ip-172-31-26-68"} 1 0.4502251125562781 0.0 1.5484515484515484 0.0 0.3334175498093246 12
+stats: session 11 15706.17227272727 2584.782088252001 82394.682 5277.359 40824.55509375 32
+stats: users_count 0 89
+stats: finish_users_count 11 43
+stats: request 57 496.4808245614035 1040.3097438381853 60006.853 3.806 1799.4340393700788 508
+stats: connect 0 0 0 23.18 0.53 1.4695393258426965 89
+stats: page 56 505.3494285714286 1047.7318911996942 60006.853 3.806 1806.5471264822136 506
+stats: tr_Initial_Get_Root 0 0 0 868.853 40.247 302.79170588235286 51
+stats: 302 22 229
+stats: tr_Get_Root 0 0 0 791.381 84.067 449.039125 8
+stats: match_stop 0 9
+stats: tr_Redirect_Root 13 630.0206153846154 172.84471437304126 1032.287 43.214 377.34403947368423 76
+stats: 504 0 9
+stats: tr_Post_New_Comment_On_Post 0 0 0 406.66 8.959 127.673375 8
+stats: match 55 524
+stats: tr_Get_Post 0 0 0 16055.732 1467.775 10687.47275 8
+stats: 200 35 327
+stats: tr_Redirect_To_Post 0 0 0 17237.337 1660.153 13321.777125 16
+stats: size_rcv 338008 4042092
+stats: tr_Post_New_Comment_On_Comment 0 0 0 429.24 30.055 89.228875 8
+stats: nomatch 0 9
+stats: tr_Get_Logout 0 0 0 22.973 16.475 20.282666666666668 3
+stats: newphase 0 1
+stats: tr_Get_Conversations 3 26.593333333333334 1.6509755365305139 182.953 15.728 58.9134 5
+stats: size_sent 38120 320915
+stats: tr_Authenticate_User 7 6548.445142857142 1952.68117635781 12221.298 832.679 3639.4318170731704 82
+stats: connected -11 46
+stats: tr_Get_New_Conversation 4 4155.513500000001 283.13046826993013 4520.024 442.588 1384.094 3
+stats: tr_Post_New_Conversation 2 144.151 12.982 240.521 94.955 154.90633333333332 3
+stats: tr_Get_Login 1 5.104 0.0 8.463 5.104 8.0105 2
+stats: tr_Redirect_To_New_Conversation 0 0 0 258.442 78.628 150.70766666666665 3
+stats: tr_Redirect_To_Same_Conversation 1 97.749 0.0 97.749 53.9 69.992 2
+stats: tr_Reply_To_Conversation 1 187.699 0.0 193.597 131.179 162.388 2
+stats: tr_Post_Login 1 146.27 0.0 146.27 133.9 135.10750000000002 2
+stats: tr_Get_New_Book 4 96.64249999999998 133.64173345646935 326.996 5.536 24.489944444444443 18
+stats: tr_Post_New_Book 7 67.53385714285714 104.80489360634232 323.868 15.84 57.73757142857143 14
+stats: tr_Redirect_To_New_Book 9 61.71555555555555 97.62915951487162 337.419 15.829 50.69290909090909 11
+stats: tr_Get_Book 0 0 0 60007.053 59999.76 60002.893000000004 9
+# stats: dump at 1575622742
+stats: users 41 59
+stats: {load,"tsung_controller@ip-172-31-26-68"} 1 0.0 0.0 0.0 0.0 0.0 13
+stats: {freemem,"tsung_controller@ip-172-31-26-68"} 1 713.546875 0.0 725.44140625 712.9375 719.77734375 13
+stats: {recvpackets,"tsung_controller@ip-172-31-26-68"} 1 362.0 0.0 1627 2 436.5833333333333 12
+stats: {sentpackets,"tsung_controller@ip-172-31-26-68"} 1 176.0 0.0 1857 3 302.0 12
+stats: {cpu,"tsung_controller@ip-172-31-26-68"} 1 0.20020020020020018 0.0 1.5484515484515484 0.0 0.3424027469437056 13
+stats: session 5 23575.860399999998 3677.672118714207 82394.682 5277.359 34398.92227906977 43
+stats: users_count 0 89
+stats: finish_users_count 5 48
+stats: request 19 1670.2148947368416 5522.351993556301 60006.853 3.806 1667.9856619469028 565
+stats: connect 0 0 0 23.18 0.53 1.4695393258426965 89
+stats: page 16 1983.4098750000005 5966.593765014747 60006.853 3.806 1676.8904163701068 562
+stats: tr_Initial_Get_Root 0 0 0 868.853 40.247 302.79170588235286 51
+stats: 302 8 237
+stats: tr_Get_Root 0 0 0 791.381 84.067 449.039125 8
+stats: match_stop 0 9
+stats: tr_Redirect_Root 0 0 0 1032.287 43.214 414.25185393258425 89
+stats: 504 0 9
+stats: tr_Post_New_Comment_On_Post 1 48.679 0.0 406.66 8.959 127.673375 8
+stats: match 19 543
+stats: tr_Get_Post 1 24766.283 0.0 24766.283 1467.775 10687.47275 8
+stats: 200 11 338
+stats: tr_Redirect_To_Post 0 0 0 17237.337 1660.153 13321.777125 16
+stats: size_rcv 73692 4115784
+stats: tr_Post_New_Comment_On_Comment 0 0 0 429.24 30.055 89.228875 8
+stats: nomatch 0 9
+stats: tr_Get_Logout 0 0 0 22.973 16.475 20.282666666666668 3
+stats: newphase 0 1
+stats: tr_Get_Conversations 0 0 0 182.953 15.728 46.793375 8
+stats: size_sent 9297 330212
+stats: tr_Authenticate_User 0 0 0 12221.298 832.679 3868.230617977528 89
+stats: connected -5 41
+stats: tr_Get_New_Conversation 1 4313.592 0.0 4520.024 442.588 2967.762285714286 7
+stats: tr_Post_New_Conversation 3 147.22433333333333 43.85083352558865 240.521 94.955 150.6042 5
+stats: tr_Get_Login 0 0 0 8.463 5.104 7.041666666666667 3
+stats: tr_Redirect_To_New_Conversation 4 311.45 197.72383147840324 521.353 78.628 150.70766666666665 3
+stats: tr_Redirect_To_Same_Conversation 3 115.72033333333333 22.840144867219106 144.963 53.9 79.24433333333333 3
+stats: tr_Reply_To_Conversation 3 169.98100000000002 39.54456959769149 208.193 115.512 170.82500000000002 3
+stats: tr_Post_Login 0 0 0 146.27 133.9 138.82833333333335 3
+stats: tr_Get_New_Book 0 0 0 326.996 5.536 37.60859090909091 22
+stats: tr_Post_New_Book 1 17.214 0.0 323.868 15.84 61.00300000000001 21
+stats: tr_Redirect_To_New_Book 2 26.666999999999998 13.650999999999998 337.419 13.016 55.653099999999995 20
+stats: tr_Get_Book 0 0 0 60007.053 59999.76 60002.893000000004 9
+# stats: dump at 1575622752
+stats: users 39 59
+stats: {load,"tsung_controller@ip-172-31-26-68"} 1 0.0 0.0 0.0 0.0 0.0 14
+stats: {freemem,"tsung_controller@ip-172-31-26-68"} 1 712.4296875 0.0 725.44140625 712.4296875 719.3323102678571 14
+stats: {recvpackets,"tsung_controller@ip-172-31-26-68"} 1 483.0 0.0 1627 2 430.84615384615387 13
+stats: {sentpackets,"tsung_controller@ip-172-31-26-68"} 1 727.0 0.0 1857 3 292.3076923076923 13
+stats: {cpu,"tsung_controller@ip-172-31-26-68"} 1 2.345309381237525 0.0 2.345309381237525 0.0 0.33224542217631237 14
+stats: session 2 30727.7135 2432.5445 82394.682 5277.359 33271.52 48
+stats: users_count 0 89
+stats: finish_users_count 2 50
+stats: request 11 10317.764272727274 16719.49655495243 60006.853 3.806 1668.0581883561645 584
+stats: connect 0 0 0 23.18 0.53 1.4695393258426965 89
+stats: page 9 12610.641222222222 17684.796336072217 60006.853 3.806 1685.375384083045 578
+stats: tr_Initial_Get_Root 0 0 0 868.853 40.247 302.79170588235286 51
+stats: 302 5 242
+stats: tr_Get_Root 0 0 0 791.381 84.067 449.039125 8
+stats: match_stop 0 9
+stats: tr_Redirect_Root 0 0 0 1032.287 43.214 414.25185393258425 89
+stats: 504 0 9
+stats: tr_Post_New_Comment_On_Post 3 45.156 7.116385037362717 406.66 8.959 118.89622222222222 9
+stats: match 11 554
+stats: tr_Get_Post 3 37597.29466666666 1480.6887042324493 39691.071 1467.775 12251.785 9
+stats: 200 6 344
+stats: tr_Redirect_To_Post 0 0 0 17237.337 1660.153 13321.777125 16
+stats: size_rcv 138045 4253829
+stats: tr_Post_New_Comment_On_Comment 0 0 0 429.24 30.055 89.228875 8
+stats: nomatch 0 9
+stats: tr_Get_Logout 0 0 0 22.973 16.475 20.282666666666668 3
+stats: newphase 0 1
+stats: tr_Get_Conversations 0 0 0 182.953 15.728 46.793375 8
+stats: size_sent 5843 336055
+stats: tr_Authenticate_User 0 0 0 12221.298 832.679 3868.230617977528 89
+stats: connected -2 39
+stats: tr_Get_New_Conversation 0 0 0 4520.024 442.588 3135.9910000000004 8
+stats: tr_Post_New_Conversation 0 0 0 240.521 94.955 149.33675 8
+stats: tr_Get_Login 0 0 0 8.463 5.104 7.041666666666667 3
+stats: tr_Redirect_To_New_Conversation 1 138.81 0.0 521.353 78.628 242.56042857142853 7
+stats: tr_Redirect_To_Same_Conversation 2 79.9155 22.804499999999997 144.963 53.9 97.48233333333333 6
+stats: tr_Reply_To_Conversation 2 144.4515 4.285500000000006 208.193 115.512 170.40300000000002 6
+stats: tr_Post_Login 0 0 0 146.27 133.9 138.82833333333335 3
+stats: tr_Get_New_Book 0 0 0 326.996 5.536 37.60859090909091 22
+stats: tr_Post_New_Book 0 0 0 323.868 15.84 59.01259090909091 22
+stats: tr_Redirect_To_New_Book 0 0 0 337.419 13.016 53.018 22
+stats: tr_Get_Book 0 0 0 60007.053 59999.76 60002.893000000004 9
+# stats: dump at 1575622762
+stats: users 39 59
+stats: {load,"tsung_controller@ip-172-31-26-68"} 1 0.0 0.0 0.0 0.0 0.0 15
+stats: {freemem,"tsung_controller@ip-172-31-26-68"} 1 711.5234375 0.0 725.44140625 711.5234375 718.8721354166667 15
+stats: {recvpackets,"tsung_controller@ip-172-31-26-68"} 1 184.0 0.0 1627 2 434.57142857142856 14
+stats: {sentpackets,"tsung_controller@ip-172-31-26-68"} 1 162.0 0.0 1857 3 323.35714285714283 14
+stats: {cpu,"tsung_controller@ip-172-31-26-68"} 1 0.6996501749125438 0.0 2.345309381237525 0.0 0.4664496861137265 15
+stats: session 0 0 0 82394.682 5277.359 33169.767739999996 50
+stats: users_count 0 89
+stats: finish_users_count 0 50
+stats: request 10 21723.866400000003 21686.993790329358 60006.853 3.806 1827.9687210084037 595
+stats: connect 0 0 0 23.18 0.53 1.4695393258426965 89
+stats: page 10 21723.866400000003 21686.993790329358 60006.853 3.806 1852.8837189097105 587
+stats: tr_Initial_Get_Root 0 0 0 868.853 40.247 302.79170588235286 51
+stats: 302 5 247
+stats: tr_Get_Root 0 0 0 791.381 84.067 449.039125 8
+stats: match_stop 0 9
+stats: tr_Redirect_Root 0 0 0 1032.287 43.214 414.25185393258425 89
+stats: 504 0 9
+stats: tr_Post_New_Comment_On_Post 5 53.89960000000001 17.257014036037642 406.66 8.959 100.46116666666667 12
+stats: match 10 564
+stats: tr_Get_Post 5 43400.4852 1208.3596772102917 45003.5 1467.775 18588.162416666666 12
+stats: 200 5 349
+stats: tr_Redirect_To_Post 0 0 0 17237.337 1660.153 13321.777125 16
+stats: size_rcv 218351 4472180
+stats: tr_Post_New_Comment_On_Comment 0 0 0 429.24 30.055 89.228875 8
+stats: nomatch 0 9
+stats: tr_Get_Logout 0 0 0 22.973 16.475 20.282666666666668 3
+stats: newphase 0 1
+stats: tr_Get_Conversations 0 0 0 182.953 15.728 46.793375 8
+stats: size_sent 6797 342852
+stats: tr_Authenticate_User 0 0 0 12221.298 832.679 3868.230617977528 89
+stats: connected 0 39
+stats: tr_Get_New_Conversation 0 0 0 4520.024 442.588 3135.9910000000004 8
+stats: tr_Post_New_Conversation 0 0 0 240.521 94.955 149.33675 8
+stats: tr_Get_Login 0 0 0 8.463 5.104 7.041666666666667 3
+stats: tr_Redirect_To_New_Conversation 0 0 0 521.353 78.628 229.59162499999996 8
+stats: tr_Redirect_To_Same_Conversation 0 0 0 144.963 53.9 93.090625 8
+stats: tr_Reply_To_Conversation 0 0 0 208.193 115.512 163.91512500000002 8
+stats: tr_Post_Login 0 0 0 146.27 133.9 138.82833333333335 3
+stats: tr_Get_New_Book 0 0 0 326.996 5.536 37.60859090909091 22
+stats: tr_Post_New_Book 0 0 0 323.868 15.84 59.01259090909091 22
+stats: tr_Redirect_To_New_Book 0 0 0 337.419 13.016 53.018 22
+stats: tr_Get_Book 0 0 0 60007.053 59999.76 60002.893000000004 9
+# stats: dump at 1575622772
+stats: users 38 59
+stats: {load,"tsung_controller@ip-172-31-26-68"} 1 0.0 0.0 0.0 0.0 0.0 16
+stats: {freemem,"tsung_controller@ip-172-31-26-68"} 1 710.08203125 0.0 725.44140625 710.08203125 718.412841796875 16
+stats: {recvpackets,"tsung_controller@ip-172-31-26-68"} 1 171.0 0.0 1627 2 417.8666666666667 15
+stats: {sentpackets,"tsung_controller@ip-172-31-26-68"} 1 38.0 0.0 1857 3 312.6 15
+stats: {cpu,"tsung_controller@ip-172-31-26-68"} 1 0.2001000500250125 0.0 2.345309381237525 0.0 0.4810247166636526 16
+stats: session 1 68295.035 0.0 82394.682 5277.359 33169.767739999996 50
+stats: users_count 0 89
+stats: finish_users_count 1 51
+stats: request 23 25237.17073913044 24263.751216785207 60006.853 3.806 2156.826533884298 605
+stats: connect 0 0 0 23.18 0.53 1.4695393258426965 89
+stats: page 23 25237.17073913044 24263.751216785207 60006.853 3.806 2185.731 597
+stats: tr_Initial_Get_Root 0 0 0 868.853 40.247 302.79170588235286 51
+stats: 302 11 258
+stats: tr_Get_Root 0 0 0 791.381 84.067 449.039125 8
+stats: match_stop 1 10
+stats: tr_Redirect_Root 0 0 0 1032.287 43.214 414.25185393258425 89
+stats: 504 1 10
+stats: tr_Post_New_Comment_On_Post 11 99.65381818181817 94.695712648287 406.66 8.959 86.76658823529412 17
+stats: match 22 586
+stats: tr_Get_Post 11 47221.71836363637 2487.242592729374 50506.7 1467.775 25885.904411764706 17
+stats: 200 11 360
+stats: tr_Redirect_To_Post 0 0 0 17237.337 1660.153 13321.777125 16
+stats: size_rcv 482369 4954549
+stats: tr_Post_New_Comment_On_Comment 0 0 0 429.24 30.055 89.228875 8
+stats: nomatch 1 10
+stats: tr_Get_Logout 0 0 0 22.973 16.475 20.282666666666668 3
+stats: newphase 0 1
+stats: tr_Get_Conversations 0 0 0 182.953 15.728 46.793375 8
+stats: size_sent 13113 355965
+stats: tr_Authenticate_User 0 0 0 12221.298 832.679 3868.230617977528 89
+stats: connected -1 38
+stats: tr_Get_New_Conversation 0 0 0 4520.024 442.588 3135.9910000000004 8
+stats: tr_Post_New_Conversation 0 0 0 240.521 94.955 149.33675 8
+stats: tr_Get_Login 0 0 0 8.463 5.104 7.041666666666667 3
+stats: tr_Redirect_To_New_Conversation 0 0 0 521.353 78.628 229.59162499999996 8
+stats: tr_Redirect_To_Same_Conversation 0 0 0 144.963 53.9 93.090625 8
+stats: tr_Reply_To_Conversation 0 0 0 208.193 115.512 163.91512500000002 8
+stats: tr_Post_Login 0 0 0 146.27 133.9 138.82833333333335 3
+stats: tr_Get_New_Book 0 0 0 326.996 5.536 37.60859090909091 22
+stats: tr_Post_New_Book 0 0 0 323.868 15.84 59.01259090909091 22
+stats: tr_Redirect_To_New_Book 0 0 0 337.419 13.016 53.018 22
+stats: tr_Get_Book 1 60000.146 0.0 60007.053 59999.76 60002.893000000004 9
+# stats: dump at 1575622782
+stats: users 28 59
+stats: {load,"tsung_controller@ip-172-31-26-68"} 1 0.0 0.0 0.0 0.0 0.0 17
+stats: {freemem,"tsung_controller@ip-172-31-26-68"} 1 705.25 0.0 725.44140625 705.25 717.9227941176471 17
+stats: {recvpackets,"tsung_controller@ip-172-31-26-68"} 1 413.0 0.0 1627 2 402.4375 16
+stats: {sentpackets,"tsung_controller@ip-172-31-26-68"} 1 91.0 0.0 1857 3 295.4375 16
+stats: {cpu,"tsung_controller@ip-172-31-26-68"} 1 0.4502251125562781 0.0 2.345309381237525 0.0 0.46449973627314434 17
+stats: session 10 67200.28790000001 1478.8500093558798 82394.682 5277.359 33858.49847058823 51
+stats: users_count 0 89
+stats: finish_users_count 10 61
+stats: 302 2 260
+stats: request 15 49732.407 19987.91748468018 60006.853 3.806 3002.125764331211 628
+stats: connect 0 0 0 23.18 0.53 1.4695393258426965 89
+stats: page 15 49732.407 19987.91748468018 60006.853 3.806 3040.86505483871 620
+stats: tr_Initial_Get_Root 0 0 0 868.853 40.247 302.79170588235286 51
+stats: match_stop 10 20
+stats: tr_Get_Root 0 0 0 791.381 84.067 449.039125 8
+stats: 504 10 20
+stats: tr_Redirect_Root 0 0 0 1032.287 43.214 414.25185393258425 89
+stats: match 5 591
+stats: tr_Post_New_Comment_On_Post 2 80.94 44.25 406.66 8.959 91.82942857142858 28
+stats: 200 3 363
+stats: tr_Get_Post 2 49374.018 326.82500000000255 50506.7 1467.775 34267.83132142857 28
+stats: size_rcv 135018 5089567
+stats: tr_Redirect_To_Post 1 47076.665 0.0 47076.665 1660.153 13321.777125 16
+stats: nomatch 10 20
+stats: tr_Post_New_Comment_On_Comment 0 0 0 429.24 30.055 89.228875 8
+stats: newphase 0 1
+stats: tr_Get_Logout 0 0 0 22.973 16.475 20.282666666666668 3
+stats: size_sent 3057 359022
+stats: tr_Get_Conversations 0 0 0 182.953 15.728 46.793375 8
+stats: connected -10 28
+stats: tr_Authenticate_User 0 0 0 12221.298 832.679 3868.230617977528 89
+stats: tr_Get_New_Conversation 0 0 0 4520.024 442.588 3135.9910000000004 8
+stats: tr_Post_New_Conversation 0 0 0 240.521 94.955 149.33675 8
+stats: tr_Get_Login 0 0 0 8.463 5.104 7.041666666666667 3
+stats: tr_Redirect_To_New_Conversation 0 0 0 521.353 78.628 229.59162499999996 8
+stats: tr_Redirect_To_Same_Conversation 0 0 0 144.963 53.9 93.090625 8
+stats: tr_Reply_To_Conversation 0 0 0 208.193 115.512 163.91512500000002 8
+stats: tr_Post_Login 0 0 0 146.27 133.9 138.82833333333335 3
+stats: tr_Get_New_Book 0 0 0 326.996 5.536 37.60859090909091 22
+stats: tr_Post_New_Book 0 0 0 323.868 15.84 59.01259090909091 22
+stats: tr_Redirect_To_New_Book 0 0 0 337.419 13.016 53.018 22
+stats: tr_Get_Book 10 60001.972499999996 0.9323759166760215 60007.053 59999.76 60002.618299999995 10
+# stats: dump at 1575622792
+stats: users 22 59
+stats: {load,"tsung_controller@ip-172-31-26-68"} 1 0.0 0.0 0.0 0.0 0.0 18
+stats: {freemem,"tsung_controller@ip-172-31-26-68"} 1 704.7421875 0.0 725.44140625 704.7421875 717.21875 18
+stats: {recvpackets,"tsung_controller@ip-172-31-26-68"} 1 540.0 0.0 1627 2 403.05882352941177 17
+stats: {sentpackets,"tsung_controller@ip-172-31-26-68"} 1 1001.0 0.0 1857 3 283.4117647058824 17
+stats: {cpu,"tsung_controller@ip-172-31-26-68"} 1 2.051025512756378 0.0 2.345309381237525 0.0 0.46370670162220734 18
+stats: session 6 70660.42816666666 2595.7189419812257 82394.682 5277.359 39324.365590163936 61
+stats: users_count 0 89
+stats: finish_users_count 6 67
+stats: request 7 51439.22928571429 20975.96396582251 60006.853 3.806 4092.256741835148 643
+stats: connect 0 0 0 23.18 0.53 1.4695393258426965 89
+stats: page 7 51439.22928571429 20975.96396582251 60006.853 3.806 4143.81486456693 635
+stats: 302 1 261
+stats: tr_Initial_Get_Root 0 0 0 868.853 40.247 302.79170588235286 51
+stats: match_stop 6 26
+stats: tr_Get_Root 0 0 0 791.381 84.067 449.039125 8
+stats: 504 6 26
+stats: tr_Redirect_Root 0 0 0 1032.287 43.214 414.25185393258425 89
+stats: match 1 592
+stats: tr_Post_New_Comment_On_Post 0 0 0 406.66 8.959 91.10346666666668 30
+stats: 200 0 363
+stats: tr_Get_Post 0 0 0 50506.7 1467.775 35274.91043333334 30
+stats: size_rcv 2124 5091691
+stats: tr_Redirect_To_Post 0 0 0 47076.665 1660.153 15307.358764705883 17
+stats: nomatch 6 26
+stats: tr_Post_New_Comment_On_Comment 1 59.083 0.0 429.24 30.055 89.228875 8
+stats: newphase 0 1
+stats: tr_Get_Logout 0 0 0 22.973 16.475 20.282666666666668 3
+stats: size_sent 1242 360264
+stats: tr_Get_Conversations 0 0 0 182.953 15.728 46.793375 8
+stats: connected -6 22
+stats: tr_Authenticate_User 0 0 0 12221.298 832.679 3868.230617977528 89
+stats: tr_Get_New_Conversation 0 0 0 4520.024 442.588 3135.9910000000004 8
+stats: tr_Post_New_Conversation 0 0 0 240.521 94.955 149.33675 8
+stats: tr_Get_Login 0 0 0 8.463 5.104 7.041666666666667 3
+stats: tr_Redirect_To_New_Conversation 0 0 0 521.353 78.628 229.59162499999996 8
+stats: tr_Redirect_To_Same_Conversation 0 0 0 144.963 53.9 93.090625 8
+stats: tr_Reply_To_Conversation 0 0 0 208.193 115.512 163.91512500000002 8
+stats: tr_Post_Login 0 0 0 146.27 133.9 138.82833333333335 3
+stats: tr_Get_New_Book 0 0 0 326.996 5.536 37.60859090909091 22
+stats: tr_Post_New_Book 0 0 0 323.868 15.84 59.01259090909091 22
+stats: tr_Redirect_To_New_Book 0 0 0 337.419 13.016 53.018 22
+stats: tr_Get_Book 6 60002.80000000001 2.4222325789749304 60007.053 59999.748 60002.29539999999 20
+# stats: dump at 1575622802
+stats: users 22 59
+stats: {load,"tsung_controller@ip-172-31-26-68"} 1 0.0 0.0 0.0 0.0 0.0 19
+stats: {freemem,"tsung_controller@ip-172-31-26-68"} 1 704.92578125 0.0 725.44140625 704.7421875 716.5620888157895 19
+stats: {recvpackets,"tsung_controller@ip-172-31-26-68"} 1 260.0 0.0 1627 2 410.6666666666667 18
+stats: {sentpackets,"tsung_controller@ip-172-31-26-68"} 1 514.0 0.0 1857 3 323.27777777777777 18
+stats: {cpu,"tsung_controller@ip-172-31-26-68"} 1 0.6003001500750376 0.0 2.345309381237525 0.0 0.5472497969450584 19
+stats: session 0 0 0 82394.682 5277.359 42130.580149253736 67
+stats: users_count 0 89
+stats: finish_users_count 0 67
+stats: request 2 24418.1105 24367.2875 60006.853 3.806 4602.147215384616 650
+stats: 302 1 262
+stats: connect 0 0 0 23.18 0.53 1.4695393258426965 89
+stats: page 2 24418.1105 24367.2875 60006.853 3.806 4659.496953271028 642
+stats: tr_Initial_Get_Root 0 0 0 868.853 40.247 302.79170588235286 51
+stats: match_stop 0 26
+stats: tr_Get_Root 0 0 0 791.381 84.067 449.039125 8
+stats: 504 0 26
+stats: tr_Redirect_Root 0 0 0 1032.287 43.214 414.25185393258425 89
+stats: match 2 594
+stats: tr_Post_New_Comment_On_Post 0 0 0 406.66 8.959 91.10346666666668 30
+stats: 200 1 364
+stats: tr_Get_Post 0 0 0 50506.7 1467.775 35274.91043333334 30
+stats: size_rcv 44537 5136228
+stats: tr_Redirect_To_Post 1 48792.247 0.0 48792.247 1660.153 15307.358764705883 17
+stats: nomatch 0 26
+stats: tr_Post_New_Comment_On_Comment 1 51.071 0.0 429.24 30.055 85.87933333333334 9
+stats: newphase 0 1
+stats: tr_Get_Logout 0 0 0 22.973 16.475 20.282666666666668 3
+stats: size_sent 1246 361510
+stats: tr_Get_Conversations 0 0 0 182.953 15.728 46.793375 8
+stats: connected 0 22
+stats: tr_Authenticate_User 0 0 0 12221.298 832.679 3868.230617977528 89
+stats: tr_Get_New_Conversation 0 0 0 4520.024 442.588 3135.9910000000004 8
+stats: tr_Post_New_Conversation 0 0 0 240.521 94.955 149.33675 8
+stats: tr_Get_Login 0 0 0 8.463 5.104 7.041666666666667 3
+stats: tr_Redirect_To_New_Conversation 0 0 0 521.353 78.628 229.59162499999996 8
+stats: tr_Redirect_To_Same_Conversation 0 0 0 144.963 53.9 93.090625 8
+stats: tr_Reply_To_Conversation 0 0 0 208.193 115.512 163.91512500000002 8
+stats: tr_Post_Login 0 0 0 146.27 133.9 138.82833333333335 3
+stats: tr_Get_New_Book 0 0 0 326.996 5.536 37.60859090909091 22
+stats: tr_Post_New_Book 0 0 0 323.868 15.84 59.01259090909091 22
+stats: tr_Redirect_To_New_Book 0 0 0 337.419 13.016 53.018 22
+stats: tr_Get_Book 0 0 0 60007.053 59999.748 60002.41184615384 26
+# stats: dump at 1575622812
+stats: users 22 59
+stats: {load,"tsung_controller@ip-172-31-26-68"} 1 0.0703125 0.0 0.0703125 0.0 0.0 20
+stats: {freemem,"tsung_controller@ip-172-31-26-68"} 1 704.81640625 0.0 725.44140625 704.7421875 715.9802734375 20
+stats: {recvpackets,"tsung_controller@ip-172-31-26-68"} 1 294.0 0.0 1627 2 402.7368421052632 19
+stats: {sentpackets,"tsung_controller@ip-172-31-26-68"} 1 343.0 0.0 1857 3 333.3157894736842 19
+stats: {cpu,"tsung_controller@ip-172-31-26-68"} 1 0.7507507507507507 0.0 2.345309381237525 0.0 0.5499023146015574 20
+stats: session 0 0 0 82394.682 5277.359 42130.580149253736 67
+stats: users_count 0 89
+stats: finish_users_count 0 67
+stats: connect 0 0 0 23.18 0.53 1.4695393258426965 89
+stats: request 14 27755.919642857138 24088.283425734426 60006.853 3.806 4662.932378834356 652
+stats: page 14 27755.919642857138 24088.283425734426 60006.853 3.806 4720.859107142857 644
+stats: tr_Initial_Get_Root 0 0 0 868.853 40.247 302.79170588235286 51
+stats: 302 6 268
+stats: tr_Get_Root 0 0 0 791.381 84.067 449.039125 8
+stats: match_stop 0 26
+stats: tr_Redirect_Root 0 0 0 1032.287 43.214 414.25185393258425 89
+stats: 504 0 26
+stats: tr_Post_New_Comment_On_Post 0 0 0 406.66 8.959 91.10346666666668 30
+stats: match 14 608
+stats: tr_Get_Post 0 0 0 50506.7 1467.775 35274.91043333334 30
+stats: 200 8 372
+stats: tr_Redirect_To_Post 8 48544.32062500001 2770.553699747621 52010.011 1660.153 17167.630333333334 18
+stats: size_rcv 356823 5493051
+stats: tr_Post_New_Comment_On_Comment 6 46.71633333333333 5.311205941738237 429.24 30.055 82.3985 10
+stats: nomatch 0 26
+stats: tr_Get_Logout 0 0 0 22.973 16.475 20.282666666666668 3
+stats: newphase 0 1
+stats: tr_Get_Conversations 0 0 0 182.953 15.728 46.793375 8
+stats: size_sent 6354 367864
+stats: tr_Authenticate_User 0 0 0 12221.298 832.679 3868.230617977528 89
+stats: connected 0 22
+stats: tr_Get_New_Conversation 0 0 0 4520.024 442.588 3135.9910000000004 8
+stats: tr_Post_New_Conversation 0 0 0 240.521 94.955 149.33675 8
+stats: tr_Get_Login 0 0 0 8.463 5.104 7.041666666666667 3
+stats: tr_Redirect_To_New_Conversation 0 0 0 521.353 78.628 229.59162499999996 8
+stats: tr_Redirect_To_Same_Conversation 0 0 0 144.963 53.9 93.090625 8
+stats: tr_Reply_To_Conversation 0 0 0 208.193 115.512 163.91512500000002 8
+stats: tr_Post_Login 0 0 0 146.27 133.9 138.82833333333335 3
+stats: tr_Get_New_Book 0 0 0 326.996 5.536 37.60859090909091 22
+stats: tr_Post_New_Book 0 0 0 323.868 15.84 59.01259090909091 22
+stats: tr_Redirect_To_New_Book 0 0 0 337.419 13.016 53.018 22
+stats: tr_Get_Book 0 0 0 60007.053 59999.748 60002.41184615384 26
+# stats: dump at 1575622822
+stats: users 22 59
+stats: {load,"tsung_controller@ip-172-31-26-68"} 1 0.05859375 0.0 0.0703125 0.0 0.0033482142857142855 21
+stats: {freemem,"tsung_controller@ip-172-31-26-68"} 1 702.28125 0.0 725.44140625 702.28125 715.4486607142857 21
+stats: {recvpackets,"tsung_controller@ip-172-31-26-68"} 1 248.0 0.0 1627 2 397.3 20
+stats: {sentpackets,"tsung_controller@ip-172-31-26-68"} 1 54.0 0.0 1857 3 333.8 20
+stats: {cpu,"tsung_controller@ip-172-31-26-68"} 1 0.3 0.0 2.345309381237525 0.0 0.559466525846757 21
+stats: session 0 0 0 82394.682 5277.359 42130.580149253736 67
+stats: users_count 0 89
+stats: finish_users_count 0 67
+stats: request 19 23334.138842105265 24574.328546408196 60006.853 3.806 5148.37054954955 666
+stats: connect 0 0 0 23.18 0.53 1.4695393258426965 89
+stats: page 19 23334.138842105265 24574.328546408196 60006.853 3.806 5210.966778115502 658
+stats: tr_Initial_Get_Root 0 0 0 868.853 40.247 302.79170588235286 51
+stats: 302 10 278
+stats: tr_Get_Root 0 0 0 791.381 84.067 449.039125 8
+stats: match_stop 0 26
+stats: tr_Redirect_Root 0 0 0 1032.287 43.214 414.25185393258425 89
+stats: 504 0 26
+stats: tr_Post_New_Comment_On_Post 0 0 0 406.66 8.959 91.10346666666668 30
+stats: match 19 627
+stats: tr_Get_Post 0 0 0 50506.7 1467.775 35274.91043333334 30
+stats: 200 9 381
+stats: tr_Redirect_To_Post 9 49214.83288888889 1697.9765338984098 52010.011 1660.153 26821.99657692308 26
+stats: size_rcv 404313 5897364
+stats: tr_Post_New_Comment_On_Comment 10 47.493 9.679586344467413 429.24 30.055 69.0176875 16
+stats: nomatch 0 26
+stats: tr_Get_Logout 0 0 0 22.973 16.475 20.282666666666668 3
+stats: newphase 0 1
+stats: tr_Get_Conversations 0 0 0 182.953 15.728 46.793375 8
+stats: size_sent 12434 380298
+stats: tr_Authenticate_User 0 0 0 12221.298 832.679 3868.230617977528 89
+stats: connected 0 22
+stats: tr_Get_New_Conversation 0 0 0 4520.024 442.588 3135.9910000000004 8
+stats: tr_Post_New_Conversation 0 0 0 240.521 94.955 149.33675 8
+stats: tr_Get_Login 0 0 0 8.463 5.104 7.041666666666667 3
+stats: tr_Redirect_To_New_Conversation 0 0 0 521.353 78.628 229.59162499999996 8
+stats: tr_Redirect_To_Same_Conversation 0 0 0 144.963 53.9 93.090625 8
+stats: tr_Reply_To_Conversation 0 0 0 208.193 115.512 163.91512500000002 8
+stats: tr_Post_Login 0 0 0 146.27 133.9 138.82833333333335 3
+stats: tr_Get_New_Book 0 0 0 326.996 5.536 37.60859090909091 22
+stats: tr_Post_New_Book 0 0 0 323.868 15.84 59.01259090909091 22
+stats: tr_Redirect_To_New_Book 0 0 0 337.419 13.016 53.018 22
+stats: tr_Get_Book 0 0 0 60007.053 59999.748 60002.41184615384 26
+# stats: dump at 1575622832
+stats: users 21 59
+stats: {load,"tsung_controller@ip-172-31-26-68"} 1 0.05078125 0.0 0.0703125 0.0 0.005859375 22
+stats: {freemem,"tsung_controller@ip-172-31-26-68"} 1 700.18359375 0.0 725.44140625 700.18359375 714.8501420454545 22
+stats: {recvpackets,"tsung_controller@ip-172-31-26-68"} 1 345.0 0.0 1627 2 390.1904761904762 21
+stats: {sentpackets,"tsung_controller@ip-172-31-26-68"} 1 73.0 0.0 1857 3 320.4761904761905 21
+stats: {cpu,"tsung_controller@ip-172-31-26-68"} 1 0.44999999999999996 0.0 2.345309381237525 0.0 0.5476725928537227 22
+stats: session 1 128338.649 0.0 128338.649 5277.359 42130.580149253736 67
+stats: users_count 0 89
+stats: finish_users_count 1 68
+stats: request 8 23608.101875000004 23489.738463496742 60006.853 3.806 5652.793319708028 685
+stats: connect 0 0 0 23.18 0.53 1.4695393258426965 89
+stats: page 8 23608.101875000004 23489.738463496742 60006.853 3.806 5719.593468242247 677
+stats: tr_Initial_Get_Root 0 0 0 868.853 40.247 302.79170588235286 51
+stats: 302 4 282
+stats: tr_Get_Root 0 0 0 791.381 84.067 449.039125 8
+stats: match_stop 0 26
+stats: tr_Redirect_Root 0 0 0 1032.287 43.214 414.25185393258425 89
+stats: 504 0 26
+stats: tr_Post_New_Comment_On_Post 0 0 0 406.66 8.959 91.10346666666668 30
+stats: match 8 635
+stats: tr_Get_Post 0 0 0 50506.7 1467.775 35274.91043333334 30
+stats: 200 4 385
+stats: tr_Redirect_To_Post 4 47087.2685 1201.0909699928027 52010.011 1660.153 32580.15448571429 35
+stats: size_rcv 179816 6077180
+stats: tr_Post_New_Comment_On_Comment 4 134.121 142.78470670033258 429.24 30.055 60.73896153846154 26
+stats: nomatch 0 26
+stats: tr_Get_Logout 0 0 0 22.973 16.475 20.282666666666668 3
+stats: newphase 0 1
+stats: tr_Get_Conversations 0 0 0 182.953 15.728 46.793375 8
+stats: size_sent 6064 386362
+stats: tr_Authenticate_User 0 0 0 12221.298 832.679 3868.230617977528 89
+stats: connected -1 21
+stats: tr_Get_New_Conversation 0 0 0 4520.024 442.588 3135.9910000000004 8
+stats: tr_Post_New_Conversation 0 0 0 240.521 94.955 149.33675 8
+stats: tr_Get_Login 0 0 0 8.463 5.104 7.041666666666667 3
+stats: tr_Redirect_To_New_Conversation 0 0 0 521.353 78.628 229.59162499999996 8
+stats: tr_Redirect_To_Same_Conversation 0 0 0 144.963 53.9 93.090625 8
+stats: tr_Reply_To_Conversation 0 0 0 208.193 115.512 163.91512500000002 8
+stats: tr_Post_Login 0 0 0 146.27 133.9 138.82833333333335 3
+stats: tr_Get_New_Book 0 0 0 326.996 5.536 37.60859090909091 22
+stats: tr_Post_New_Book 0 0 0 323.868 15.84 59.01259090909091 22
+stats: tr_Redirect_To_New_Book 0 0 0 337.419 13.016 53.018 22
+stats: tr_Get_Book 0 0 0 60007.053 59999.748 60002.41184615384 26
+# stats: dump at 1575622842
+stats: users 21 59
+stats: {load,"tsung_controller@ip-172-31-26-68"} 1 0.0390625 0.0 0.0703125 0.0 0.0078125 23
+stats: {freemem,"tsung_controller@ip-172-31-26-68"} 1 699.171875 0.0 725.44140625 699.171875 714.2124660326087 23
+stats: {recvpackets,"tsung_controller@ip-172-31-26-68"} 1 183.0 0.0 1627 2 388.1363636363636 22
+stats: {sentpackets,"tsung_controller@ip-172-31-26-68"} 1 258.0 0.0 1857 3 309.22727272727275 22
+stats: {cpu,"tsung_controller@ip-172-31-26-68"} 1 0.2 0.0 2.345309381237525 0.0 0.5434259583818217 23
+stats: session 0 0 0 128338.649 5277.359 43398.34586764706 68
+stats: users_count 0 89
+stats: finish_users_count 0 68
+stats: request 0 0 0 60006.853 3.806 5860.069608946607 693
+stats: connect 0 0 0 23.18 0.53 1.4695393258426965 89
+stats: page 0 0 0 60006.853 3.806 5928.510354744527 685
+stats: tr_Initial_Get_Root 0 0 0 868.853 40.247 302.79170588235286 51
+stats: 302 0 282
+stats: tr_Get_Root 0 0 0 791.381 84.067 449.039125 8
+stats: match_stop 0 26
+stats: tr_Redirect_Root 0 0 0 1032.287 43.214 414.25185393258425 89
+stats: 504 0 26
+stats: tr_Post_New_Comment_On_Post 0 0 0 406.66 8.959 91.10346666666668 30
+stats: match 0 635
+stats: tr_Get_Post 0 0 0 50506.7 1467.775 35274.91043333334 30
+stats: 200 0 385
+stats: tr_Redirect_To_Post 0 0 0 52010.011 1660.153 34068.06361538462 39
+stats: size_rcv 0 6077180
+stats: tr_Post_New_Comment_On_Comment 0 0 0 429.24 30.055 70.52323333333334 30
+stats: nomatch 0 26
+stats: tr_Get_Logout 0 0 0 22.973 16.475 20.282666666666668 3
+stats: newphase 0 1
+stats: tr_Get_Conversations 0 0 0 182.953 15.728 46.793375 8
+stats: size_sent 0 386362
+stats: tr_Authenticate_User 0 0 0 12221.298 832.679 3868.230617977528 89
+stats: connected 0 21
+stats: tr_Get_New_Conversation 0 0 0 4520.024 442.588 3135.9910000000004 8
+stats: tr_Post_New_Conversation 0 0 0 240.521 94.955 149.33675 8
+stats: tr_Get_Login 0 0 0 8.463 5.104 7.041666666666667 3
+stats: tr_Redirect_To_New_Conversation 0 0 0 521.353 78.628 229.59162499999996 8
+stats: tr_Redirect_To_Same_Conversation 0 0 0 144.963 53.9 93.090625 8
+stats: tr_Reply_To_Conversation 0 0 0 208.193 115.512 163.91512500000002 8
+stats: tr_Post_Login 0 0 0 146.27 133.9 138.82833333333335 3
+stats: tr_Get_New_Book 0 0 0 326.996 5.536 37.60859090909091 22
+stats: tr_Post_New_Book 0 0 0 323.868 15.84 59.01259090909091 22
+stats: tr_Redirect_To_New_Book 0 0 0 337.419 13.016 53.018 22
+stats: tr_Get_Book 0 0 0 60007.053 59999.748 60002.41184615384 26
+# stats: dump at 1575622852
+stats: users 20 59
+stats: {load,"tsung_controller@ip-172-31-26-68"} 1 0.12109375 0.0 0.12109375 0.0 0.009114583333333334 24
+stats: {freemem,"tsung_controller@ip-172-31-26-68"} 1 698.34375 0.0 725.44140625 698.34375 713.5857747395834 24
+stats: {recvpackets,"tsung_controller@ip-172-31-26-68"} 1 567.0 0.0 1627 2 379.2173913043478 23
+stats: {sentpackets,"tsung_controller@ip-172-31-26-68"} 1 1499.0 0.0 1857 3 307.0 23
+stats: {cpu,"tsung_controller@ip-172-31-26-68"} 1 2.498750624687656 0.0 2.498750624687656 0.0 0.5291165434492459 24
+stats: session 1 142045.584 0.0 142045.584 5277.359 43398.34586764706 68
+stats: users_count 0 89
+stats: finish_users_count 1 69
+stats: request 1 47332.38 0.0 60006.853 3.806 5860.069608946607 693
+stats: connect 0 0 0 23.18 0.53 1.4695393258426965 89
+stats: page 1 47332.38 0.0 60006.853 3.806 5928.510354744527 685
+stats: tr_Initial_Get_Root 0 0 0 868.853 40.247 302.79170588235286 51
+stats: 302 0 282
+stats: tr_Get_Root 0 0 0 791.381 84.067 449.039125 8
+stats: match_stop 0 26
+stats: tr_Redirect_Root 0 0 0 1032.287 43.214 414.25185393258425 89
+stats: 504 0 26
+stats: tr_Post_New_Comment_On_Post 0 0 0 406.66 8.959 91.10346666666668 30
+stats: match 1 636
+stats: tr_Get_Post 0 0 0 50506.7 1467.775 35274.91043333334 30
+stats: 200 1 386
+stats: tr_Redirect_To_Post 1 47332.593 0.0 52010.011 1660.153 34068.06361538462 39
+stats: size_rcv 45221 6122401
+stats: tr_Post_New_Comment_On_Comment 0 0 0 429.24 30.055 70.52323333333334 30
+stats: nomatch 0 26
+stats: tr_Get_Logout 0 0 0 22.973 16.475 20.282666666666668 3
+stats: newphase 0 1
+stats: tr_Get_Conversations 0 0 0 182.953 15.728 46.793375 8
+stats: size_sent 0 386362
+stats: tr_Authenticate_User 0 0 0 12221.298 832.679 3868.230617977528 89
+stats: connected -1 20
+stats: tr_Get_New_Conversation 0 0 0 4520.024 442.588 3135.9910000000004 8
+stats: tr_Post_New_Conversation 0 0 0 240.521 94.955 149.33675 8
+stats: tr_Get_Login 0 0 0 8.463 5.104 7.041666666666667 3
+stats: tr_Redirect_To_New_Conversation 0 0 0 521.353 78.628 229.59162499999996 8
+stats: tr_Redirect_To_Same_Conversation 0 0 0 144.963 53.9 93.090625 8
+stats: tr_Reply_To_Conversation 0 0 0 208.193 115.512 163.91512500000002 8
+stats: tr_Post_Login 0 0 0 146.27 133.9 138.82833333333335 3
+stats: tr_Get_New_Book 0 0 0 326.996 5.536 37.60859090909091 22
+stats: tr_Post_New_Book 0 0 0 323.868 15.84 59.01259090909091 22
+stats: tr_Redirect_To_New_Book 0 0 0 337.419 13.016 53.018 22
+stats: tr_Get_Book 0 0 0 60007.053 59999.748 60002.41184615384 26
+# stats: dump at 1575622862
+stats: users 14 59
+stats: {load,"tsung_controller@ip-172-31-26-68"} 1 0.1015625 0.0 0.12109375 0.0 0.01359375 25
+stats: {freemem,"tsung_controller@ip-172-31-26-68"} 1 698.37109375 0.0 725.44140625 698.34375 712.97609375 25
+stats: {recvpackets,"tsung_controller@ip-172-31-26-68"} 1 383.0 0.0 1627 2 387.0416666666667 24
+stats: {sentpackets,"tsung_controller@ip-172-31-26-68"} 1 1028.0 0.0 1857 3 356.6666666666667 24
+stats: {cpu,"tsung_controller@ip-172-31-26-68"} 1 1.547678482276585 0.0 2.498750624687656 0.0 0.6079019066987823 25
+stats: session 6 152462.70416666666 2931.2540844618857 156832.388 5277.359 44828.01598550725 69
+stats: users_count 0 89
+stats: finish_users_count 6 75
+stats: request 5 48840.577600000004 1804.0680257350155 60006.853 3.806 5919.827981268009 694
+stats: connect 0 0 0 23.18 0.53 1.4695393258426965 89
+stats: page 5 48840.577600000004 1804.0680257350155 60006.853 3.806 5988.865849854228 686
+stats: tr_Initial_Get_Root 0 0 0 868.853 40.247 302.79170588235286 51
+stats: 302 0 282
+stats: tr_Get_Root 0 0 0 791.381 84.067 449.039125 8
+stats: match_stop 0 26
+stats: tr_Redirect_Root 0 0 0 1032.287 43.214 414.25185393258425 89
+stats: 504 0 26
+stats: tr_Post_New_Comment_On_Post 0 0 0 406.66 8.959 91.10346666666668 30
+stats: match 5 641
+stats: tr_Get_Post 0 0 0 50506.7 1467.775 35274.91043333334 30
+stats: 200 5 391
+stats: tr_Redirect_To_Post 5 48840.779 1804.0807131524928 52010.011 1660.153 34399.67685 40
+stats: size_rcv 226935 6349336
+stats: tr_Post_New_Comment_On_Comment 0 0 0 429.24 30.055 70.52323333333334 30
+stats: nomatch 0 26
+stats: tr_Get_Logout 0 0 0 22.973 16.475 20.282666666666668 3
+stats: newphase 0 1
+stats: tr_Get_Conversations 0 0 0 182.953 15.728 46.793375 8
+stats: size_sent 0 386362
+stats: tr_Authenticate_User 0 0 0 12221.298 832.679 3868.230617977528 89
+stats: connected -5 15
+stats: tr_Get_New_Conversation 0 0 0 4520.024 442.588 3135.9910000000004 8
+stats: tr_Post_New_Conversation 0 0 0 240.521 94.955 149.33675 8
+stats: tr_Get_Login 0 0 0 8.463 5.104 7.041666666666667 3
+stats: tr_Redirect_To_New_Conversation 0 0 0 521.353 78.628 229.59162499999996 8
+stats: tr_Redirect_To_Same_Conversation 0 0 0 144.963 53.9 93.090625 8
+stats: tr_Reply_To_Conversation 0 0 0 208.193 115.512 163.91512500000002 8
+stats: tr_Post_Login 0 0 0 146.27 133.9 138.82833333333335 3
+stats: tr_Get_New_Book 0 0 0 326.996 5.536 37.60859090909091 22
+stats: tr_Post_New_Book 0 0 0 323.868 15.84 59.01259090909091 22
+stats: tr_Redirect_To_New_Book 0 0 0 337.419 13.016 53.018 22
+stats: tr_Get_Book 0 0 0 60007.053 59999.748 60002.41184615384 26
+# stats: dump at 1575622872
+stats: users 3 59
+stats: {load,"tsung_controller@ip-172-31-26-68"} 1 0.078125 0.0 0.12109375 0.0 0.01697716346153846 26
+stats: {freemem,"tsung_controller@ip-172-31-26-68"} 1 700.32421875 0.0 725.44140625 698.34375 712.4143629807693 26
+stats: {recvpackets,"tsung_controller@ip-172-31-26-68"} 1 405.0 0.0 1627 2 386.88 25
+stats: {sentpackets,"tsung_controller@ip-172-31-26-68"} 1 668.0 0.0 1857 3 383.52 25
+stats: {cpu,"tsung_controller@ip-172-31-26-68"} 1 1.4955134596211366 0.0 2.498750624687656 0.0 0.6440471596056209 26
+stats: session 11 159190.09745454547 3934.5355778063645 163305.658 5277.359 53438.791040000004 75
+stats: users_count 0 89
+stats: finish_users_count 11 86
+stats: request 11 47503.20690909091 2946.1812452044824 60006.853 3.806 6226.843357653789 699
+stats: connect 0 0 0 23.18 0.53 1.4695393258426965 89
+stats: page 11 47503.20690909091 2946.1812452044824 60006.853 3.806 6298.936123010131 691
+stats: tr_Initial_Get_Root 0 0 0 868.853 40.247 302.79170588235286 51
+stats: 302 0 282
+stats: tr_Get_Root 0 0 0 791.381 84.067 449.039125 8
+stats: match_stop 0 26
+stats: tr_Redirect_Root 0 0 0 1032.287 43.214 414.25185393258425 89
+stats: 504 0 26
+stats: tr_Post_New_Comment_On_Post 0 0 0 406.66 8.959 91.10346666666668 30
+stats: match 11 652
+stats: tr_Get_Post 0 0 0 50506.7 1467.775 35274.91043333334 30
+stats: 200 11 402
+stats: tr_Redirect_To_Post 11 47503.388999999996 2946.1775983670163 52584.108 1660.153 36004.24375555556 45
+stats: size_rcv 502412 6851748
+stats: tr_Post_New_Comment_On_Comment 0 0 0 429.24 30.055 70.52323333333334 30
+stats: nomatch 0 26
+stats: tr_Get_Logout 0 0 0 22.973 16.475 20.282666666666668 3
+stats: newphase 0 1
+stats: tr_Get_Conversations 0 0 0 182.953 15.728 46.793375 8
+stats: size_sent 0 386362
+stats: tr_Authenticate_User 0 0 0 12221.298 832.679 3868.230617977528 89
+stats: connected -11 4
+stats: tr_Get_New_Conversation 0 0 0 4520.024 442.588 3135.9910000000004 8
+stats: tr_Post_New_Conversation 0 0 0 240.521 94.955 149.33675 8
+stats: tr_Get_Login 0 0 0 8.463 5.104 7.041666666666667 3
+stats: tr_Redirect_To_New_Conversation 0 0 0 521.353 78.628 229.59162499999996 8
+stats: tr_Redirect_To_Same_Conversation 0 0 0 144.963 53.9 93.090625 8
+stats: tr_Reply_To_Conversation 0 0 0 208.193 115.512 163.91512500000002 8
+stats: tr_Post_Login 0 0 0 146.27 133.9 138.82833333333335 3
+stats: tr_Get_New_Book 0 0 0 326.996 5.536 37.60859090909091 22
+stats: tr_Post_New_Book 0 0 0 323.868 15.84 59.01259090909091 22
+stats: tr_Redirect_To_New_Book 0 0 0 337.419 13.016 53.018 22
+stats: tr_Get_Book 0 0 0 60007.053 59999.748 60002.41184615384 26
+# stats: dump at 1575622878
+stats: users 0 59
+stats: {load,"tsung_controller@ip-172-31-26-68"} 1 0.0703125 0.0 0.12109375 0.0 0.019241898148148147 27
+stats: {freemem,"tsung_controller@ip-172-31-26-68"} 1 705.72265625 0.0 725.44140625 698.34375 711.9665798611111 27
+stats: {recvpackets,"tsung_controller@ip-172-31-26-68"} 1 412.0 0.0 1627 2 387.5769230769231 26
+stats: {sentpackets,"tsung_controller@ip-172-31-26-68"} 1 82.0 0.0 1857 3 394.46153846153845 26
+stats: {cpu,"tsung_controller@ip-172-31-26-68"} 1 0.1 0.0 2.498750624687656 0.0 0.6755829484950844 27
+stats: session 3 161589.83699999997 3186.247449741559 165686.5 5277.359 66965.12093023256 86
+stats: users_count 0 89
+stats: finish_users_count 3 89
+stats: request 4 48255.357 1320.5280589559604 60006.853 3.806 6866.336314084504 710
+stats: connect 0 0 0 23.18 0.53 1.4695393258426965 89
+stats: page 4 48255.357 1320.5280589559604 60006.853 3.806 6944.58708974359 702
+stats: tr_Initial_Get_Root 0 0 0 868.853 40.247 302.79170588235286 51
+stats: 302 0 282
+stats: tr_Get_Root 0 0 0 791.381 84.067 449.039125 8
+stats: match_stop 0 26
+stats: tr_Redirect_Root 0 0 0 1032.287 43.214 414.25185393258425 89
+stats: 504 0 26
+stats: tr_Post_New_Comment_On_Post 0 0 0 406.66 8.959 91.10346666666668 30
+stats: match 4 656
+stats: tr_Get_Post 0 0 0 50506.7 1467.775 35274.91043333334 30
+stats: 200 4 406
+stats: tr_Redirect_To_Post 4 48255.53125 1320.5315083587323 52584.108 1660.153 38263.00442857143 56
+stats: size_rcv 185885 7037633
+stats: tr_Post_New_Comment_On_Comment 0 0 0 429.24 30.055 70.52323333333334 30
+stats: nomatch 0 26
+stats: tr_Get_Logout 0 0 0 22.973 16.475 20.282666666666668 3
+stats: newphase 0 1
+stats: tr_Get_Conversations 0 0 0 182.953 15.728 46.793375 8
+stats: size_sent 0 386362
+stats: tr_Authenticate_User 0 0 0 12221.298 832.679 3868.230617977528 89
+stats: connected -4 0
+stats: tr_Get_New_Conversation 0 0 0 4520.024 442.588 3135.9910000000004 8
+stats: tr_Post_New_Conversation 0 0 0 240.521 94.955 149.33675 8
+stats: tr_Get_Login 0 0 0 8.463 5.104 7.041666666666667 3
+stats: tr_Redirect_To_New_Conversation 0 0 0 521.353 78.628 229.59162499999996 8
+stats: tr_Redirect_To_Same_Conversation 0 0 0 144.963 53.9 93.090625 8
+stats: tr_Reply_To_Conversation 0 0 0 208.193 115.512 163.91512500000002 8
+stats: tr_Post_Login 0 0 0 146.27 133.9 138.82833333333335 3
+stats: tr_Get_New_Book 0 0 0 326.996 5.536 37.60859090909091 22
+stats: tr_Post_New_Book 0 0 0 323.868 15.84 59.01259090909091 22
+stats: tr_Redirect_To_New_Book 0 0 0 337.419 13.016 53.018 22
+stats: tr_Get_Book 0 0 0 60007.053 59999.748 60002.41184615384 26
+EndMonitor:{1575,622878,302355}
