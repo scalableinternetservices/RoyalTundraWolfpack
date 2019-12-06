@@ -77,7 +77,7 @@ class CommentsController < ApplicationController
     #   @comment = Comment.find(params[:id])
     # end
     def set_post
-      @post = Post.find(params[:post_id])
+      # @post = Post.find(params[:post_id])
     end
 
     # # Never trust parameters from the scary internet, only allow the white list through.
