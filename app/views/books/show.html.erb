@@ -22,7 +22,7 @@
                 <div class="header"> <%= post.title %></div>
                 <div class="meta"> by <%= getAuthorById(post.author) %> </div>
                 <div class="meta">Upvotes: <%= post.score %></div>
-                <div class="meta"><%= post.comments.size %> comments</div>
+                <div class="meta"><%= Comment.where(["post_id = ?", post.id]).size %> comments</div>
                 <div class="description"> <%= truncate_content(post.content)%></div>
               </div>
             </a>

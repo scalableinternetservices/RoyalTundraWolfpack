@@ -2,7 +2,7 @@ class CommentsController < ApplicationController
 
   # before_action :set_comment, only: [:show, :edit, :update, :destroy]
   prepend_before_action :authenticate_user!, except: [:index]
-  before_action :find_commentable, :set_post
+  before_action :find_commentable
 
   # GET /comments
   # GET /comments.json

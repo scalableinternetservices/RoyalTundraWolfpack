@@ -2,7 +2,6 @@
 
 <h1 class="ui header"><%= @user.username %>'s Profile</h1>
 
-<%-# cache("user/" + @user.id.to_s) do -%>
   <%if current_user != nil && current_user == @user%>
   <p>
     <strong>Email:</strong>
@@ -37,7 +36,6 @@
   <%= link_to 'Delete', @user, method: :delete, data: { confirm: 'Are you sure?' } %> | 
 <% end %>
 <%= link_to 'Back', root_path %>
-<%-# end -%>
 
 
 
