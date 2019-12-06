@@ -103,8 +103,9 @@
       <transaction name="Post_New_Comment_On_Post">
         <request subst="true">
           <!-- <match do="abort" when="nomatch">HTTP/1.1 (2|3)\d\d</match> -->
-          <dyn_variable name="redirect_post_id" re="Location: http://.*/posts/(.*)\r"/>
-          <http  url="/posts/%%_random_post_id%%/comments" contents="authenticity_token=%%_authenticity_token%%&amp;comment%body%5D=tsung_comment_body&amp;" method="POST"/>
+          <!-- <dyn_variable name="redirect_post_id" re="Location: http://.*/posts/(.*)\r"/> -->
+          <dyn_variable name="redirect_post" re="Location: (http://.*)\r"/>
+          <http  url="/posts/%%_random_post_id%%/comments" contents="authenticity_token=%%_authenticity_token%%&amp;comment%5Bbody%5D=tsung_parent_comment_body&amp;" method="POST"/>
         </request>
       </transaction>
 
@@ -115,20 +116,37 @@
           <!-- <match do="abort" when="nomatch">HTTP/1.1 (2|3)\d\d</match> --><!-- 
           <dyn_variable name="authenticity_token" xpath="string(/html/body/div[2]/div[2]/div[1]/div[2]/form/input[2]/@value)"/> -->
           <dyn_variable name="authenticity_token" xpath="/html/head/meta[@name='csrf-token']/@content"/>
-          <dyn_variable name="first_comment_path" xpath="string(/html/body/div[2]/div[1]/form/@action)"/>
-          <http url="/posts/%%_redirect_post_id%%"/>
+          <dyn_variable name="first_comment_path" xpath="/html/body/div[2]/div[2]/div[1]/div[2]/form/@action"/>
+          <http url="/posts/%%_random_post_id%%"/>
         </request>
       </transaction>
 
       <setdynvars code="fun({Pid,DynVars})-&gt;{ok,Val}=ts_dynvars:lookup(authenticity_token,DynVars),re:replace(Val,&quot;[+]&quot;,&quot;%2B&quot;,[global, {return,list}]) end." sourcetype="eval">
         <var name="authenticity_token"/>
       </setdynvars>
+      
+      <setdynvars code="fun({Pid,DynVars})-&gt;{ok,Val}=ts_dynvars:lookup(first_comment_path,DynVars),re:replace(Val,&quot;[+]&quot;,&quot;%2B&quot;,[global, {return,list}]) end." sourcetype="eval">
+        <var name="first_comment_path"/>
+      </setdynvars>
+
        <thinktime random="true" value="2"/>
 
       <transaction name="Post_New_Comment_On_Comment">
         <request subst="true">
           <!-- <match do="abort" when="nomatch">HTTP/1.1 (2|3)\d\d</match> -->
-          <http url="/posts/%%_redirect_post_id%%/%%_first_comment_path%%"/>
+          <http url="%%_first_comment_path%%" contents="authenticity_token=%%_authenticity_token%%&amp;comment%5Bbody%5D=tsung_child_comment_body&amp;" method="POST"/>
+        </request>
+      </transaction>
+
+      <thinktime random="true" value="2"/>
+
+      <transaction name="Redirect_To_Post">
+        <request subst="true">
+          <!-- <match do="abort" when="nomatch">HTTP/1.1 (2|3)\d\d</match> --><!-- 
+          <dyn_variable name="authenticity_token" xpath="string(/html/body/div[2]/div[2]/div[1]/div[2]/form/input[2]/@value)"/> -->
+<!--           <dyn_variable name="authenticity_token" xpath="/html/head/meta[@name='csrf-token']/@content"/>
+          <dyn_variable name="first_comment_path" xpath="string(/html/body/div[2]/div[1]/form/@action)"/> -->
+          <http url="/posts/%%_random_post_id%%"/>
         </request>
       </transaction>
       
