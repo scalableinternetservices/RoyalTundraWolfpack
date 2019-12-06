@@ -23,6 +23,9 @@ class PostsController < ApplicationController
   # GET /posts/new
   def new
     @post = Post.new
+    if params.has_key?(:book)
+      @book = Book.find(params[:book])
+    end
   end
 
   # GET /posts/1/edit

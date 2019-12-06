@@ -10,9 +10,6 @@ BOOKS = 50
 i = 0
 
 while i < USERS
-  # u = [i.to_s + "@seed.com", "seed" + i.to_s, "asdasd"]
-  # puts u
-  # users << [i.to_s + "@seed.com", "seed" + i.to_s, "asdasd"]
   user = User.new(email: i.to_s + "@seed.com", username: "seed" + i.to_s, password: "asdasd", password_confirmation: "asdasd") 
   users << user
   i += 1
@@ -30,7 +27,6 @@ end
 
 Book.import columns, books, validate: false
 puts "Seeded Books"
-
 
 columns = [:title, :author, :content, :book_id]
 (1..USERS).each do |user_id|
@@ -76,39 +72,3 @@ columns = [:body, :commentable_id, :commentable_type, :user_id]
 end
 
 Comment.import columns, childcomments, validate: false
-# puts "Seeded Child Comments"
-
-# users.each do |sender|
-#   users.each do |receiver|
-#     if sender != receiver
-#       ongoing_conversation = Mailboxer::Conversation.between(receiver, sender).find{|c| c.participants.count == 2 }
-#       if !ongoing_conversation.present?
-#         receipt = sender.send_message(receiver, "seed-message", "default-subject")
-#       end
-#     end
-#   end
-# end
-
-# puts "Seeded Start Msgs"
-
-# users.each do |sender|
-#   count = 10
-#   users.reverse_each do |receiver|
-#     if count < 0
-#       break
-#     end
-#     if sender != receiver
-#       ongoing_conversation = Mailboxer::Conversation.between(receiver, sender).find{|c| c.participants.count == 2 }
-#       if ongoing_conversation.present?
-#         i = 0
-#         while i < 10
-#           receipt = sender.reply_to_conversation(ongoing_conversation, "seed-reply")
-#           i += 1
-#         end
-#       end
-#       count -= 1
-#     end
-#   end
-# end
-
-# puts "Seeded Reply Msgs"
