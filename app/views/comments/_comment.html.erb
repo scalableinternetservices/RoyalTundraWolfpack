@@ -12,7 +12,7 @@
 			<%= form_for [comment, Comment.new] do |f| %>
 				<div class="field">
 				    <%= f.text_area :body, placeholder: "Add a Reply", rows: 1%><br/>
-				   
+				   	<%= f.hidden_field :post_id, :value => request.path_parameters[:id] %>
 				</div>
 			    <%= f.submit "Reply", class: "ui button"  %>
 			<% end %>
