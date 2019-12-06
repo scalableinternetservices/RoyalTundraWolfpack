@@ -1,0 +1,468 @@
+<?xml version="1.0"?><tsung loglevel="notice">
+  <clients>
+    <client host="localhost" maxusers="15000" use_controller_vm="true"/>
+  </clients>
+  <servers>
+    <server host="irenepawena-m524xlarge-base1.3hfpeaqsam.us-west-2.elasticbeanstalk.com" port="80" type="tcp"/>
+  </servers>
+
+  <load>
+    <arrivalphase duration="15" phase="1" unit="second" wait_all_sessions_end="true">
+      <users arrivalrate="2" unit="second"/>
+    </arrivalphase>
+    <arrivalphase duration="15" phase="2" unit="second" wait_all_sessions_end="true">
+      <users arrivalrate="4" unit="second"/>
+    </arrivalphase>
+</load>
+
+  <options>
+    <option name="global_ack_timeout" value="2000"/>
+  </options>
+
+  <sessions>
+
+    <session name="Register-Logout-Login" probability="10" type="ts_http">
+
+
+      <transaction name="Initial_Get_Root">
+        <request>
+          <http url="/"/>
+        </request>
+      </transaction>
+
+      <thinktime random="true" value="2"/>
+      
+      <transaction name="Authenticate_User">
+        <request>
+          <dyn_variable name="authenticity_token"/>
+          <http url="/register"/>
+        </request>
+
+        <setdynvars code="fun({Pid,DynVars})->{ok,Val}=ts_dynvars:lookup(authenticity_token,DynVars),re:replace(Val,&quot;[+]&quot;,&quot;%2B&quot;,[global, {return,list}]) end." sourcetype="eval">
+          <var name="authenticity_token"/>
+        </setdynvars>
+        <setdynvars length="13" sourcetype="random_string">
+          <var name="rnd_email"/>
+        </setdynvars>
+        <setdynvars length="13" sourcetype="random_string">
+          <var name="rnd_user"/>
+        </setdynvars>
+        <thinktime random="true" value="2"/>
+
+        <request subst="true">
+          <http content_type="application/x-www-form-urlencoded" contents="authenticity_token=%%_authenticity_token%%&amp;user%5Bemail%5D=%%_rnd_email%%@gmail.com&amp;user%5Busername%5D=%%_rnd_user%%&amp;user%5Bpassword%5D=123456&amp;user%5Bpassword_confirmation%5D=123456&amp;commit=Sign+up" method="POST" url="/"/>
+        </request>
+
+        <thinktime random="true" value="2"/>
+
+        <request subst="true">
+          <http content_type="application/x-www-form-urlencoded" contents="authenticity_token=%%_authenticity_token%%&amp;user%5Bemail%5D=%%_rnd_email%%@gmail.com&amp;user%5Busername%5D=%%_rnd_user%%&amp;user%5Bpassword%5D=123456&amp;user%5Bpassword_confirmation%5D=123456&amp;commit=Sign+up" method="POST" url="/"/>
+        </request>
+      </transaction>
+
+      <thinktime random="true" value="2"/>
+
+      <transaction name="Redirect_Root">
+        <request>
+          <http url="/"/>
+        </request>
+      </transaction>
+
+      <thinktime random="true" value="2"/>
+
+      <transaction name="Get_Logout">
+        <request>
+          <http url="/logout"/>
+        </request>
+      </transaction>
+
+      <thinktime random="true" value="2"/>
+
+      <transaction name="Get_Login">
+        <request>
+          <dyn_variable name="authenticity_token"/>
+          <http url="/login"/>
+        </request>
+      </transaction>
+
+      <setdynvars code="fun({Pid,DynVars})->{ok,Val}=ts_dynvars:lookup(authenticity_token,DynVars),re:replace(Val,&quot;[+]&quot;,&quot;%2B&quot;,[global, {return,list}]) end." sourcetype="eval">
+        <var name="authenticity_token"/>
+      </setdynvars>
+      <thinktime random="true" value="2"/>
+
+      <transaction name="Post_Login">
+        <request subst="true">
+          <http content_type="application/x-www-form-urlencoded" contents="authenticity_token=%%_authenticity_token%%&amp;user%5Bemail%5D=%%_rnd_email%%@gmail.com&amp;user%5Bpassword%5D=123456&amp;commit=Log+in" method="POST" url="/login"/>
+        </request>
+      </transaction>
+
+    </session>
+
+    <session name="Create-Book" probability="20" type="ts_http">
+      <transaction name="Initial_Get_Root">
+        <request>
+          <http url="/"/>
+        </request>
+      </transaction>
+
+      <thinktime random="true" value="2"/>
+      
+      <transaction name="Authenticate_User">
+        <request>
+          <dyn_variable name="authenticity_token"/>
+          <http url="/register"/>
+        </request>
+
+        <setdynvars code="fun({Pid,DynVars})->{ok,Val}=ts_dynvars:lookup(authenticity_token,DynVars),re:replace(Val,&quot;[+]&quot;,&quot;%2B&quot;,[global, {return,list}]) end." sourcetype="eval">
+          <var name="authenticity_token"/>
+        </setdynvars>
+        <setdynvars length="13" sourcetype="random_string">
+          <var name="rnd_email"/>
+        </setdynvars>
+        <setdynvars length="13" sourcetype="random_string">
+          <var name="rnd_user"/>
+        </setdynvars>
+        <thinktime random="true" value="2"/>
+
+        <request subst="true">
+          <http content_type="application/x-www-form-urlencoded" contents="authenticity_token=%%_authenticity_token%%&amp;user%5Bemail%5D=%%_rnd_email%%@gmail.com&amp;user%5Busername%5D=%%_rnd_user%%&amp;user%5Bpassword%5D=123456&amp;user%5Bpassword_confirmation%5D=123456&amp;commit=Sign+up" method="POST" url="/"/>
+        </request>
+
+        <thinktime random="true" value="2"/>
+
+        <request subst="true">
+          <http content_type="application/x-www-form-urlencoded" contents="authenticity_token=%%_authenticity_token%%&amp;user%5Bemail%5D=%%_rnd_email%%@gmail.com&amp;user%5Busername%5D=%%_rnd_user%%&amp;user%5Bpassword%5D=123456&amp;user%5Bpassword_confirmation%5D=123456&amp;commit=Sign+up" method="POST" url="/"/>
+        </request>
+      </transaction>
+
+      <thinktime random="true" value="2"/>
+
+      <transaction name="Redirect_Root">
+        <request>
+          <http url="/"/>
+        </request>
+      </transaction>
+
+      <thinktime random="true" value="2"/>
+
+      <transaction name="Get_New_Book">
+        <request subst="true">
+          <dyn_variable name="authenticity_token"/>
+          <http url="/books/new"/>
+        </request>
+      </transaction>
+
+      <thinktime random="true" value="2"/>
+
+      <setdynvars code="fun({Pid,DynVars})->{ok,Val}=ts_dynvars:lookup(authenticity_token,DynVars),re:replace(Val,&quot;[+]&quot;,&quot;%2B&quot;,[global, {return,list}]) end." sourcetype="eval">
+        <var name="authenticity_token"/>
+      </setdynvars>
+      <setdynvars length="30" sourcetype="random_string">
+        <var name="rnd_book_title"/>
+      </setdynvars>
+
+      <transaction name="Post_New_Book">
+        <request subst="true">
+          <dyn_variable name="book_id" re="Location: http://.*/books/(.*)\r"/>
+          <http contents="authenticity_token=%%_authenticity_token%%&amp;book%5Btitle%5D=%%_rnd_book_title%%&amp;book%5Bauthor%5D=tsung_book_author&amp;" method="POST" url="/books"/>
+        </request>
+      </transaction>
+
+      <thinktime random="true" value="4"/>
+
+      <transaction name="Redirect_To_New_Book">
+        <request subst="true">
+          <http url="/books/%%_book_id%%"/>
+        </request>
+      </transaction>
+
+    </session>
+
+    <session name="Create-Post" probability="30" type="ts_http">
+
+      <transaction name="Initial_Get_Root">
+        <request>
+          <http url="/"/>
+        </request>
+      </transaction>
+
+      <thinktime random="true" value="2"/>
+      
+      <transaction name="Authenticate_User">
+        <request>
+          <dyn_variable name="authenticity_token"/>
+          <http url="/register"/>
+        </request>
+
+        <setdynvars code="fun({Pid,DynVars})->{ok,Val}=ts_dynvars:lookup(authenticity_token,DynVars),re:replace(Val,&quot;[+]&quot;,&quot;%2B&quot;,[global, {return,list}]) end." sourcetype="eval">
+          <var name="authenticity_token"/>
+        </setdynvars>
+        <setdynvars length="13" sourcetype="random_string">
+          <var name="rnd_email"/>
+        </setdynvars>
+        <setdynvars length="13" sourcetype="random_string">
+          <var name="rnd_user"/>
+        </setdynvars>
+        <thinktime random="true" value="2"/>
+
+        <request subst="true">
+          <http content_type="application/x-www-form-urlencoded" contents="authenticity_token=%%_authenticity_token%%&amp;user%5Bemail%5D=%%_rnd_email%%@gmail.com&amp;user%5Busername%5D=%%_rnd_user%%&amp;user%5Bpassword%5D=123456&amp;user%5Bpassword_confirmation%5D=123456&amp;commit=Sign+up" method="POST" url="/"/>
+        </request>
+
+        <thinktime random="true" value="2"/>
+
+        <request subst="true">
+          <http content_type="application/x-www-form-urlencoded" contents="authenticity_token=%%_authenticity_token%%&amp;user%5Bemail%5D=%%_rnd_email%%@gmail.com&amp;user%5Busername%5D=%%_rnd_user%%&amp;user%5Bpassword%5D=123456&amp;user%5Bpassword_confirmation%5D=123456&amp;commit=Sign+up" method="POST" url="/"/>
+        </request>
+      </transaction>
+
+      <thinktime random="true" value="2"/>
+
+      <transaction name="Redirect_Root">
+        <request>
+          <http url="/"/>
+        </request>
+      </transaction>
+
+      <thinktime random="true" value="2"/>
+      <setdynvars end="30" sourcetype="random_number" start="1">
+        <var name="random_book_id"/>
+      </setdynvars>
+
+      <transaction name="Get_Book">
+        <request subst="true">
+          <http url="/books/%%_random_book_id%%"/>
+        </request>
+      </transaction>
+
+      <thinktime random="true" value="2"/>
+
+      <transaction name="Get_New_Post">
+        <request>
+          <dyn_variable name="authenticity_token"/>
+          <http url="/posts/new"/>
+        </request>
+      </transaction>
+
+      <setdynvars code="fun({Pid,DynVars})->{ok,Val}=ts_dynvars:lookup(authenticity_token,DynVars),re:replace(Val,&quot;[+]&quot;,&quot;%2B&quot;,[global, {return,list}]) end." sourcetype="eval">
+        <var name="authenticity_token"/>
+      </setdynvars>
+
+      <transaction name="Post_New_Post">
+        <request subst="true">
+          <dyn_variable name="post_id" re="Location: http://.*/posts/(.*)\r"/>
+          <http contents="authenticity_token=%%_authenticity_token%%&amp;post%5Btitle%5D=tsung_post_title&amp;post%5Bcontent%5D=tsung_post_content&amp;post%5Bbook_id%5D=%%_random_book_id%%&amp;" method="POST" url="/posts"/>
+        </request>
+      </transaction>
+
+      <thinktime random="true" value="4"/>
+
+      <transaction name="Redirect_To_New_Post">
+        <request subst="true">
+          <http url="/posts/%%_post_id%%"/>
+        </request>
+      </transaction>
+
+    </session>
+
+    <session name="Add_Comment" probability="30" type="ts_http">
+
+      <transaction name="Authenticate_User">
+        <request>
+          <dyn_variable name="authenticity_token"/>
+          <http url="/register"/>
+        </request>
+
+        <setdynvars code="fun({Pid,DynVars})->{ok,Val}=ts_dynvars:lookup(authenticity_token,DynVars),re:replace(Val,&quot;[+]&quot;,&quot;%2B&quot;,[global, {return,list}]) end." sourcetype="eval">
+          <var name="authenticity_token"/>
+        </setdynvars>
+        <setdynvars length="13" sourcetype="random_string">
+          <var name="rnd_email"/>
+        </setdynvars>
+        <setdynvars length="13" sourcetype="random_string">
+          <var name="rnd_user"/>
+        </setdynvars>
+        <thinktime random="true" value="2"/>
+
+        <request subst="true">
+          <http content_type="application/x-www-form-urlencoded" contents="authenticity_token=%%_authenticity_token%%&amp;user%5Bemail%5D=%%_rnd_email%%@gmail.com&amp;user%5Busername%5D=%%_rnd_user%%&amp;user%5Bpassword%5D=123456&amp;user%5Bpassword_confirmation%5D=123456&amp;commit=Sign+up" method="POST" url="/"/>
+        </request>
+
+        <thinktime random="true" value="2"/>
+
+        <request subst="true">
+          <http content_type="application/x-www-form-urlencoded" contents="authenticity_token=%%_authenticity_token%%&amp;user%5Bemail%5D=%%_rnd_email%%@gmail.com&amp;user%5Busername%5D=%%_rnd_user%%&amp;user%5Bpassword%5D=123456&amp;user%5Bpassword_confirmation%5D=123456&amp;commit=Sign+up" method="POST" url="/"/>
+        </request>
+      </transaction>
+
+      <thinktime random="true" value="2"/>
+
+      <transaction name="Redirect_Root">
+        <request>
+          <http url="/"/>
+        </request>
+      </transaction>
+
+      <thinktime random="true" value="2"/>
+
+      <setdynvars end="99" sourcetype="random_number" start="1">
+        <var name="random_post_id"/>
+      </setdynvars>
+
+      <transaction name="Get_Post">
+        <request subst="true">
+          <dyn_variable name="authenticity_token" xpath="/html/head/meta[@name='csrf-token']/@content"/>
+          <http url="/posts/%%_random_post_id%%"/>
+        </request>
+      </transaction>
+
+      <setdynvars code="fun({Pid,DynVars})->{ok,Val}=ts_dynvars:lookup(authenticity_token,DynVars),re:replace(Val,&quot;[+]&quot;,&quot;%2B&quot;,[global, {return,list}]) end." sourcetype="eval">
+        <var name="authenticity_token"/>
+      </setdynvars>
+
+      <transaction name="Post_New_Comment_On_Post">
+        <request subst="true">
+            <dyn_variable name="redirect_post" re="Location: (http://.*)\r"/>
+          <http contents="authenticity_token=%%_authenticity_token%%&amp;comment%5Bbody%5D=tsung_parent_comment_body&amp;" method="POST" url="/posts/%%_random_post_id%%/comments"/>
+        </request>
+      </transaction>
+
+      <thinktime random="true" value="2"/>
+
+      <transaction name="Redirect_To_Post">
+        <request subst="true">
+             <dyn_variable name="authenticity_token" xpath="/html/head/meta[@name='csrf-token']/@content"/>
+          <dyn_variable name="first_comment_path" xpath="/html/body/div[2]/div[2]/div[1]/div[2]/form/@action"/>
+          <http url="/posts/%%_random_post_id%%"/>
+        </request>
+      </transaction>
+
+      <setdynvars code="fun({Pid,DynVars})->{ok,Val}=ts_dynvars:lookup(authenticity_token,DynVars),re:replace(Val,&quot;[+]&quot;,&quot;%2B&quot;,[global, {return,list}]) end." sourcetype="eval">
+        <var name="authenticity_token"/>
+      </setdynvars>
+      <setdynvars code="fun({Pid,DynVars})->{ok,Val}=ts_dynvars:lookup(first_comment_path,DynVars),re:replace(Val,&quot;[+]&quot;,&quot;%2B&quot;,[global, {return,list}]) end." sourcetype="eval">
+        <var name="first_comment_path"/>
+      </setdynvars>
+      <thinktime random="true" value="2"/>
+
+      <transaction name="Post_New_Comment_On_Comment">
+        <request subst="true">
+             <http contents="authenticity_token=%%_authenticity_token%%&amp;comment%5Bbody%5D=tsung_child_comment_body&amp;" method="POST" url="%%_first_comment_path%%"/>
+        </request>
+      </transaction>
+
+      <thinktime random="true" value="2"/>
+
+      <transaction name="Redirect_To_Post">
+        <request subst="true">
+              <http url="/posts/%%_random_post_id%%"/>
+        </request>
+      </transaction>
+    </session>
+
+    <session name="Send-Message" probability="10" type="ts_http">
+
+      <transaction name="Get_Root">
+        <request>
+          <http url="/"/>
+        </request>
+      </transaction>
+
+      <thinktime random="true" value="2"/>
+
+      <transaction name="Authenticate_User">
+        <request>
+          <dyn_variable name="authenticity_token"/>
+          <http url="/register"/>
+        </request>
+
+        <setdynvars code="fun({Pid,DynVars})->{ok,Val}=ts_dynvars:lookup(authenticity_token,DynVars),re:replace(Val,&quot;[+]&quot;,&quot;%2B&quot;,[global, {return,list}]) end." sourcetype="eval">
+          <var name="authenticity_token"/>
+        </setdynvars>
+        <setdynvars length="13" sourcetype="random_string">
+          <var name="rnd_email"/>
+        </setdynvars>
+        <setdynvars length="13" sourcetype="random_string">
+          <var name="rnd_user"/>
+        </setdynvars>
+        <thinktime random="true" value="2"/>
+
+        <request subst="true">
+          <http content_type="application/x-www-form-urlencoded" contents="authenticity_token=%%_authenticity_token%%&amp;user%5Bemail%5D=%%_rnd_email%%@gmail.com&amp;user%5Busername%5D=%%_rnd_user%%&amp;user%5Bpassword%5D=123456&amp;user%5Bpassword_confirmation%5D=123456&amp;commit=Sign+up" method="POST" url="/"/>
+        </request>
+
+        <thinktime random="true" value="2"/>
+
+        <request subst="true">
+          <http content_type="application/x-www-form-urlencoded" contents="authenticity_token=%%_authenticity_token%%&amp;user%5Bemail%5D=%%_rnd_email%%@gmail.com&amp;user%5Busername%5D=%%_rnd_user%%&amp;user%5Bpassword%5D=123456&amp;user%5Bpassword_confirmation%5D=123456&amp;commit=Sign+up" method="POST" url="/"/>
+        </request>
+      </transaction>
+
+      <thinktime random="true" value="2"/>
+
+      <transaction name="Redirect_Root">
+        <request>
+              <http url="/"/>
+        </request>
+      </transaction>
+
+      <thinktime random="true" value="2"/>
+
+      <transaction name="Get_Conversations">
+        <request>
+              <http url="/conversations"/>
+        </request>
+      </transaction>
+
+      <thinktime random="true" value="2"/>
+
+      <transaction name="Get_New_Conversation">
+        <request>
+             <dyn_variable name="authenticity_token"/>
+          <http url="/conversations/new"/>
+        </request>
+      </transaction>
+
+      <setdynvars code="fun({Pid,DynVars})->{ok,Val}=ts_dynvars:lookup(authenticity_token,DynVars),re:replace(Val,&quot;[+]&quot;,&quot;%2B&quot;,[global, {return,list}]) end." sourcetype="eval">
+        <var name="authenticity_token"/>
+      </setdynvars>
+      <setdynvars end="30" sourcetype="random_number" start="1">
+        <var name="random_user_id"/>
+      </setdynvars>
+      <thinktime random="true" value="2"/>
+
+      <transaction name="Post_New_Conversation">
+        <request subst="true">
+              <dyn_variable name="convo_id" re="Location: http://.*/conversations/(.*)\r"/>
+          <http contents="authenticity_token=%%_authenticity_token%%&amp;user_id=2&amp;body=tsung_message&amp;" method="POST" url="/conversations"/>
+        </request>
+      </transaction>
+
+      <thinktime random="true" value="4"/>
+
+      <transaction name="Redirect_To_New_Conversation">
+        <request subst="true">
+          <dyn_variable name="authenticity_token"/>
+          <http url="/conversations/%%_convo_id%%"/>
+        </request>
+      </transaction>
+
+      <setdynvars code="fun({Pid,DynVars})->{ok,Val}=ts_dynvars:lookup(authenticity_token,DynVars),re:replace(Val,&quot;[+]&quot;,&quot;%2B&quot;,[global, {return,list}]) end." sourcetype="eval">
+        <var name="authenticity_token"/>
+      </setdynvars>
+      <thinktime random="true" value="2"/>
+
+      <transaction name="Reply_To_Conversation">
+        <request subst="true">
+          <http contents="authenticity_token=%%_authenticity_token%%&amp;body=message" method="POST" url="/conversations/%%_convo_id%%/messages"/>
+        </request>
+      </transaction>
+
+      <transaction name="Redirect_To_Same_Conversation">
+        <request subst="true">
+          <http url="/conversations/%%_convo_id%%"/>
+        </request>
+      </transaction>
+    </session>
+  </sessions>
+</tsung>
