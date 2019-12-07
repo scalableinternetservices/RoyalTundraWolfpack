@@ -1,0 +1,189 @@
+
+=INFO REPORT==== 7-Dec-2019::02:47:01 ===
+    ts_config_server:(5:<0.102.0>) Config server started, logdir is "/home/ec2-user/.tsung/log/20191207-0247"
+ 
+=INFO REPORT==== 7-Dec-2019::02:47:01 ===
+              ts_mon:(5:<0.83.0>) starting monitor, global 
+
+=INFO REPORT==== 7-Dec-2019::02:47:01 ===
+           ts_config:(5:<0.102.0>) Reading config file: simple.xml
+
+=INFO REPORT==== 7-Dec-2019::02:47:01 ===
+           ts_config:(5:<0.102.0>) Session name for id 1 is "Register-Logout-Login"
+
+=INFO REPORT==== 7-Dec-2019::02:47:01 ===
+           ts_config:(5:<0.102.0>) Session name for id 2 is "Create-Book"
+
+=INFO REPORT==== 7-Dec-2019::02:47:01 ===
+           ts_config:(5:<0.102.0>) Session name for id 3 is "Create-Post"
+
+=INFO REPORT==== 7-Dec-2019::02:47:01 ===
+           ts_config:(5:<0.102.0>) Session name for id 4 is "Add_Comment"
+
+=INFO REPORT==== 7-Dec-2019::02:47:01 ===
+           ts_config:(5:<0.102.0>) Session name for id 5 is "Send-Message"
+
+=INFO REPORT==== 7-Dec-2019::02:47:01 ===
+    ts_config_server:(4:<0.102.0>) SYSINFO:Tsung version: 1.7.0
+
+=INFO REPORT==== 7-Dec-2019::02:47:01 ===
+    ts_config_server:(4:<0.102.0>) SYSINFO:Erlang version: Erlang/OTP 20 [erts-9.1] [source] [64-bit] [smp:2:2] [ds:2:2:10] [async-threads:8] [hipe] [kernel-poll:true]
+
+
+=INFO REPORT==== 7-Dec-2019::02:47:01 ===
+    ts_config_server:(4:<0.102.0>) SYSINFO:System architecture x86_64-unknown-linux-gnu
+
+=INFO REPORT==== 7-Dec-2019::02:47:01 ===
+    ts_config_server:(4:<0.102.0>) SYSINFO:Current path: /usr/local/lib/tsung/tsung-1.7.0/ebin/tsung.beam
+
+=INFO REPORT==== 7-Dec-2019::02:47:01 ===
+              ts_mon:(5:<0.103.0>) Activate clients with text backend
+
+=INFO REPORT==== 7-Dec-2019::02:47:01 ===
+              ts_mon:(5:<0.103.0>) Starting tsung clients on hosts: [localhost]
+
+=INFO REPORT==== 7-Dec-2019::02:47:01 ===
+    ts_config_server:(5:<0.102.0>) Start a launcher on the controller beam localhost
+
+=INFO REPORT==== 7-Dec-2019::02:47:01 ===
+  ts_launcher_static:(5:<0.154.0>) Launch msg receive ("localhost")
+
+=INFO REPORT==== 7-Dec-2019::02:47:01 ===
+         ts_launcher:(5:<0.155.0>) Launch msg receive ("localhost")
+
+=INFO REPORT==== 7-Dec-2019::02:47:01 ===
+    ts_config_server:(5:<0.102.0>) New arrival phase 1 for client "localhost" (last ? true): will start 30 users
+
+=INFO REPORT==== 7-Dec-2019::02:47:01 ===
+    ts_config_server:(5:<0.102.0>) New arrival phase 2 for client "localhost" (last ? true): will start 60 users
+
+=INFO REPORT==== 7-Dec-2019::02:47:01 ===
+    ts_config_server:(5:<0.102.0>) New arrival phase 3 for client "localhost" (last ? true): will start 120 users
+
+=INFO REPORT==== 7-Dec-2019::02:47:01 ===
+    ts_config_server:(5:<0.102.0>) New arrival phase 4 for client "localhost" (last ? true): will start 240 users
+
+=INFO REPORT==== 7-Dec-2019::02:47:01 ===
+    ts_config_server:(5:<0.102.0>) New arrival phase 5 for client "localhost" (last ? true): will start 480 users
+
+=INFO REPORT==== 7-Dec-2019::02:47:01 ===
+    ts_config_server:(5:<0.102.0>) New arrival phase 6 for client "localhost" (last ? true): will start 960 users
+
+=INFO REPORT==== 7-Dec-2019::02:47:01 ===
+         ts_launcher:(5:<0.155.0>) Expected duration of first phase: 15.0 sec (30 users) 
+
+=INFO REPORT==== 7-Dec-2019::02:47:01 ===
+         ts_launcher:(5:<0.155.0>) Activate launcher (30 users) in 1323 msec 
+
+=INFO REPORT==== 7-Dec-2019::02:47:14 ===
+         ts_launcher:(4:<0.155.0>) Need to wait 2.619 sec before changing phase, going to sleep
+
+=INFO REPORT==== 7-Dec-2019::02:47:17 ===
+         ts_launcher:(5:<0.155.0>) Waking up
+
+=INFO REPORT==== 7-Dec-2019::02:47:17 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 25 sessions active)
+=INFO REPORT==== 7-Dec-2019::02:47:22 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 18 sessions active)
+=INFO REPORT==== 7-Dec-2019::02:47:27 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 12 sessions active)
+=INFO REPORT==== 7-Dec-2019::02:47:32 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 3 sessions active)
+=INFO REPORT==== 7-Dec-2019::02:47:37 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 2 sessions active)
+=INFO REPORT==== 7-Dec-2019::02:47:42 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 1 sessions active)
+=INFO REPORT==== 7-Dec-2019::02:47:47 ===
+         ts_launcher:(5:<0.155.0>) Start a new arrival phase (60 users, 0.004); expected duration=15.0 sec
+
+=INFO REPORT==== 7-Dec-2019::02:48:02 ===
+         ts_launcher:(5:<0.155.0>) Phase duration exceeded, but not all users were launched (2 users, 3.3% of phase)
+
+=INFO REPORT==== 7-Dec-2019::02:48:02 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 51 sessions active)
+=INFO REPORT==== 7-Dec-2019::02:48:07 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 37 sessions active)
+=INFO REPORT==== 7-Dec-2019::02:48:12 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 16 sessions active)
+=INFO REPORT==== 7-Dec-2019::02:48:17 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 8 sessions active)
+=INFO REPORT==== 7-Dec-2019::02:48:22 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 4 sessions active)
+=INFO REPORT==== 7-Dec-2019::02:48:27 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 2 sessions active)
+=INFO REPORT==== 7-Dec-2019::02:48:32 ===
+         ts_launcher:(5:<0.155.0>) Start a new arrival phase (120 users, 0.008); expected duration=15.0 sec
+
+=INFO REPORT==== 7-Dec-2019::02:48:47 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 105 sessions active)
+=INFO REPORT==== 7-Dec-2019::02:48:52 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 83 sessions active)
+=INFO REPORT==== 7-Dec-2019::02:48:57 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 43 sessions active)
+=INFO REPORT==== 7-Dec-2019::02:49:02 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 20 sessions active)
+=INFO REPORT==== 7-Dec-2019::02:49:07 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 9 sessions active)
+=INFO REPORT==== 7-Dec-2019::02:49:12 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 1 sessions active)
+=INFO REPORT==== 7-Dec-2019::02:49:17 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 1 sessions active)
+=INFO REPORT==== 7-Dec-2019::02:49:22 ===
+         ts_launcher:(5:<0.155.0>) Start a new arrival phase (240 users, 0.016); expected duration=15.0 sec
+
+=INFO REPORT==== 7-Dec-2019::02:49:37 ===
+         ts_launcher:(4:<0.155.0>) Need to wait 0.572 sec before changing phase, going to sleep
+
+=INFO REPORT==== 7-Dec-2019::02:49:37 ===
+         ts_launcher:(5:<0.155.0>) Waking up
+
+=INFO REPORT==== 7-Dec-2019::02:49:37 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 201 sessions active)
+=INFO REPORT==== 7-Dec-2019::02:49:42 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 158 sessions active)
+=INFO REPORT==== 7-Dec-2019::02:49:47 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 97 sessions active)
+=INFO REPORT==== 7-Dec-2019::02:49:52 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 40 sessions active)
+=INFO REPORT==== 7-Dec-2019::02:49:57 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 20 sessions active)
+=INFO REPORT==== 7-Dec-2019::02:50:02 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 6 sessions active)
+=INFO REPORT==== 7-Dec-2019::02:50:07 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 3 sessions active)
+=INFO REPORT==== 7-Dec-2019::02:50:12 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 1 sessions active)
+=INFO REPORT==== 7-Dec-2019::02:50:17 ===
+         ts_launcher:(5:<0.155.0>) Start a new arrival phase (480 users, 0.032); expected duration=15.0 sec
+
+=INFO REPORT==== 7-Dec-2019::02:50:32 ===
+         ts_launcher:(5:<0.155.0>) Phase duration exceeded, but not all users were launched (26 users, 5.4% of phase)
+
+=INFO REPORT==== 7-Dec-2019::02:50:32 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 400 sessions active)
+=INFO REPORT==== 7-Dec-2019::02:50:37 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 310 sessions active)
+=INFO REPORT==== 7-Dec-2019::02:50:42 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 208 sessions active)
+=INFO REPORT==== 7-Dec-2019::02:50:47 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 84 sessions active)
+=INFO REPORT==== 7-Dec-2019::02:50:52 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 33 sessions active)
+=INFO REPORT==== 7-Dec-2019::02:50:57 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 12 sessions active)
+=INFO REPORT==== 7-Dec-2019::02:51:02 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 5 sessions active)
+=INFO REPORT==== 7-Dec-2019::02:51:07 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 3 sessions active)
+=INFO REPORT==== 7-Dec-2019::02:51:12 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 2 sessions active)
+=INFO REPORT==== 7-Dec-2019::02:51:17 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 1 sessions active)
+=INFO REPORT==== 7-Dec-2019::02:51:22 ===
+         ts_launcher:(5:<0.155.0>) Start a new arrival phase (960 users, 0.064); expected duration=15.0 sec
+
+=INFO REPORT==== 7-Dec-2019::02:51:37 ===
+         ts_launcher:(5:<0.155.0>) This was the last phase, wait for connected users to finish their session
+
+=INFO REPORT==== 7-Dec-2019::02:52:22 ===
+     ts_launcher_mgr:(5:<0.149.0>) No more active users 'tsung_controller@ip-172-31-29-144' "2282"
