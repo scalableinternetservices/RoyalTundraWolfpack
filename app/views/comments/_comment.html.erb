@@ -1,7 +1,8 @@
 
 <div class="comment">
 	<div class="content">
-		<p class="author"><a href="<%= url_for(comment.user)%>"><%=comment.user.username%></a></p>
+		<% author = comment.user%>
+		<p class="author"><a href="<%= url_for(author)%>"><%=author.username%></a></p>
 		<div class="text">
 			<p><%= comment.body %></p>
 		</div>

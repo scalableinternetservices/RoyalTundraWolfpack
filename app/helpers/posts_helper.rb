@@ -53,7 +53,6 @@ module PostsHelper
 
   def _renderComment(comment, children)
     #render comment, children: children
-    puts children
     render comment, children: children
   end
 end
