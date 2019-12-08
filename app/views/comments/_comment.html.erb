@@ -1,7 +1,7 @@
 
 <div class="comment">
 	<div class="content">
-		<p class="author"><a href="<%= url_for(User.find(comment.user.id))%>"><%=comment.user.username%></a></p>
+		<p class="author"><a href="<%= url_for(comment.user)%>"><%=comment.user.username%></a></p>
 		<div class="text">
 			<p><%= comment.body %></p>
 		</div>
@@ -12,14 +12,17 @@
 			<%= form_for [comment, Comment.new] do |f| %>
 				<div class="field">
 				    <%= f.text_area :body, placeholder: "Add a Reply", rows: 1%><br/>
-				   	<%= f.hidden_field :post_id, :value => request.path_parameters[:id] %>
+				   	<%= f.hidden_field :post_id, :value => params[:id] %>
 				</div>
 			    <%= f.submit "Reply", class: "ui button"  %>
 			<% end %>
 		</div>
 	<% end %>
 
-	<div class="comments">
-	    <%= render partial: 'comments/comment', collection: comment.comments %>
-	</div>
+	<%if children %>
+		<div class="comments">
+				<%#= render partial: "comments/comment", collection: [ children ] %>
+				<%= children.html_safe %>
+		</div>
+	<% end %>
 </div>
