@@ -34,6 +34,9 @@
     <arrivalphase duration="15" phase="8" unit="second" wait_all_sessions_end="true">
       <users arrivalrate="256" unit="second"/>
     </arrivalphase>
+    <arrivalphase duration="15" phase="9" unit="second" wait_all_sessions_end="true">
+      <users arrivalrate="512" unit="second"/>
+    </arrivalphase>
   </load>
 
   <options>
@@ -242,13 +245,6 @@
         <setdynvars length="13" sourcetype="random_string">
           <var name="rnd_user"/>
         </setdynvars>
-        <thinktime random="true" value="2"/>
-
-        <request subst="true">
-          <match do="abort" when="nomatch">HTTP/1.1 (2|3)\d\d</match>
-          <http content_type="application/x-www-form-urlencoded" contents="authenticity_token=%%_authenticity_token%%&amp;user%5Bemail%5D=%%_rnd_email%%@gmail.com&amp;user%5Busername%5D=%%_rnd_user%%&amp;user%5Bpassword%5D=123456&amp;user%5Bpassword_confirmation%5D=123456&amp;commit=Sign+up" method="POST" url="/"/>
-        </request>
-
         <thinktime random="true" value="2"/>
 
         <request subst="true">
