@@ -5,18 +5,21 @@ parentcomments= []
 users = []
 books = []
 
+TOTAL_USERS = 2048
 USERS = 100
 BOOKS = 50
 
 i = 0
 
-while i < USERS
-  user = User.new(email: i.to_s + "@seed.com", username: "seed" + i.to_s, password: "asdasd", password_confirmation: "asdasd") 
-  users << user
+while i < TOTAL_USERS
+  user = User.new(email: i.to_s + "@seed.com", username: "seed" + i.to_s, password: "123456", password_confirmation: "123456") 
+  if i < USERS
+    users << user
+  end
+  user.save!(:validate => false)
   i += 1
 end
 
-User.import users, validate: false
 puts "Seeded Users"
 
 i = 0
