@@ -1,0 +1,2 @@
+[10/Dec/2019:01:29:39 -0000] access to /es../../assets/ico/favicon.ico failed for 66.240.219.146, reason: 
+"httpd_file: Can't access /home/ec2-user/.tsung/log/20191210-0054/es../../assets/ico/favicon.ico: File not found"

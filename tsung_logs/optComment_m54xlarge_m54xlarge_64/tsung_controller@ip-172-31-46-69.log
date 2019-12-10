@@ -1,0 +1,1960 @@
+
+=INFO REPORT==== 9-Dec-2019::10:31:41 ===
+    ts_config_server:(5:<0.102.0>) Config server started, logdir is "/home/ec2-user/.tsung/log/20191209-1031"
+ 
+=INFO REPORT==== 9-Dec-2019::10:31:41 ===
+              ts_mon:(5:<0.83.0>) starting monitor, global 
+
+=INFO REPORT==== 9-Dec-2019::10:31:41 ===
+           ts_config:(5:<0.102.0>) Reading config file: simple.xml
+
+=INFO REPORT==== 9-Dec-2019::10:31:41 ===
+           ts_config:(5:<0.102.0>) Session name for id 1 is "Register-Logout-Login"
+
+=INFO REPORT==== 9-Dec-2019::10:31:41 ===
+           ts_config:(5:<0.102.0>) Session name for id 2 is "Create-Book"
+
+=INFO REPORT==== 9-Dec-2019::10:31:41 ===
+           ts_config:(5:<0.102.0>) Session name for id 3 is "Create-Post"
+
+=INFO REPORT==== 9-Dec-2019::10:31:41 ===
+           ts_config:(5:<0.102.0>) Session name for id 4 is "Add_Comment"
+
+=INFO REPORT==== 9-Dec-2019::10:31:41 ===
+           ts_config:(5:<0.102.0>) Session name for id 5 is "Send-Message"
+
+=INFO REPORT==== 9-Dec-2019::10:31:41 ===
+    ts_config_server:(4:<0.102.0>) SYSINFO:Tsung version: 1.7.0
+
+=INFO REPORT==== 9-Dec-2019::10:31:41 ===
+    ts_config_server:(4:<0.102.0>) SYSINFO:Erlang version: Erlang/OTP 20 [erts-9.1] [source] [64-bit] [smp:96:96] [ds:96:96:10] [async-threads:8] [hipe] [kernel-poll:true]
+
+
+=INFO REPORT==== 9-Dec-2019::10:31:41 ===
+    ts_config_server:(4:<0.102.0>) SYSINFO:System architecture x86_64-unknown-linux-gnu
+
+=INFO REPORT==== 9-Dec-2019::10:31:41 ===
+    ts_config_server:(4:<0.102.0>) SYSINFO:Current path: /usr/local/lib/tsung/tsung-1.7.0/ebin/tsung.beam
+
+=INFO REPORT==== 9-Dec-2019::10:31:41 ===
+              ts_mon:(5:<0.103.0>) Activate clients with text backend
+
+=INFO REPORT==== 9-Dec-2019::10:31:41 ===
+              ts_mon:(5:<0.103.0>) Starting tsung clients on hosts: [localhost]
+
+=INFO REPORT==== 9-Dec-2019::10:31:41 ===
+    ts_config_server:(5:<0.102.0>) Start a launcher on the controller beam localhost
+
+=INFO REPORT==== 9-Dec-2019::10:31:41 ===
+  ts_launcher_static:(5:<0.154.0>) Launch msg receive ("localhost")
+
+=INFO REPORT==== 9-Dec-2019::10:31:41 ===
+         ts_launcher:(5:<0.155.0>) Launch msg receive ("localhost")
+
+=INFO REPORT==== 9-Dec-2019::10:31:41 ===
+    ts_config_server:(5:<0.102.0>) New arrival phase 1 for client "localhost" (last ? true): will start 30 users
+
+=INFO REPORT==== 9-Dec-2019::10:31:41 ===
+    ts_config_server:(5:<0.102.0>) New arrival phase 2 for client "localhost" (last ? true): will start 60 users
+
+=INFO REPORT==== 9-Dec-2019::10:31:41 ===
+    ts_config_server:(5:<0.102.0>) New arrival phase 3 for client "localhost" (last ? true): will start 120 users
+
+=INFO REPORT==== 9-Dec-2019::10:31:41 ===
+    ts_config_server:(5:<0.102.0>) New arrival phase 4 for client "localhost" (last ? true): will start 240 users
+
+=INFO REPORT==== 9-Dec-2019::10:31:41 ===
+    ts_config_server:(5:<0.102.0>) New arrival phase 5 for client "localhost" (last ? true): will start 480 users
+
+=INFO REPORT==== 9-Dec-2019::10:31:41 ===
+    ts_config_server:(5:<0.102.0>) New arrival phase 6 for client "localhost" (last ? true): will start 960 users
+
+=INFO REPORT==== 9-Dec-2019::10:31:41 ===
+         ts_launcher:(5:<0.155.0>) Expected duration of first phase: 15.0 sec (30 users) 
+
+=INFO REPORT==== 9-Dec-2019::10:31:41 ===
+         ts_launcher:(5:<0.155.0>) Activate launcher (30 users) in 1130 msec 
+
+=INFO REPORT==== 9-Dec-2019::10:31:57 ===
+         ts_launcher:(5:<0.155.0>) Phase duration exceeded, but not all users were launched (6 users, 20.0% of phase)
+
+=INFO REPORT==== 9-Dec-2019::10:31:57 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 23 sessions active)
+=INFO REPORT==== 9-Dec-2019::10:32:02 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 14 sessions active)
+=INFO REPORT==== 9-Dec-2019::10:32:07 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 7 sessions active)
+=INFO REPORT==== 9-Dec-2019::10:32:12 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 4 sessions active)
+=INFO REPORT==== 9-Dec-2019::10:32:17 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 1 sessions active)
+=INFO REPORT==== 9-Dec-2019::10:32:22 ===
+         ts_launcher:(5:<0.155.0>) Start a new arrival phase (60 users, 0.004); expected duration=15.0 sec
+
+=INFO REPORT==== 9-Dec-2019::10:32:38 ===
+         ts_launcher:(5:<0.155.0>) Phase duration exceeded, but not all users were launched (8 users, 13.3% of phase)
+
+=INFO REPORT==== 9-Dec-2019::10:32:38 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 46 sessions active)
+=INFO REPORT==== 9-Dec-2019::10:32:43 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 37 sessions active)
+=INFO REPORT==== 9-Dec-2019::10:32:48 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 21 sessions active)
+=INFO REPORT==== 9-Dec-2019::10:32:53 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 9 sessions active)
+=INFO REPORT==== 9-Dec-2019::10:32:58 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 3 sessions active)
+=INFO REPORT==== 9-Dec-2019::10:33:03 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 1 sessions active)
+=INFO REPORT==== 9-Dec-2019::10:33:08 ===
+         ts_launcher:(5:<0.155.0>) Start a new arrival phase (120 users, 0.008); expected duration=15.0 sec
+
+=INFO REPORT==== 9-Dec-2019::10:33:23 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 109 sessions active)
+=INFO REPORT==== 9-Dec-2019::10:33:28 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 83 sessions active)
+=INFO REPORT==== 9-Dec-2019::10:33:33 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 60 sessions active)
+=INFO REPORT==== 9-Dec-2019::10:33:38 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 31 sessions active)
+=INFO REPORT==== 9-Dec-2019::10:33:43 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 15 sessions active)
+=INFO REPORT==== 9-Dec-2019::10:33:48 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 4 sessions active)
+=INFO REPORT==== 9-Dec-2019::10:33:53 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 2 sessions active)
+=INFO REPORT==== 9-Dec-2019::10:33:58 ===
+         ts_launcher:(5:<0.155.0>) Start a new arrival phase (240 users, 0.016); expected duration=15.0 sec
+
+=INFO REPORT==== 9-Dec-2019::10:34:13 ===
+         ts_launcher:(5:<0.155.0>) Phase duration exceeded, but not all users were launched (28 users, 11.7% of phase)
+
+=INFO REPORT==== 9-Dec-2019::10:34:13 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 189 sessions active)
+=INFO REPORT==== 9-Dec-2019::10:34:18 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 149 sessions active)
+=INFO REPORT==== 9-Dec-2019::10:34:23 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 99 sessions active)
+=INFO REPORT==== 9-Dec-2019::10:34:28 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 58 sessions active)
+=INFO REPORT==== 9-Dec-2019::10:34:33 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 23 sessions active)
+=INFO REPORT==== 9-Dec-2019::10:34:38 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 9 sessions active)
+=INFO REPORT==== 9-Dec-2019::10:34:43 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 3 sessions active)
+=INFO REPORT==== 9-Dec-2019::10:34:48 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 3 sessions active)
+=INFO REPORT==== 9-Dec-2019::10:34:53 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 2 sessions active)
+=INFO REPORT==== 9-Dec-2019::10:34:58 ===
+         ts_launcher:(5:<0.155.0>) Start a new arrival phase (480 users, 0.032); expected duration=15.0 sec
+
+=INFO REPORT==== 9-Dec-2019::10:35:12 ===
+         ts_launcher:(4:<0.155.0>) Need to wait 0.361 sec before changing phase, going to sleep
+
+=INFO REPORT==== 9-Dec-2019::10:35:13 ===
+         ts_launcher:(5:<0.155.0>) Waking up
+
+=INFO REPORT==== 9-Dec-2019::10:35:13 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 446 sessions active)
+=INFO REPORT==== 9-Dec-2019::10:35:18 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 405 sessions active)
+=INFO REPORT==== 9-Dec-2019::10:35:23 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 345 sessions active)
+=INFO REPORT==== 9-Dec-2019::10:35:28 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 240 sessions active)
+=INFO REPORT==== 9-Dec-2019::10:35:33 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 138 sessions active)
+=INFO REPORT==== 9-Dec-2019::10:35:38 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 77 sessions active)
+=INFO REPORT==== 9-Dec-2019::10:35:43 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 31 sessions active)
+=INFO REPORT==== 9-Dec-2019::10:35:48 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 11 sessions active)
+=INFO REPORT==== 9-Dec-2019::10:35:53 ===
+         ts_launcher:(5:<0.155.0>) Wait for all sessions to finish before starting next phase (still 3 sessions active)
+=INFO REPORT==== 9-Dec-2019::10:35:58 ===
+         ts_launcher:(5:<0.155.0>) Start a new arrival phase (960 users, 0.064); expected duration=15.0 sec
+
+=INFO REPORT==== 9-Dec-2019::10:36:11 ===
+           ts_search:(5:<0.1321.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:11 ===
+           ts_search:(5:<0.1111.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:11 ===
+           ts_search:(5:<0.1111.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:11 ===
+           ts_search:(5:<0.1214.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:11 ===
+           ts_search:(5:<0.1214.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:11 ===
+           ts_search:(5:<0.1304.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:11 ===
+           ts_search:(5:<0.1331.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:11 ===
+           ts_search:(5:<0.1896.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:11 ===
+           ts_search:(5:<0.1897.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:11 ===
+           ts_search:(5:<0.1899.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:11 ===
+           ts_search:(5:<0.1901.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:11 ===
+           ts_search:(5:<0.1355.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:11 ===
+           ts_search:(5:<0.1267.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:11 ===
+           ts_search:(5:<0.1356.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:11 ===
+           ts_search:(5:<0.1889.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:11 ===
+           ts_search:(5:<0.1133.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:11 ===
+           ts_search:(5:<0.1905.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:11 ===
+           ts_search:(5:<0.1909.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:11 ===
+           ts_search:(5:<0.1314.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:11 ===
+           ts_search:(5:<0.1912.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:11 ===
+           ts_search:(5:<0.1914.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:11 ===
+           ts_search:(5:<0.1919.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:11 ===
+           ts_search:(5:<0.1894.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:11 ===
+           ts_search:(5:<0.1910.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:11 ===
+           ts_search:(5:<0.1921.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:11 ===
+           ts_search:(5:<0.1388.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:11 ===
+           ts_search:(5:<0.1165.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:11 ===
+           ts_search:(5:<0.1165.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:11 ===
+           ts_search:(5:<0.1922.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:11 ===
+           ts_search:(5:<0.1096.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:11 ===
+           ts_search:(5:<0.1925.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1927.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1512.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1512.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1353.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1931.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1932.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1902.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1509.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1509.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1395.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1447.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1447.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1942.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1945.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1755.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1755.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1911.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1928.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1426.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1959.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1960.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1913.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1926.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1343.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1515.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1515.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1493.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1493.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1969.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1396.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1325.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1947.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1977.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1979.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1978.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1446.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1446.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1981.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1985.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1446.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1446.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1935.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1988.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1572.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1572.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1312.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1312.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1990.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1413.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1413.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1133.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1133.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.2004.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1462.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1939.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1924.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.2007.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1315.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:12 ===
+           ts_search:(5:<0.1315.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1312.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1312.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1420.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1420.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1108.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1308.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1278.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1278.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1962.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1318.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1755.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1755.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1950.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1895.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1971.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1956.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.2022.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.2023.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1986.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+         ts_launcher:(5:<0.155.0>) Phase duration exceeded, but not all users were launched (25 users, 2.6% of phase)
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+         ts_launcher:(5:<0.155.0>) This was the last phase, wait for connected users to finish their session
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.2027.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1108.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1136.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1410.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1933.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1936.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1963.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1097.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1940.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1407.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1338.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1362.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1519.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.2001.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1385.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1970.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1369.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1509.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1509.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.2002.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1417.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.2005.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1893.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1399.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1975.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1282.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1282.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1921.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1921.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1974.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1470.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1470.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1788.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1788.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1906.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1953.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.2010.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1967.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1512.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1512.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1115.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1322.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1110.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:13 ===
+           ts_search:(5:<0.1345.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:14 ===
+           ts_search:(5:<0.2006.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:14 ===
+           ts_search:(5:<0.1538.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:14 ===
+           ts_search:(5:<0.1538.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:14 ===
+           ts_search:(5:<0.1306.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:14 ===
+           ts_search:(5:<0.1306.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:14 ===
+           ts_search:(5:<0.2011.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:14 ===
+           ts_search:(5:<0.1912.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:14 ===
+           ts_search:(5:<0.1912.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:14 ===
+           ts_search:(5:<0.1568.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:14 ===
+           ts_search:(5:<0.1568.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:14 ===
+           ts_search:(5:<0.1354.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:14 ===
+           ts_search:(5:<0.1344.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:14 ===
+           ts_search:(5:<0.1973.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:14 ===
+           ts_search:(5:<0.1580.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:14 ===
+           ts_search:(5:<0.1580.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:14 ===
+           ts_search:(5:<0.1946.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:14 ===
+           ts_search:(5:<0.1532.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:14 ===
+           ts_search:(5:<0.1532.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:14 ===
+           ts_search:(5:<0.1904.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:14 ===
+           ts_search:(5:<0.1538.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:14 ===
+           ts_search:(5:<0.1538.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:14 ===
+           ts_search:(5:<0.1510.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:14 ===
+           ts_search:(5:<0.1510.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:14 ===
+           ts_search:(5:<0.1418.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:14 ===
+           ts_search:(5:<0.2009.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:14 ===
+           ts_search:(5:<0.1510.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:14 ===
+           ts_search:(5:<0.1510.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:14 ===
+           ts_search:(5:<0.1267.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:14 ===
+           ts_search:(5:<0.1372.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:14 ===
+           ts_search:(5:<0.1631.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:14 ===
+           ts_search:(5:<0.1631.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:14 ===
+           ts_search:(5:<0.1177.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:14 ===
+           ts_search:(5:<0.1177.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:14 ===
+           ts_search:(5:<0.2018.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:14 ===
+           ts_search:(5:<0.1976.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:14 ===
+           ts_search:(5:<0.1422.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:14 ===
+           ts_search:(5:<0.1442.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:14 ===
+           ts_search:(5:<0.1996.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1456.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1795.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1795.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1439.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1434.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1888.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1966.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1249.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1249.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1146.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1955.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1788.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1788.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1470.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1470.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1333.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1491.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1631.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1631.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1457.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1941.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1201.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1290.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1319.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1290.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1319.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1277.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1316.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1419.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1742.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1742.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1315.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1315.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1404.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1407.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1994.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1687.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1687.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1309.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1309.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1607.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1607.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1185.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1185.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1365.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1486.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1984.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1177.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1177.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1483.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:15 ===
+           ts_search:(5:<0.1949.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:16 ===
+           ts_search:(5:<0.2000.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:16 ===
+           ts_search:(5:<0.1553.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:16 ===
+           ts_search:(5:<0.1553.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:16 ===
+           ts_search:(5:<0.1436.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:16 ===
+           ts_search:(5:<0.1409.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:16 ===
+           ts_search:(5:<0.1900.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:16 ===
+           ts_search:(5:<0.1375.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:16 ===
+           ts_search:(5:<0.1789.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:16 ===
+           ts_search:(5:<0.1789.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:16 ===
+           ts_search:(5:<0.1696.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:16 ===
+           ts_search:(5:<0.1696.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:16 ===
+           ts_search:(5:<0.1327.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:16 ===
+           ts_search:(5:<0.1416.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:16 ===
+           ts_search:(5:<0.1685.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:16 ===
+           ts_search:(5:<0.1474.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:16 ===
+           ts_search:(5:<0.1357.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:16 ===
+           ts_search:(5:<0.1357.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:16 ===
+           ts_search:(5:<0.1309.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:16 ===
+           ts_search:(5:<0.1309.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:16 ===
+           ts_search:(5:<0.2021.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:16 ===
+           ts_search:(5:<0.1246.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:16 ===
+           ts_search:(5:<0.1537.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:16 ===
+           ts_search:(5:<0.1420.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:16 ===
+           ts_search:(5:<0.1420.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:16 ===
+           ts_search:(5:<0.1696.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:16 ===
+           ts_search:(5:<0.1696.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:16 ===
+           ts_search:(5:<0.1568.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:16 ===
+           ts_search:(5:<0.1568.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:16 ===
+           ts_search:(5:<0.1466.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:16 ===
+           ts_search:(5:<0.1467.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:16 ===
+           ts_search:(5:<0.2014.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:16 ===
+           ts_search:(5:<0.1144.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:16 ===
+           ts_search:(5:<0.1304.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:16 ===
+           ts_search:(5:<0.1249.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:16 ===
+           ts_search:(5:<0.1249.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:16 ===
+           ts_search:(5:<0.1137.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:16 ===
+           ts_search:(5:<0.1445.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:16 ===
+           ts_search:(5:<0.1374.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:16 ===
+           ts_search:(5:<0.1374.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:16 ===
+           ts_search:(5:<0.1096.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:16 ===
+           ts_search:(5:<0.1664.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:16 ===
+           ts_search:(5:<0.1664.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:17 ===
+           ts_search:(5:<0.1097.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:17 ===
+           ts_search:(5:<0.1115.0>) Dyn Var (RE): no Match (varname=convo_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:17 ===
+           ts_search:(5:<0.1276.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:17 ===
+           ts_search:(5:<0.1333.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:17 ===
+           ts_search:(5:<0.1277.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:17 ===
+           ts_search:(5:<0.1284.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:17 ===
+           ts_search:(5:<0.1284.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:17 ===
+           ts_search:(5:<0.1685.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:17 ===
+           ts_search:(5:<0.1194.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:17 ===
+           ts_search:(5:<0.1194.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:17 ===
+           ts_search:(5:<0.1580.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:17 ===
+           ts_search:(5:<0.1580.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:17 ===
+           ts_search:(5:<0.1619.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:17 ===
+           ts_search:(5:<0.1619.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:17 ===
+           ts_search:(5:<0.1316.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:17 ===
+           ts_search:(5:<0.1317.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:17 ===
+           ts_search:(5:<0.1295.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:17 ===
+           ts_search:(5:<0.1553.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:17 ===
+           ts_search:(5:<0.1553.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:17 ===
+           ts_search:(5:<0.1284.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:17 ===
+           ts_search:(5:<0.1284.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:17 ===
+           ts_search:(5:<0.1563.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:18 ===
+           ts_search:(5:<0.1915.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:18 ===
+           ts_search:(5:<0.1302.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:18 ===
+           ts_search:(5:<0.1729.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:18 ===
+           ts_search:(5:<0.1729.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:18 ===
+           ts_search:(5:<0.1615.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:18 ===
+           ts_search:(5:<0.1499.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:18 ===
+           ts_search:(5:<0.1386.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:18 ===
+           ts_search:(5:<0.1386.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:18 ===
+           ts_search:(5:<0.1921.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:18 ===
+           ts_search:(5:<0.1521.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:18 ===
+           ts_search:(5:<0.1104.0>) Dyn Var: no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:18 ===
+           ts_search:(5:<0.1104.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:18 ===
+           ts_search:(5:<0.1317.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:18 ===
+           ts_search:(5:<0.1518.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:18 ===
+           ts_search:(5:<0.1539.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:18 ===
+           ts_search:(5:<0.1115.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:18 ===
+           ts_search:(5:<0.1267.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:18 ===
+           ts_search:(5:<0.1829.0>) Dyn Var (RE): no Match (varname=redirect_post), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:19 ===
+           ts_search:(5:<0.1390.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:19 ===
+           ts_search:(5:<0.1314.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:19 ===
+           ts_search:(5:<0.1163.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:19 ===
+           ts_search:(5:<0.1395.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:19 ===
+           ts_search:(5:<0.1407.0>) Dyn Var (RE): no Match (varname=convo_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:19 ===
+           ts_search:(5:<0.1912.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:19 ===
+           ts_search:(5:<0.1201.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:20 ===
+           ts_search:(5:<0.1729.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:20 ===
+           ts_search:(5:<0.1314.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:21 ===
+           ts_search:(5:<0.1407.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:21 ===
+           ts_search:(5:<0.1390.0>) Dyn Var (RE): no Match (varname=convo_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:21 ===
+           ts_search:(5:<0.1144.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:21 ===
+           ts_search:(5:<0.1829.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:21 ===
+           ts_search:(5:<0.1146.0>) Dyn Var (RE): no Match (varname=convo_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:21 ===
+           ts_search:(5:<0.1395.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:22 ===
+           ts_search:(5:<0.1146.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:23 ===
+           ts_search:(5:<0.1390.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:23 ===
+           ts_search:(5:<0.1804.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:24 ===
+           ts_search:(5:<0.1896.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:24 ===
+           ts_search:(5:<0.1932.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:25 ===
+           ts_search:(5:<0.1914.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:25 ===
+           ts_search:(5:<0.1664.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:25 ===
+           ts_search:(5:<0.1823.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:26 ===
+           ts_search:(5:<0.1969.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:26 ===
+           ts_search:(5:<0.1905.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:27 ===
+           ts_search:(5:<0.1909.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:28 ===
+           ts_search:(5:<0.1741.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:28 ===
+           ts_search:(5:<0.1847.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:28 ===
+           ts_search:(5:<0.1801.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:29 ===
+           ts_search:(5:<0.1858.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:29 ===
+           ts_search:(5:<0.1116.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:32 ===
+           ts_search:(5:<0.1892.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:34 ===
+           ts_search:(5:<0.1787.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:34 ===
+           ts_search:(5:<0.1355.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:34 ===
+           ts_search:(5:<0.1289.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:35 ===
+           ts_search:(5:<0.1956.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:35 ===
+           ts_search:(5:<0.1355.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:36 ===
+           ts_search:(5:<0.1289.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:36 ===
+           ts_search:(5:<0.1956.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:37 ===
+           ts_search:(5:<0.1399.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:37 ===
+           ts_search:(5:<0.1911.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:37 ===
+           ts_search:(5:<0.1926.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:37 ===
+           ts_search:(5:<0.1924.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:38 ===
+           ts_search:(5:<0.1911.0>) Dyn Var (RE): no Match (varname=convo_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:38 ===
+           ts_search:(5:<0.2002.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:38 ===
+           ts_search:(5:<0.1926.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:38 ===
+           ts_search:(5:<0.1904.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:38 ===
+           ts_search:(5:<0.1396.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:39 ===
+           ts_search:(5:<0.1491.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:39 ===
+           ts_search:(5:<0.2000.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:39 ===
+           ts_search:(5:<0.1436.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:39 ===
+           ts_search:(5:<0.1442.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:39 ===
+           ts_search:(5:<0.1974.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:39 ===
+           ts_search:(5:<0.1975.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:39 ===
+           ts_search:(5:<0.1419.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:39 ===
+           ts_search:(5:<0.1399.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:39 ===
+           ts_search:(5:<0.1925.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:39 ===
+           ts_search:(5:<0.2006.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:40 ===
+           ts_search:(5:<0.1419.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:40 ===
+           ts_search:(5:<0.1442.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:40 ===
+           ts_search:(5:<0.1962.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:40 ===
+           ts_search:(5:<0.2006.0>) Dyn Var (RE): no Match (varname=convo_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:40 ===
+           ts_search:(5:<0.2018.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:40 ===
+           ts_search:(5:<0.1974.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:40 ===
+           ts_search:(5:<0.1388.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:40 ===
+           ts_search:(5:<0.2027.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:40 ===
+           ts_search:(5:<0.2011.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:40 ===
+           ts_search:(5:<0.1764.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:40 ===
+           ts_search:(5:<0.1501.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:40 ===
+           ts_search:(5:<0.1426.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:40 ===
+           ts_search:(5:<0.1426.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:40 ===
+           ts_search:(5:<0.1706.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:40 ===
+           ts_search:(5:<0.2011.0>) Dyn Var (RE): no Match (varname=convo_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:41 ===
+           ts_search:(5:<0.2000.0>) Dyn Var (RE): no Match (varname=convo_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:41 ===
+           ts_search:(5:<0.2021.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:41 ===
+           ts_search:(5:<0.1404.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:41 ===
+           ts_search:(5:<0.1537.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:41 ===
+           ts_search:(5:<0.1948.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:41 ===
+           ts_search:(5:<0.2006.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:41 ===
+           ts_search:(5:<0.1962.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:41 ===
+           ts_search:(5:<0.1362.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:41 ===
+           ts_search:(5:<0.1388.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:41 ===
+           ts_search:(5:<0.1931.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:41 ===
+           ts_search:(5:<0.2021.0>) Dyn Var (RE): no Match (varname=convo_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:41 ===
+           ts_search:(5:<0.1899.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:41 ===
+           ts_search:(5:<0.1404.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:41 ===
+           ts_search:(5:<0.1369.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:41 ===
+           ts_search:(5:<0.1904.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:41 ===
+           ts_search:(5:<0.1318.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:42 ===
+           ts_search:(5:<0.1927.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:42 ===
+           ts_search:(5:<0.1396.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:42 ===
+           ts_search:(5:<0.1519.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:42 ===
+           ts_search:(5:<0.1519.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:42 ===
+           ts_search:(5:<0.1897.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:42 ===
+           ts_search:(5:<0.1491.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:42 ===
+           ts_search:(5:<0.1985.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:42 ===
+           ts_search:(5:<0.1537.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:42 ===
+           ts_search:(5:<0.1936.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:42 ===
+           ts_search:(5:<0.2011.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:42 ===
+           ts_search:(5:<0.1945.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:42 ===
+           ts_search:(5:<0.1960.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:43 ===
+           ts_search:(5:<0.1979.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:43 ===
+           ts_search:(5:<0.1981.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:43 ===
+           ts_search:(5:<0.1953.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:43 ===
+           ts_search:(5:<0.1975.0>) Dyn Var (RE): no Match (varname=convo_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:43 ===
+           ts_search:(5:<0.2018.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:43 ===
+           ts_search:(5:<0.1990.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:43 ===
+           ts_search:(5:<0.1365.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:43 ===
+           ts_search:(5:<0.2004.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:43 ===
+           ts_search:(5:<0.1996.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:43 ===
+           ts_search:(5:<0.1953.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:43 ===
+           ts_search:(5:<0.2023.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:43 ===
+           ts_search:(5:<0.1331.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:43 ===
+           ts_search:(5:<0.1901.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:43 ===
+           ts_search:(5:<0.1946.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:44 ===
+           ts_search:(5:<0.2000.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:44 ===
+           ts_search:(5:<0.1975.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:44 ===
+           ts_search:(5:<0.1362.0>) Dyn Var (RE): no Match (varname=convo_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:44 ===
+           ts_search:(5:<0.1919.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:44 ===
+           ts_search:(5:<0.1318.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:44 ===
+           ts_search:(5:<0.1915.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:44 ===
+           ts_search:(5:<0.2002.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:44 ===
+           ts_search:(5:<0.1946.0>) Dyn Var (RE): no Match (varname=convo_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:45 ===
+           ts_search:(5:<0.1946.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:45 ===
+           ts_search:(5:<0.1996.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:45 ===
+           ts_search:(5:<0.1365.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:45 ===
+           ts_search:(5:<0.1362.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:45 ===
+           ts_search:(5:<0.1369.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:45 ===
+           ts_search:(5:<0.1888.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:45 ===
+           ts_search:(5:<0.1894.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:45 ===
+           ts_search:(5:<0.1978.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:46 ===
+           ts_search:(5:<0.1436.0>) Dyn Var (RE): no Match (varname=convo_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:46 ===
+           ts_search:(5:<0.1924.0>) Dyn Var (RE): no Match (varname=convo_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:46 ===
+           ts_search:(5:<0.1959.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:46 ===
+           ts_search:(5:<0.1922.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:46 ===
+           ts_search:(5:<0.1521.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:46 ===
+           ts_search:(5:<0.1936.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:46 ===
+           ts_search:(5:<0.1893.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:46 ===
+           ts_search:(5:<0.2007.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:46 ===
+           ts_search:(5:<0.1893.0>) Dyn Var (RE): no Match (varname=convo_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:47 ===
+           ts_search:(5:<0.1888.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:47 ===
+           ts_search:(5:<0.1327.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:47 ===
+           ts_search:(5:<0.2022.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:47 ===
+           ts_search:(5:<0.1911.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:47 ===
+           ts_search:(5:<0.1900.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:48 ===
+           ts_search:(5:<0.2021.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:48 ===
+           ts_search:(5:<0.1893.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:48 ===
+           ts_search:(5:<0.1521.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:48 ===
+           ts_search:(5:<0.1942.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:48 ===
+           ts_search:(5:<0.1915.0>) Dyn Var (RE): no Match (varname=convo_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:48 ===
+           ts_search:(5:<0.1894.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:48 ===
+           ts_search:(5:<0.1924.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:48 ===
+           ts_search:(5:<0.1832.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:48 ===
+           ts_search:(5:<0.1462.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:48 ===
+           ts_search:(5:<0.1900.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:48 ===
+           ts_search:(5:<0.1889.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:48 ===
+           ts_search:(5:<0.1372.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:48 ===
+           ts_search:(5:<0.1372.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:48 ===
+           ts_search:(5:<0.1462.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:49 ===
+           ts_search:(5:<0.1889.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:49 ===
+           ts_search:(5:<0.1456.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:49 ===
+           ts_search:(5:<0.1950.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:49 ===
+           ts_search:(5:<0.1456.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:49 ===
+           ts_search:(5:<0.1915.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:49 ===
+           ts_search:(5:<0.1331.0>) Dyn Var (RE): no Match (varname=convo_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:49 ===
+           ts_search:(5:<0.1976.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:49 ===
+           ts_search:(5:<0.1976.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:49 ===
+           ts_search:(5:<0.1949.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:49 ===
+           ts_search:(5:<0.1994.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:49 ===
+           ts_search:(5:<0.1933.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:49 ===
+           ts_search:(5:<0.1933.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:49 ===
+           ts_search:(5:<0.1949.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:49 ===
+           ts_search:(5:<0.1994.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:49 ===
+           ts_search:(5:<0.1986.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:49 ===
+           ts_search:(5:<0.1913.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:49 ===
+           ts_search:(5:<0.1986.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:49 ===
+           ts_search:(5:<0.2001.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:49 ===
+           ts_search:(5:<0.1913.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:49 ===
+           ts_search:(5:<0.2001.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:50 ===
+           ts_search:(5:<0.1436.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:50 ===
+           ts_search:(5:<0.1418.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:50 ===
+           ts_search:(5:<0.1940.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:50 ===
+           ts_search:(5:<0.1418.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:50 ===
+           ts_search:(5:<0.1940.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:50 ===
+           ts_search:(5:<0.1971.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:50 ===
+           ts_search:(5:<0.1971.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:50 ===
+           ts_search:(5:<0.1338.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:50 ===
+           ts_search:(5:<0.1356.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:50 ===
+           ts_search:(5:<0.1356.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:50 ===
+           ts_search:(5:<0.1338.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:50 ===
+           ts_search:(5:<0.1834.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:50 ===
+           ts_search:(5:<0.1988.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:50 ===
+           ts_search:(5:<0.1331.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:50 ===
+           ts_search:(5:<0.1308.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:51 ===
+           ts_search:(5:<0.1308.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:51 ===
+           ts_search:(5:<0.2005.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:51 ===
+           ts_search:(5:<0.2005.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:51 ===
+           ts_search:(5:<0.1977.0>) Dyn Var: no Match (varname=first_comment_path), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:51 ===
+           ts_search:(5:<0.1801.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:51 ===
+           ts_search:(5:<0.1327.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:51 ===
+           ts_search:(5:<0.1486.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:52 ===
+           ts_search:(5:<0.1486.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:52 ===
+           ts_search:(5:<0.1895.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:52 ===
+           ts_search:(5:<0.1895.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:52 ===
+           ts_search:(5:<0.1518.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:52 ===
+           ts_search:(5:<0.1858.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:52 ===
+           ts_search:(5:<0.1801.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:52 ===
+           ts_search:(5:<0.1984.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:52 ===
+           ts_search:(5:<0.1950.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:52 ===
+           ts_search:(5:<0.1984.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:53 ===
+           ts_search:(5:<0.1947.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:53 ===
+           ts_search:(5:<0.1906.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:53 ===
+           ts_search:(5:<0.1906.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:53 ===
+           ts_search:(5:<0.1947.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:53 ===
+           ts_search:(5:<0.1858.0>) Dyn Var (RE): no Match (varname=convo_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:53 ===
+           ts_search:(5:<0.1353.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:53 ===
+           ts_search:(5:<0.1353.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:53 ===
+           ts_search:(5:<0.1902.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:53 ===
+           ts_search:(5:<0.1902.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:53 ===
+           ts_search:(5:<0.1385.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:53 ===
+           ts_search:(5:<0.1385.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:53 ===
+           ts_search:(5:<0.1563.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:53 ===
+           ts_search:(5:<0.1563.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:54 ===
+           ts_search:(5:<0.1910.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:54 ===
+           ts_search:(5:<0.1910.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:54 ===
+           ts_search:(5:<0.1539.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:54 ===
+           ts_search:(5:<0.1539.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:54 ===
+           ts_search:(5:<0.1375.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:54 ===
+           ts_search:(5:<0.1375.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:54 ===
+           ts_search:(5:<0.1935.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:54 ===
+           ts_search:(5:<0.1935.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:54 ===
+           ts_search:(5:<0.1439.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:54 ===
+           ts_search:(5:<0.1439.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:54 ===
+           ts_search:(5:<0.1963.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:54 ===
+           ts_search:(5:<0.1963.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:54 ===
+           ts_search:(5:<0.1417.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:54 ===
+           ts_search:(5:<0.1417.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:55 ===
+           ts_search:(5:<0.1344.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:55 ===
+           ts_search:(5:<0.1344.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:55 ===
+           ts_search:(5:<0.2014.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:55 ===
+           ts_search:(5:<0.2014.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:55 ===
+           ts_search:(5:<0.1858.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:55 ===
+           ts_search:(5:<0.1246.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:55 ===
+           ts_search:(5:<0.1246.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:56 ===
+           ts_search:(5:<0.1970.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:56 ===
+           ts_search:(5:<0.1970.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:57 ===
+           ts_search:(5:<0.1345.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:57 ===
+           ts_search:(5:<0.1474.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:57 ===
+           ts_search:(5:<0.1345.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:57 ===
+           ts_search:(5:<0.1474.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:57 ===
+           ts_search:(5:<0.1416.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:57 ===
+           ts_search:(5:<0.1416.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:58 ===
+           ts_search:(5:<0.1325.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:58 ===
+           ts_search:(5:<0.1445.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:58 ===
+           ts_search:(5:<0.1325.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:58 ===
+           ts_search:(5:<0.1445.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:58 ===
+           ts_search:(5:<0.1483.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:58 ===
+           ts_search:(5:<0.1483.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:58 ===
+           ts_search:(5:<0.1518.0>) Dyn Var (RE): no Match (varname=book_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:58 ===
+           ts_search:(5:<0.1892.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:36:58 ===
+           ts_search:(5:<0.1892.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:37:00 ===
+           ts_search:(5:<0.1409.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:37:00 ===
+           ts_search:(5:<0.1409.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:37:00 ===
+           ts_search:(5:<0.1499.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:37:00 ===
+           ts_search:(5:<0.1499.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:37:01 ===
+           ts_search:(5:<0.1847.0>) Dyn Var (RE): no Match (varname=authenticity_token), 
+
+=INFO REPORT==== 9-Dec-2019::10:37:01 ===
+           ts_search:(5:<0.1847.0>) Dyn Var (RE): no Match (varname=post_id), 
+
+=INFO REPORT==== 9-Dec-2019::10:38:08 ===
+     ts_launcher_mgr:(5:<0.149.0>) No more active users 'tsung_controller@ip-172-31-46-69' "11180"
