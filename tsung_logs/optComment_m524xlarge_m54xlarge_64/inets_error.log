@@ -1,0 +1,10 @@
+[09/Dec/2019:22:29:04 -0000], Error reading request: 413: "Method unreasonably long" max size is 20
+
+[09/Dec/2019:22:29:04 -0000], Error reading request: 413: "Method unreasonably long" max size is 20
+
+[09/Dec/2019:22:29:11 -0000] access to /favicon.ico failed for 72.194.33.175, reason: 
+"httpd_file: Can't access /home/ec2-user/.tsung/log/20191209-2220/favicon.ico: File not found"
+[09/Dec/2019:22:29:12 -0000] access to /assets/ico/favicon.ico failed for 72.194.33.175, reason: 
+"httpd_file: Can't access /home/ec2-user/.tsung/log/20191209-2220/assets/ico/favicon.ico: File not found"
+[09/Dec/2019:22:29:14 -0000] access to /favicon.ico failed for 72.194.33.175, reason: 
+"httpd_file: Can't access /home/ec2-user/.tsung/log/20191209-2220/favicon.ico: File not found"
