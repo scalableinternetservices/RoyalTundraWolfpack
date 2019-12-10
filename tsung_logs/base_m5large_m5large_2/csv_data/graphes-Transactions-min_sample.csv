@@ -1,0 +1,7 @@
+time,page,tr_Redirect_To_Same_Conversation,tr_Post_New_Post,tr_Post_New_Conversation,tr_Get_New_Book,tr_Get_Logout,tr_Get_Conversations,tr_Redirect_To_New_Book,tr_Redirect_Root,tr_Get_New_Post,tr_Get_Login,tr_Redirect_To_New_Conversation,tr_Get_Root,tr_Post_New_Comment_On_Comment,tr_Get_New_Conversation,tr_Initial_Get_Root,tr_Authenticate_User,tr_Post_Login,tr_Post_New_Comment_On_Post,tr_Redirect_To_New_Post,tr_Get_Book,tr_Redirect_To_Post,tr_Get_Post,tr_Reply_To_Conversation,tr_Post_New_Book 
+0,0.394,,,,,,0.815,,0.598,,,,2.044,0.811,,1.564,967.781,,0.678,,,1.277,0.965,, 
+10,0.35,,0.434,0.737,1.019,0.527,0.624,0.683,0.423,0.692,0.904,0.789,1.602,0.783,0.73,1.526,6.766,0.953,0.442,0.747,0.699,1.064,0.917,,0.794 
+20,0.332,0.367,0.416,0.51,0.69,0.527,0.624,0.683,0.423,0.595,0.774,0.789,1.602,0.559,0.73,1.526,6.766,0.86,0.422,0.683,0.614,0.792,0.836,0.535,0.687 
+30,0.324,0.367,0.416,0.51,0.69,0.527,0.624,0.683,0.423,0.595,0.774,0.789,1.602,0.559,0.73,1.526,6.766,0.86,0.422,0.683,0.614,0.792,0.836,0.535,0.687 
+40,0.324,0.367,0.416,0.51,0.69,0.527,0.624,0.683,0.423,0.595,0.774,0.789,1.602,0.559,0.73,1.526,6.766,0.86,0.422,0.683,0.614,0.792,0.836,0.535,0.687 
+47,0.324,0.367,0.416,0.51,0.69,0.527,0.624,0.683,0.423,0.595,0.774,0.789,1.602,0.559,0.73,1.526,6.766,0.86,0.422,0.683,0.614,0.792,0.836,0.535,0.687 

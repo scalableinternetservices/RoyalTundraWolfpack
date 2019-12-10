@@ -1,2 +1,0 @@
-[04/Dec/2019:11:32:38 -0000] access to /favicon.ico failed for 169.231.159.231, reason: 
-"httpd_file: Can't access /home/ec2-user/.tsung/log/20191204-1128/favicon.ico: File not found"
