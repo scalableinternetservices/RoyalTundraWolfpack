@@ -1,22 +1,40 @@
+starting = Process.clock_gettime(Process::CLOCK_MONOTONIC)
 posts = []
 childcomments = []
 parentcomments= []
 users = []
+add_users = []
 books = []
 
+TOTAL_USERS = 2048
 USERS = 100
 BOOKS = 50
 
 i = 0
 
-while i < USERS
-  user = User.new(email: i.to_s + "@seed.com", username: "seed" + i.to_s, password: "asdasd", password_confirmation: "asdasd") 
-  users << user
+while i < TOTAL_USERS
+  user = User.new(email: i.to_s + "@seed.com", username: "seed" + i.to_s, password: "123456", password_confirmation: "123456") 
+  if i < USERS
+    users << user
+  end
+  user.save!(:validate => false)
   i += 1
 end
 
-User.import users, validate: false
-puts "Seeded Users"
+# User.import users, validate: false
+puts "Seeded Users List"
+
+# columns = [:email, :username, :password]
+# while i < TOTAL_USERS
+#   test_email = i.to_s + "@seed.com"
+#   test_username = "seed" + i.to_s
+#   add_users << [test_email, test_username, "123456"]
+#   i += 1
+# end
+
+# User.import columns, add_users, validate: false
+# puts "Seeded Users List 2"
+
 
 i = 0
 columns = [ :title, :author ]
@@ -72,3 +90,7 @@ columns = [:body, :commentable_id, :commentable_type, :user_id]
 end
 
 Comment.import columns, childcomments, validate: false
+puts "Seeded Child Comments"
+ending = Process.clock_gettime(Process::CLOCK_MONOTONIC)
+elapsed = ending - starting
+puts "Took " + elapsed.to_s + " sec to seed"
