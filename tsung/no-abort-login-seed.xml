@@ -117,7 +117,7 @@
         <var name="authenticity_token"/>
       </setdynvars>
       <setdynvars end="2047" sourcetype="random_number" start="0">
-        <var name="random_user_id"/>
+        <var name="rnd_user_id"/>
       </setdynvars>
       <thinktime random="true" value="2"/>
 
@@ -155,7 +155,7 @@
         <var name="authenticity_token"/>
       </setdynvars>
       <setdynvars end="2047" sourcetype="random_number" start="0">
-        <var name="random_user_id"/>
+        <var name="rnd_user_id"/>
       </setdynvars>
       <thinktime random="true" value="2"/>
 
@@ -229,7 +229,7 @@
         <var name="authenticity_token"/>
       </setdynvars>
       <setdynvars end="2047" sourcetype="random_number" start="0">
-        <var name="random_user_id"/>
+        <var name="rnd_user_id"/>
       </setdynvars>
       <thinktime random="true" value="2"/>
 
@@ -301,7 +301,7 @@
         <var name="authenticity_token"/>
       </setdynvars>
       <setdynvars end="2047" sourcetype="random_number" start="0">
-        <var name="random_user_id"/>
+        <var name="rnd_user_id"/>
       </setdynvars>
       <thinktime random="true" value="2"/>
 
@@ -322,7 +322,7 @@
       <thinktime random="true" value="2"/>
 
       <setdynvars end="99" sourcetype="random_number" start="1">
-        <var name="random_post_id"/>
+        <var name="rnd_user_id"/>
       </setdynvars>
 
       <transaction name="Get_Post">
@@ -398,7 +398,7 @@
         <var name="authenticity_token"/>
       </setdynvars>
       <setdynvars end="2047" sourcetype="random_number" start="0">
-        <var name="random_user_id"/>
+        <var name="rnd_user_id"/>
       </setdynvars>
       <thinktime random="true" value="2"/>
 
