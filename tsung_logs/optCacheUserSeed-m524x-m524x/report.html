@@ -1,0 +1,510 @@
+<html>
+  <head>
+    <title>Tsung - Stats Report </title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<link rel="Index" href="/"/>
+    <script type="text/javascript" src="style/dygraph-combined.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="style/bootstrap.min.css" rel="stylesheet">
+    <link href="style/dashboard.css" rel="stylesheet">
+    <link href="style/docs.min.css" rel="stylesheet">
+
+  </head>
+<body>
+    <script src="style/jquery.min.js"></script>
+    <script src="style/bootstrap.min.js"></script>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Tsung <!-- SUBTITLE --></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/es/ts_web:status">Status</a></li>
+            <li><a href="report.html">Reports</a></li>
+            <li><a href="graph.html">Graphs</a></li>
+            <li><a href="/es/ts_web:logs">Logs</a></li>
+            <li><a href="/es/ts_web:stop">Stop</a></li>
+            <!-- <li><a href="no-abort.xml">Config</a></li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li><a href="report.html#stats">Main statistics</a></li>
+            <li><a href="report.html#transaction">Transactions</a></li>
+            <li><a href="report.html#network">Network Throughput</a></li>
+            <li><a href="report.html#count">Counters</a></li>
+            <li><a href="report.html#os_mon">Server monitoring</a></li>
+            <li><a href="report.html#http_status">HTTP status</a></li>
+            <li><a href="report.html#errors">Errors</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="graph.html#response_time">Response times</a></li>
+            <li><a href="graph.html#throughput">Throughput graphs</a></li>
+            <li><a href="graph.html#users">Simultaneous Users</a></li>
+            <li><a href="graph.html#os_mon">Server monitoring</a></li>
+            <li><a href="graph.html#http_status">HTTP status</a></li>
+            <li><a href="graph.html#errors">Errors</a></li>
+          </ul>
+       </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+
+
+<div class="row placeholders">
+<!-- tsung_stats_duration -->
+</div>
+
+
+
+ <h3 id="stats" class="sub-header">Main Statistics</h3>
+ <div class="table-responsive">
+ <table class="table table-striped table-bordered">
+  <tr><th class="stats">Name</th> <th class="stats">highest 10sec
+ mean</th> <th class="stats">lowest 10sec mean </th><th
+ class="stats">Highest Rate</th><th class="stats">Mean Rate</stats><th class="stats"> Mean </th><th class="stats">Count</th>
+  </tr>
+     <tr>
+		<td class="stats">connect</td>
+		<td class="stats">1.89 msec </td>
+		<td class="stats">1.02 msec</td>
+		<td class="stats">744.6 / sec</td>
+		<td class="stats">40.20 / sec</td>
+		<td class="stats">1.12 msec </td>
+		<td class="stats">20118 </td>
+     </tr>
+     <tr>
+		<td class="stats">page</td>
+		<td class="stats">1.59 sec </td>
+		<td class="stats">19.90 msec</td>
+		<td class="stats">1901 / sec</td>
+		<td class="stats">233.14 / sec</td>
+		<td class="stats">0.51 sec </td>
+		<td class="stats">116624 </td>
+     </tr>
+     <tr>
+		<td class="stats">request</td>
+		<td class="stats">1.56 sec </td>
+		<td class="stats">19.90 msec</td>
+		<td class="stats">1934.4 / sec</td>
+		<td class="stats">239.11 / sec</td>
+		<td class="stats">0.50 sec </td>
+		<td class="stats">119609 </td>
+     </tr>
+     <tr>
+		<td class="stats">session</td>
+		<td class="stats">57.00 sec </td>
+		<td class="stats">3.08 sec</td>
+		<td class="stats">399.2 / sec</td>
+		<td class="stats">29.57 / sec</td>
+		<td class="stats">17.83 sec </td>
+		<td class="stats">14786 </td>
+     </tr>
+ </table>
+ </div>
+
+ <h3 id="transaction" class="sub-header">Transactions Statistics</h3>
+ <div class="table-responsive">
+ <table class="table table-striped table-bordered">
+  <tr><th class="stats">Name</th> <th class="stats">highest 10sec
+ mean</th> <th class="stats">lowest 10sec mean</th><th
+ class="stats">Highest Rate</th><th class="stats">Mean Rate</stats><th class="stats"> Mean </th><th class="stats">Count</th>
+  </tr>
+     <tr>
+		<td class="stats">tr_Get_Book</td>
+		<td class="stats">2.36 sec </td>
+		<td class="stats">33.41 msec </td>
+		<td class="stats">132.9 / sec</td>
+		<td class="stats">8.87 / sec</td>
+		<td class="stats">1.06 sec </td>
+		<td class="stats">4435 </td>
+     </tr>
+     <tr>
+		<td class="stats">tr_Get_Conversations</td>
+		<td class="stats">0.83 sec </td>
+		<td class="stats">10.84 msec </td>
+		<td class="stats">38.3 / sec</td>
+		<td class="stats">3.00 / sec</td>
+		<td class="stats">0.36 sec </td>
+		<td class="stats">1502 </td>
+     </tr>
+     <tr>
+		<td class="stats">tr_Get_Login</td>
+		<td class="stats">0.26 sec </td>
+		<td class="stats">6.81 msec </td>
+		<td class="stats">362.7 / sec</td>
+		<td class="stats">29.53 / sec</td>
+		<td class="stats">81.63 msec </td>
+		<td class="stats">14778 </td>
+     </tr>
+     <tr>
+		<td class="stats">tr_Get_Logout</td>
+		<td class="stats">0.71 sec </td>
+		<td class="stats">10.31 msec </td>
+		<td class="stats">39.7 / sec</td>
+		<td class="stats">2.97 / sec</td>
+		<td class="stats">0.26 sec </td>
+		<td class="stats">1483 </td>
+     </tr>
+     <tr>
+		<td class="stats">tr_Get_New_Book</td>
+		<td class="stats">0.44 sec </td>
+		<td class="stats">9.82 msec </td>
+		<td class="stats">71.8 / sec</td>
+		<td class="stats">5.93 / sec</td>
+		<td class="stats">0.18 sec </td>
+		<td class="stats">2966 </td>
+     </tr>
+     <tr>
+		<td class="stats">tr_Get_New_Conversation</td>
+		<td class="stats">1.10 sec </td>
+		<td class="stats">67.78 msec </td>
+		<td class="stats">41.5 / sec</td>
+		<td class="stats">3.00 / sec</td>
+		<td class="stats">0.46 sec </td>
+		<td class="stats">1502 </td>
+     </tr>
+     <tr>
+		<td class="stats">tr_Get_New_Post</td>
+		<td class="stats">0.82 sec </td>
+		<td class="stats">13.59 msec </td>
+		<td class="stats">124.8 / sec</td>
+		<td class="stats">8.87 / sec</td>
+		<td class="stats">0.32 sec </td>
+		<td class="stats">4434 </td>
+     </tr>
+     <tr>
+		<td class="stats">tr_Get_Post</td>
+		<td class="stats">4.22 sec </td>
+		<td class="stats">79.57 msec </td>
+		<td class="stats">125.5 / sec</td>
+		<td class="stats">8.73 / sec</td>
+		<td class="stats">1.78 sec </td>
+		<td class="stats">4367 </td>
+     </tr>
+     <tr>
+		<td class="stats">tr_Get_Register</td>
+		<td class="stats">0.33 sec </td>
+		<td class="stats">7.18 msec </td>
+		<td class="stats">42.5 / sec</td>
+		<td class="stats">2.97 / sec</td>
+		<td class="stats">94.63 msec </td>
+		<td class="stats">1487 </td>
+     </tr>
+     <tr>
+		<td class="stats">tr_Get_Root</td>
+		<td class="stats">3.79 sec </td>
+		<td class="stats">17.59 msec </td>
+		<td class="stats">40 / sec</td>
+		<td class="stats">3.00 / sec</td>
+		<td class="stats">0.29 sec </td>
+		<td class="stats">1502 </td>
+     </tr>
+     <tr>
+		<td class="stats">tr_Initial_Get_Root</td>
+		<td class="stats">3.64 sec </td>
+		<td class="stats">19.56 msec </td>
+		<td class="stats">232.4 / sec</td>
+		<td class="stats">17.80 / sec</td>
+		<td class="stats">0.30 sec </td>
+		<td class="stats">8910 </td>
+     </tr>
+     <tr>
+		<td class="stats">tr_Post_Login</td>
+		<td class="stats">0.74 sec </td>
+		<td class="stats">0.12 sec </td>
+		<td class="stats">374 / sec</td>
+		<td class="stats">29.51 / sec</td>
+		<td class="stats">0.35 sec </td>
+		<td class="stats">14768 </td>
+     </tr>
+     <tr>
+		<td class="stats">tr_Post_New_Book</td>
+		<td class="stats">0.90 sec </td>
+		<td class="stats">14.53 msec </td>
+		<td class="stats">80.4 / sec</td>
+		<td class="stats">5.93 / sec</td>
+		<td class="stats">0.35 sec </td>
+		<td class="stats">2964 </td>
+     </tr>
+     <tr>
+		<td class="stats">tr_Post_New_Comment_On_Comment</td>
+		<td class="stats">1.08 sec </td>
+		<td class="stats">15.60 msec </td>
+		<td class="stats">117.8 / sec</td>
+		<td class="stats">8.73 / sec</td>
+		<td class="stats">0.26 sec </td>
+		<td class="stats">4366 </td>
+     </tr>
+     <tr>
+		<td class="stats">tr_Post_New_Comment_On_Post</td>
+		<td class="stats">1.17 sec </td>
+		<td class="stats">17.04 msec </td>
+		<td class="stats">132.8 / sec</td>
+		<td class="stats">8.73 / sec</td>
+		<td class="stats">0.47 sec </td>
+		<td class="stats">4367 </td>
+     </tr>
+     <tr>
+		<td class="stats">tr_Post_New_Conversation</td>
+		<td class="stats">2.35 sec </td>
+		<td class="stats">31.54 msec </td>
+		<td class="stats">38.1 / sec</td>
+		<td class="stats">3.00 / sec</td>
+		<td class="stats">0.82 sec </td>
+		<td class="stats">1502 </td>
+     </tr>
+     <tr>
+		<td class="stats">tr_Post_New_Post</td>
+		<td class="stats">1.02 sec </td>
+		<td class="stats">16.56 msec </td>
+		<td class="stats">124.5 / sec</td>
+		<td class="stats">8.87 / sec</td>
+		<td class="stats">0.36 sec </td>
+		<td class="stats">4434 </td>
+     </tr>
+     <tr>
+		<td class="stats">tr_Post_Register</td>
+		<td class="stats">1.35 sec </td>
+		<td class="stats">0.13 sec </td>
+		<td class="stats">37.4 / sec</td>
+		<td class="stats">2.97 / sec</td>
+		<td class="stats">0.58 sec </td>
+		<td class="stats">1485 </td>
+     </tr>
+     <tr>
+		<td class="stats">tr_Redirect_Root</td>
+		<td class="stats">1.59 sec </td>
+		<td class="stats">23.41 msec </td>
+		<td class="stats">352.9 / sec</td>
+		<td class="stats">35.43 / sec</td>
+		<td class="stats">0.66 sec </td>
+		<td class="stats">17723 </td>
+     </tr>
+     <tr>
+		<td class="stats">tr_Redirect_To_New_Book</td>
+		<td class="stats">2.17 sec </td>
+		<td class="stats">32.33 msec </td>
+		<td class="stats">71.7 / sec</td>
+		<td class="stats">5.92 / sec</td>
+		<td class="stats">0.73 sec </td>
+		<td class="stats">2962 </td>
+     </tr>
+     <tr>
+		<td class="stats">tr_Redirect_To_New_Conversation</td>
+		<td class="stats">1.60 sec </td>
+		<td class="stats">29.97 msec </td>
+		<td class="stats">42.5 / sec</td>
+		<td class="stats">3.00 / sec</td>
+		<td class="stats">0.37 sec </td>
+		<td class="stats">1502 </td>
+     </tr>
+     <tr>
+		<td class="stats">tr_Redirect_To_New_Post</td>
+		<td class="stats">1.18 sec </td>
+		<td class="stats">15.75 msec </td>
+		<td class="stats">102 / sec</td>
+		<td class="stats">8.87 / sec</td>
+		<td class="stats">0.31 sec </td>
+		<td class="stats">4433 </td>
+     </tr>
+     <tr>
+		<td class="stats">tr_Redirect_To_Post</td>
+		<td class="stats">3.66 sec </td>
+		<td class="stats">73.42 msec </td>
+		<td class="stats">233 / sec</td>
+		<td class="stats">17.47 / sec</td>
+		<td class="stats">1.05 sec </td>
+		<td class="stats">8733 </td>
+     </tr>
+     <tr>
+		<td class="stats">tr_Redirect_To_Same_Conversation</td>
+		<td class="stats">2.42 sec </td>
+		<td class="stats">30.49 msec </td>
+		<td class="stats">52.3 / sec</td>
+		<td class="stats">3.00 / sec</td>
+		<td class="stats">0.20 sec </td>
+		<td class="stats">1502 </td>
+     </tr>
+     <tr>
+		<td class="stats">tr_Reply_To_Conversation</td>
+		<td class="stats">1.89 sec </td>
+		<td class="stats">45.93 msec </td>
+		<td class="stats">49.8 / sec</td>
+		<td class="stats">3.00 / sec</td>
+		<td class="stats">0.32 sec </td>
+		<td class="stats">1502 </td>
+     </tr>
+ </table>
+</div>
+
+ <h3 id="network" class="sub-header">Network Throughput</h3>
+ <div class="table-responsive">
+ <table class="table table-striped table-bordered">
+  <tr><th class="stats">Name</th> <th class="stats">Highest Rate</th><th class="stats">Total</th>
+  </tr>
+     <tr>
+		<td class="stats">size_rcv</td>
+		<td class="stats">280.63 Mbits/sec</td>
+		<td class="stats">1.27 GB</td>
+     </tr>
+     <tr>
+		<td class="stats">size_sent</td>
+		<td class="stats">7.31 Mbits/sec</td>
+		<td class="stats">54.50 MB</td>
+     </tr>
+ </table>
+</div>
+
+ <h3 id="count" class="sub-header">Counters Statistics</h3>
+ <div class="table-responsive">
+ <table class="table table-striped table-bordered">
+  <tr><th class="stats">Name</th> <th class="stats">Highest Rate</th><th class="stats">Mean Rate</th><th class="stats">Total number</th>
+  </tr>
+ </table>
+<p>
+ <table class="table table-striped table-bordered">
+  <tr><th class="stats">Name</th> <th class="stats">Max</th> </tr>
+     <tr>
+		<td class="stats">connected</td>
+		<td class="stats">6316 </td>
+     </tr>
+     <tr>
+		<td class="stats">finish_users_count</td>
+		<td class="stats">14786 </td>
+     </tr>
+     <tr>
+		<td class="stats">newphase</td>
+		<td class="stats">8 </td>
+     </tr>
+     <tr>
+		<td class="stats">users</td>
+		<td class="stats">7139 </td>
+     </tr>
+     <tr>
+		<td class="stats">users_count</td>
+		<td class="stats">14786 </td>
+     </tr>
+ </table>
+</p>
+</div>
+
+ <h3 class="sub-header">Errors</h3>
+ <div class="table-responsive">
+ <table class="table table-striped table-bordered">
+  <tr><th class="stats">Name</th> <th class="stats">Highest Rate</th><th class="stats">Total number</th>
+  </tr>
+     <tr>
+		<td class="stats">error_unknown_msg</td>
+		<td class="stats">3.4 / sec</td>
+		<td class="stats">40 </td>
+     </tr>
+ </table>
+</div>
+
+ <h3 id="os_mon" class="sub-header">Server monitoring</h3>
+ <div class="table-responsive">
+ <table class="table table-striped table-bordered">
+  <tr><th class="stats">Name</th> <th class="stats">highest 10sec
+  mean</th><th class="stats">lowest 10sec mean</th>
+  </tr>
+     <tr>
+		<td class="stats">cpu:os_mon@tsung_controller@ip-172-31-16-38</td>
+		<td class="stats">5.37 %</td>
+		<td class="stats">0.00 %</td>
+     </tr>
+     <tr>
+		<td class="stats">freemem:os_mon@tsung_controller@ip-172-31-16-38</td>
+		<td class="stats">375592.70 MB</td>
+		<td class="stats">371335.47 MB</td>
+     </tr>
+     <tr>
+		<td class="stats">load:os_mon@tsung_controller@ip-172-31-16-38</td>
+		<td class="stats">2.18 </td>
+		<td class="stats">0.00 </td>
+     </tr>
+     <tr>
+		<td class="stats">recvpackets:os_mon@tsung_controller@ip-172-31-16-38</td>
+		<td class="stats">319645.00 / sec</td>
+		<td class="stats">5.00 / sec</td>
+     </tr>
+     <tr>
+		<td class="stats">sentpackets:os_mon@tsung_controller@ip-172-31-16-38</td>
+		<td class="stats">111824.00 / sec</td>
+		<td class="stats">5.00 / sec</td>
+     </tr>
+ </table>
+</div>
+
+
+ <h3 id="http_status" class="sub-header">HTTP return code </h3>
+ <div class="table-responsive">
+ <table class="table table-striped table-bordered">
+  <tr><th class="stats">Code</th>  <th class="stats">Highest Rate</th><th class="stats">Mean Rate</th><th class="stats">Total number</th>
+  </tr>
+     <tr>
+		<td class="stats">200</td>
+		<td class="stats">1263.3 / sec</td>
+		<td class="stats">163.14 / sec</td>
+		<td class="stats">81612</td>
+     </tr>
+     <tr>
+		<td class="stats">302</td>
+		<td class="stats">656.7 / sec</td>
+		<td class="stats">72.78 / sec</td>
+		<td class="stats">36402</td>
+     </tr>
+     <tr>
+		<td class="stats">400</td>
+		<td class="stats">6.6 / sec</td>
+		<td class="stats">1.76 / sec</td>
+		<td class="stats">123</td>
+     </tr>
+     <tr>
+		<td class="stats">404</td>
+		<td class="stats">3.1 / sec</td>
+		<td class="stats">0.93 / sec</td>
+		<td class="stats">65</td>
+     </tr>
+     <tr>
+		<td class="stats">422</td>
+		<td class="stats">17.2 / sec</td>
+		<td class="stats">4.29 / sec</td>
+		<td class="stats">300</td>
+     </tr>
+     <tr>
+		<td class="stats">502</td>
+		<td class="stats">96.5 / sec</td>
+		<td class="stats">15.76 / sec</td>
+		<td class="stats">1103</td>
+     </tr>
+ </table>
+</div>
+<footer class="bs-docs-footer" role="contentinfo">
+  <ul class="bs-docs-footer-links muted">
+    <li>Tsung version 1.7.0</li>
+    <li><address>
+        Contact:   <a href="mailto:tsung-users@process-one.net">tsung-users@process-one.net</a>
+        </address>
+     </li>
+   </ul>
+</footer>
+ </div>
+ </div>
+</div>
+</body>
+</html>
+
