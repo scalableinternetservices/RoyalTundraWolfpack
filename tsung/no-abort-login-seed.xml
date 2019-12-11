@@ -322,7 +322,7 @@
       <thinktime random="true" value="2"/>
 
       <setdynvars end="99" sourcetype="random_number" start="1">
-        <var name="rnd_user_id"/>
+        <var name="random_post_id"/>
       </setdynvars>
 
       <transaction name="Get_Post">
