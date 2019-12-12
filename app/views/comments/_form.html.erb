@@ -24,6 +24,7 @@
   <div class="field">
     <%= form.label :commentable_type %>
     <%= form.text_field :commentable_type %>
+		<%= form.hidden_field :post_id, :value => request.path_parameters[:id] %>
   </div>
 
   <div class="actions">

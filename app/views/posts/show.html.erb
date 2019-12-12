@@ -16,11 +16,6 @@
 </p>
 
 <p>
-  <strong>Upvotes:</strong>
-  <%= @post.score%>
-</p>
-
-<p>
   <strong>Content:</strong>
   <%= @post.content%>
 </p>
@@ -46,12 +41,14 @@
       <%= form_for [@post, Comment.new] do |f| %>
         <div class="field">
           <%= f.text_area :body, placeholder: "Add a comment", rows: 1%><br/>
+				  <%= f.hidden_field :post_id, :value => @post.id %>
         </div>
         <%= f.submit "Add Comment", class: "ui button" %>
       <% end %>
     </div>
   <% end %>
   <div class="ui card" style="padding: 1rem; width: 100%;">
-    <%= render(partial: 'comments/comment', collection: @post.comments) %>
+    <%#=render(partial: 'comments/comment', collection: @post.comments) %>
+    <%= render html: renderComments(@post.id).html_safe %>
   </div>
 </div>

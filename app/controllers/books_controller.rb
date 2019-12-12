@@ -1,10 +1,16 @@
 class BooksController < ApplicationController
+  prepend_before_action :authenticate_user!, except: [:index, :show]
   before_action :set_book, only: [:show, :edit, :update, :destroy]
 
   # GET /books
   # GET /books.json
   def index
-    @books = Book.all
+    #@books = Book.all
+    paginationNumber = 3
+    if user_signed_in?
+      paginationNumber = 5
+    end
+    @books = Book.order('created_at DESC',:id).page(params[:page]).per_page(paginationNumber)
   end
 
   # GET /books/1
@@ -13,6 +19,13 @@ class BooksController < ApplicationController
     @book = Book.find(params[:id])
     # @posts = Post.where(["book_id = ?" , params[:id]])
     @posts = Post.where(:book_id => params[:id])
+
+    paginationNumber = 3
+    if user_signed_in?
+      paginationNumber = 5
+    end
+    @posts = Post.order('created_at DESC',:id).page(params[:page]).per_page(paginationNumber)
+    
     #.order('created_at DESC').page(params[:page]).per_page(5)
   end
 

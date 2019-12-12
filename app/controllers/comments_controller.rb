@@ -1,4 +1,5 @@
 class CommentsController < ApplicationController
+
   # before_action :set_comment, only: [:show, :edit, :update, :destroy]
   prepend_before_action :authenticate_user!, except: [:index]
   before_action :find_commentable
@@ -75,10 +76,13 @@ class CommentsController < ApplicationController
     # def set_comment
     #   @comment = Comment.find(params[:id])
     # end
+    def set_post
+      # @post = Post.find(params[:post_id])
+    end
 
     # # Never trust parameters from the scary internet, only allow the white list through.
     def comment_params
-      params.require(:comment).permit(:body, :user_id)
+      params.require(:comment).permit(:body, :user_id, :post_id)
     end
 
     def find_commentable
