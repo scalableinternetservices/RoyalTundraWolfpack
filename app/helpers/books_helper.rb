@@ -8,6 +8,10 @@ module BooksHelper
     return auth.username
   end
 
+  def cache_key_for_post(post)
+    return "post/#{post.id}"
+  end
+
   def truncate_content(content)
     if content.length <= 200
       return content
